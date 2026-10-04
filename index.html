@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Origem Vita — Suplementos naturais, direto da origem</title>
-<meta name="description" content="Origem Vita: casa de marcas de suplementos naturais com fórmulas limpas — circulação, vitalidade, intestino, articulações e mais. Frete grátis para todo o Brasil e garantia de 120 dias.">
+<meta name="description" content="Origem Vita: casa de marcas de suplementos naturais com fórmulas limpas — circulação, vitalidade, intestino, articulações, glicemia, coração e pés. Frete grátis para todo o Brasil e garantia de 120 dias.">
 <link rel="canonical" href="https://origemvita.store/">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://origemvita.store/">
@@ -14,7 +14,7 @@
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 21V9' stroke='%233f7d4e' stroke-width='2' stroke-linecap='round'/%3E%3Cpath d='M12 10C8 10 5 7 5 3c4 0 7 3 7 7Z' fill='%233f7d4e'/%3E%3Cpath d='M12 13c3.5 0 6.5-2.5 6.5-6.5-3.5 0-6.5 2.5-6.5 6.5Z' fill='%236aa877'/%3E%3C/svg%3E">
 <!--
   Página inicial de origemvita.store
-  Cada marca fica numa pasta de mesmo nome (/rubravita/, /ignivita/, /levivita/, /aurivita/...).
+  Cada marca fica numa pasta de mesmo nome (/rubravita/, /ignivita/, /levivita/, /aurivita/, /pedivita/, /cinnavita/, /cordivita/...).
   Imagens desta página: pasta img/. Para adicionar uma marca nova: copie um bloco <a class="card"> e um link do <nav>, trocando o --c pela cor da marca.
 -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -36,7 +36,7 @@
   .logo svg{width:22px;height:22px}
   nav{display:flex;flex-wrap:wrap;justify-content:flex-end;gap:6px 22px}
   nav a{font-size:14px;font-weight:600;color:var(--c,var(--ink));text-decoration:none}
-  @media(max-width:560px){.hd{flex-direction:column;gap:6px;padding:10px 16px}nav{justify-content:center;gap:4px 16px}nav a{font-size:13.5px}.logo{font-size:17px}}
+  @media(max-width:560px){.hd{flex-direction:column;gap:6px;padding:10px 16px}nav{flex-wrap:nowrap;justify-content:flex-start;overflow-x:auto;max-width:100%;gap:18px;scrollbar-width:none}nav::-webkit-scrollbar{display:none}nav a{font-size:13.5px;white-space:nowrap}.logo{font-size:17px}}
 
   /* HERO: texto à esquerda e foto à direita no desktop; no celular texto em cima e foto embaixo */
   .hero{background:#f3ebe3;overflow:hidden}
@@ -110,6 +110,9 @@
       <a href="ignivita/" style="--c:#c8361a">Ignivita</a>
       <a href="levivita/" style="--c:#4f7a3c">Levivita</a>
       <a href="aurivita/" style="--c:#b8740a">Aurivita</a>
+      <a href="pedivita/" style="--c:#2f86c8">Pedivita</a>
+      <a href="cinnavita/" style="--c:#b4512a">Cinnavita</a>
+      <a href="cordivita/" style="--c:#0f6b63">Cordivita</a>
     </nav>
   </div>
 </header>
@@ -119,7 +122,7 @@
     <div class="hero-tx">
       <span class="kick">Casa de marcas naturais</span>
       <h1>Suplementos naturais, direto da origem</h1>
-      <p>Ingredientes que a natureza já oferece, em cápsulas práticas e com fórmula limpa. Frete grátis e garantia de 120 dias.</p>
+      <p>Ingredientes que a natureza já oferece, em cuidados práticos e com fórmula limpa. Frete grátis e garantia de 120 dias.</p>
       <a class="btn" href="#marcas">Conheça nossas marcas</a>
     </div>
     <div class="hero-media">
@@ -179,6 +182,36 @@
           <span class="go">Conhecer a Aurivita →</span>
         </div>
       </a>
+      <a class="card" href="pedivita/" style="--c:#2f86c8">
+        <div class="ph"><img src="pedivita/pedivita-img/pouch.webp" alt="Bisnaga de Pedivita gel massageador 200g" loading="lazy" decoding="async"></div>
+        <div class="bd">
+          <span class="tag">Pés e pernas</span>
+          <h3>PEDIVITA</h3>
+          <p>Gel massageador com arnica, mentol e cânfora. Frescor imediato para pés e pernas cansados.</p>
+          <ul><li>Bisnaga de 200g</li><li>Efeito gelado</li><li>Não oleoso</li></ul>
+          <span class="go">Conhecer a Pedivita →</span>
+        </div>
+      </a>
+      <a class="card" href="cinnavita/" style="--c:#b4512a">
+        <div class="ph"><img src="cinnavita/cinnavita-img/pouch.webp" alt="Pacote de Cinnavita, 120 cápsulas de canela-do-ceilão" loading="lazy" decoding="async"></div>
+        <div class="bd">
+          <span class="tag">Açúcar no sangue</span>
+          <h3>CINNAVITA</h3>
+          <p>Canela-do-ceilão (Cinnamomum zeylanicum), a canela verdadeira. Uma aliada natural para quem cuida da glicose.</p>
+          <ul><li>120 cápsulas de 500mg</li><li>Baixo teor de cumarina</li><li>Zero açúcar</li></ul>
+          <span class="go">Conhecer a Cinnavita →</span>
+        </div>
+      </a>
+      <a class="card" href="cordivita/" style="--c:#0f6b63">
+        <div class="ph"><img src="cordivita/cordivita-img/pouch.webp" alt="Pacote de Cordivita, 120 cápsulas de alcachofra, berinjela e espirulina" loading="lazy" decoding="async"></div>
+        <div class="bd">
+          <span class="tag">Colesterol e coração</span>
+          <h3>CORDIVITA</h3>
+          <p>Alcachofra, berinjela e espirulina. Uma aliada natural para quem cuida do colesterol e do coração.</p>
+          <ul><li>120 cápsulas de 500mg</li><li>Fórmula tripla</li><li>Sem estimulantes</li></ul>
+          <span class="go">Conhecer a Cordivita →</span>
+        </div>
+      </a>
     </div>
   </div>
 </section>
@@ -189,7 +222,7 @@
     <div>
       <span class="kick">Sobre a Origem Vita</span>
       <h2>O que a natureza já sabe fazer, do jeito mais simples</h2>
-      <p>A Origem Vita nasceu de uma ideia simples: pegar ingredientes que as pessoas usam há gerações — como a beterraba, a pimenta caiena, o psyllium e a cúrcuma — e colocar numa cápsula prática, com dose certa e rótulo honesto.</p>
+      <p>A Origem Vita nasceu de uma ideia simples: pegar ingredientes que as pessoas usam há gerações — como a beterraba, a cúrcuma, a canela e a arnica — e transformar em cuidados práticos para o dia a dia, com dose certa e rótulo honesto.</p>
       <p>Sem enchimento, sem promessas milagrosas. Só fórmulas limpas, explicadas de um jeito claro, para você saber exatamente o que está tomando.</p>
     </div>
   </div>
