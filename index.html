@@ -4,24 +4,24 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Origem Vita — Suplementos naturais, direto da origem</title>
-<meta name="description" content="Origem Vita: casa das marcas Rubravita, Ignivita e Levivita. Suplementos naturais com fórmulas limpas, frete grátis para todo o Brasil e garantia de 120 dias.">
+<meta name="description" content="Origem Vita: casa de marcas de suplementos naturais com fórmulas limpas — circulação, vitalidade, intestino, articulações e mais. Frete grátis para todo o Brasil e garantia de 120 dias.">
 <link rel="canonical" href="https://origemvita.store/">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://origemvita.store/">
 <meta property="og:title" content="Origem Vita — Suplementos naturais, direto da origem">
-<meta property="og:description" content="Conheça a Rubravita, a Ignivita e a Levivita: fórmulas limpas, frete grátis e garantia de 120 dias.">
+<meta property="og:description" content="Conheça as nossas marcas: fórmulas limpas, frete grátis e garantia de 120 dias.">
 <meta property="og:image" content="https://origemvita.store/img/og.jpg">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 21V9' stroke='%233f7d4e' stroke-width='2' stroke-linecap='round'/%3E%3Cpath d='M12 10C8 10 5 7 5 3c4 0 7 3 7 7Z' fill='%233f7d4e'/%3E%3Cpath d='M12 13c3.5 0 6.5-2.5 6.5-6.5-3.5 0-6.5 2.5-6.5 6.5Z' fill='%236aa877'/%3E%3C/svg%3E">
 <!--
   Página inicial de origemvita.store
-  As marcas ficam em /rubravita/, /ignivita/ e /levivita/ (pastas de mesmo nome).
-  Imagens desta página: pasta img/. Para adicionar uma marca nova, copie um bloco <a class="card">.
+  Cada marca fica numa pasta de mesmo nome (/rubravita/, /ignivita/, /levivita/, /aurivita/...).
+  Imagens desta página: pasta img/. Para adicionar uma marca nova: copie um bloco <a class="card"> e um link do <nav>, trocando o --c pela cor da marca.
 -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
-  :root{--ink:#22201f;--mut:#77706b;--line:#ebe5df;--bg:#faf7f3;--card:#fff;--rub:#9b1747;--ign:#c8361a;--lev:#4f7a3c;--leaf:#3f7d4e;--leaf-cl:#eef4ef}
+  :root{--ink:#22201f;--mut:#77706b;--line:#ebe5df;--bg:#faf7f3;--card:#fff;--leaf:#3f7d4e;--leaf-cl:#eef4ef}
   *{margin:0;padding:0;box-sizing:border-box}
   html{scroll-behavior:smooth}
   body{font-family:'Poppins',-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.6;-webkit-font-smoothing:antialiased}
@@ -34,16 +34,15 @@
   .logo{display:flex;align-items:center;gap:9px;font-weight:800;letter-spacing:4px;font-size:19px;color:var(--ink);text-decoration:none}
   .logo b{font-weight:400;color:var(--leaf)}
   .logo svg{width:22px;height:22px}
-  nav{display:flex;gap:22px}
-  nav a{font-size:14px;font-weight:600;color:var(--ink);text-decoration:none}
-  nav a.r{color:var(--rub)} nav a.i{color:var(--ign)} nav a.l{color:var(--lev)}
-  @media(max-width:560px){.hd{flex-direction:column;gap:6px;padding:10px 16px}nav{gap:20px}nav a{font-size:13.5px}.logo{font-size:17px}}
+  nav{display:flex;flex-wrap:wrap;justify-content:flex-end;gap:6px 22px}
+  nav a{font-size:14px;font-weight:600;color:var(--c,var(--ink));text-decoration:none}
+  @media(max-width:560px){.hd{flex-direction:column;gap:6px;padding:10px 16px}nav{justify-content:center;gap:4px 16px}nav a{font-size:13.5px}.logo{font-size:17px}}
 
   /* HERO: texto à esquerda e foto à direita no desktop; no celular texto em cima e foto embaixo */
   .hero{background:#f3ebe3;overflow:hidden}
   .hero-grid{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);align-items:center;max-width:1280px;margin:0 auto}
   .hero-tx{padding:48px 28px 48px 40px;max-width:520px;justify-self:end}
-  .hero-media img{width:100%;height:auto;aspect-ratio:1014/752}
+  .hero-media img{width:100%;height:auto;aspect-ratio:1104/752}
   .kick{font-size:12px;letter-spacing:3px;text-transform:uppercase;color:var(--leaf);font-weight:700}
   h1{font-family:'DM Serif Display',Georgia,serif;font-weight:400;font-size:clamp(34px,4.4vw,54px);line-height:1.06;margin:12px 0 14px}
   .hero p{color:#5f5853;font-size:16.5px;max-width:420px}
@@ -53,7 +52,7 @@
     .hero-grid{grid-template-columns:minmax(0,1fr)}
     .hero-tx{padding:34px 20px 26px;text-align:center;max-width:none;justify-self:stretch}
     .hero p{margin:0 auto}
-    .hero-media img{aspect-ratio:720/574}
+    .hero-media img{aspect-ratio:720/495}
   }
 
   /* MARCAS */
@@ -61,8 +60,8 @@
   .sec-h{text-align:center;margin-bottom:30px}
   .sec-h h2{font-family:'DM Serif Display',Georgia,serif;font-weight:400;font-size:clamp(28px,4vw,40px);line-height:1.12;margin-top:8px}
   .sec-h p{color:var(--mut);max-width:560px;margin:10px auto 0}
-  .brands{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
-  @media(max-width:860px){.brands{grid-template-columns:minmax(0,1fr);max-width:480px;margin:0 auto}}
+  .brands{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px}
+  @media(max-width:560px){.brands{grid-template-columns:minmax(0,1fr);max-width:480px;margin:0 auto}}
   .card{background:var(--card);border:1px solid var(--line);border-radius:22px;overflow:hidden;display:flex;flex-direction:column;text-decoration:none;color:inherit;transition:transform .2s,box-shadow .2s}
   .card:hover{transform:translateY(-4px);box-shadow:0 16px 36px rgba(34,32,31,.09)}
   .card .ph{aspect-ratio:1;overflow:hidden}
@@ -75,7 +74,7 @@
   .card ul{list-style:none;display:flex;flex-wrap:wrap;gap:6px;margin-top:6px}
   .card li{font-size:12px;font-weight:600;border:1px solid var(--line);border-radius:999px;padding:4px 10px;color:var(--ink)}
   .card .go{margin-top:auto;padding-top:14px;font-weight:700;font-size:15px}
-  .rub .tag,.rub .go{color:var(--rub)} .ign .tag,.ign .go{color:var(--ign)} .lev .tag,.lev .go{color:var(--lev)}
+  .card .tag,.card .go{color:var(--c,var(--leaf))}
 
   /* SOBRE */
   .about{display:grid;grid-template-columns:1.05fr 1fr;gap:40px;align-items:center}
@@ -107,9 +106,10 @@
       <span>ORIGEM<b>VITA</b></span>
     </a>
     <nav>
-      <a class="r" href="rubravita/">Rubravita</a>
-      <a class="i" href="ignivita/">Ignivita</a>
-      <a class="l" href="levivita/">Levivita</a>
+      <a href="rubravita/" style="--c:#9b1747">Rubravita</a>
+      <a href="ignivita/" style="--c:#c8361a">Ignivita</a>
+      <a href="levivita/" style="--c:#4f7a3c">Levivita</a>
+      <a href="aurivita/" style="--c:#b8740a">Aurivita</a>
     </nav>
   </div>
 </header>
@@ -125,7 +125,7 @@
     <div class="hero-media">
       <picture>
         <source media="(max-width:860px)" srcset="img/hero-mobile.webp">
-        <img src="img/hero.webp" alt="Pacotes de Rubravita, Ignivita e Levivita com beterraba, pimenta caiena e psyllium" fetchpriority="high" decoding="async">
+        <img src="img/hero.webp" alt="Pacotes de Rubravita, Ignivita, Levivita e Aurivita com beterraba, pimenta caiena, psyllium e cúrcuma" fetchpriority="high" decoding="async">
       </picture>
     </div>
   </div>
@@ -139,7 +139,7 @@
       <p>Cada marca tem uma missão. Clique para conhecer a fórmula, ver como tomar e escolher o seu kit.</p>
     </div>
     <div class="brands">
-      <a class="card rub" href="rubravita/">
+      <a class="card" href="rubravita/" style="--c:#9b1747">
         <div class="ph"><img src="rubravita/rubravita-img/pouch.webp" alt="Pacote de Rubravita, 120 cápsulas" loading="lazy" decoding="async"></div>
         <div class="bd">
           <span class="tag">Circulação e energia</span>
@@ -149,7 +149,7 @@
           <span class="go">Conhecer a Rubravita →</span>
         </div>
       </a>
-      <a class="card ign" href="ignivita/">
+      <a class="card" href="ignivita/" style="--c:#c8361a">
         <div class="ph"><img src="ignivita/ignivita-img/pouch.webp" alt="Pacote de Ignivita, 60 cápsulas" loading="lazy" decoding="async"></div>
         <div class="bd">
           <span class="tag">Circulação e vitalidade masculina</span>
@@ -159,7 +159,7 @@
           <span class="go">Conhecer a Ignivita →</span>
         </div>
       </a>
-      <a class="card lev" href="levivita/">
+      <a class="card" href="levivita/" style="--c:#4f7a3c">
         <div class="ph"><img src="levivita/levivita-img/pouch.webp" alt="Pacote de Levivita, 120 cápsulas de psyllium" loading="lazy" decoding="async"></div>
         <div class="bd">
           <span class="tag">Intestino e saciedade</span>
@@ -167,6 +167,16 @@
           <p>Psyllium (Plantago ovata), fibra solúvel natural. Para o intestino no ritmo, mais saciedade e a barriga leve.</p>
           <ul><li>120 cápsulas de 500mg</li><li>Zero glúten e lactose</li><li>Sem conservantes</li></ul>
           <span class="go">Conhecer a Levivita →</span>
+        </div>
+      </a>
+      <a class="card" href="aurivita/" style="--c:#b8740a">
+        <div class="ph"><img src="aurivita/aurivita-img/pouch.webp" alt="Pacote de Aurivita, 120 cápsulas de cúrcuma com piperina" loading="lazy" decoding="async"></div>
+        <div class="bd">
+          <span class="tag">Articulações e mobilidade</span>
+          <h3>AURIVITA</h3>
+          <p>Cúrcuma (Curcuma longa) + piperina da pimenta-preta. Para mais conforto nas articulações e liberdade para se mexer.</p>
+          <ul><li>120 cápsulas de 500mg</li><li>Com piperina</li><li>Zero glúten e lactose</li></ul>
+          <span class="go">Conhecer a Aurivita →</span>
         </div>
       </a>
     </div>
@@ -179,7 +189,7 @@
     <div>
       <span class="kick">Sobre a Origem Vita</span>
       <h2>O que a natureza já sabe fazer, do jeito mais simples</h2>
-      <p>A Origem Vita nasceu de uma ideia simples: pegar ingredientes que as pessoas usam há gerações — como a beterraba, a pimenta caiena e o psyllium — e colocar numa cápsula prática, com dose certa e rótulo honesto.</p>
+      <p>A Origem Vita nasceu de uma ideia simples: pegar ingredientes que as pessoas usam há gerações — como a beterraba, a pimenta caiena, o psyllium e a cúrcuma — e colocar numa cápsula prática, com dose certa e rótulo honesto.</p>
       <p>Sem enchimento, sem promessas milagrosas. Só fórmulas limpas, explicadas de um jeito claro, para você saber exatamente o que está tomando.</p>
     </div>
   </div>
