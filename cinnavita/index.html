@@ -431,6 +431,66 @@
   .anim{opacity:0;transform:translateY(28px);transition:opacity .7s ease,transform .7s cubic-bezier(.2,.7,.2,1)}
   .anim.in{opacity:1;transform:none}
   @media(prefers-reduced-motion:reduce){.anim,.anim.in{opacity:1!important;transform:none!important;transition:none!important}.cell,.kwbar .track{animation-play-state:paused}.kb{animation:none}}
+
+  /* ===== v3: componentes no estilo da página de referência ===== */
+  .ptitle{font-size:27px;line-height:1.18;color:var(--pri-esc);font-weight:800;margin:8px 0 8px;text-transform:none}
+  .psub{font-size:15px;color:var(--texto);margin:0 0 14px;line-height:1.55}
+  .chips{display:flex;flex-wrap:wrap;gap:6px 16px;margin:14px 0 2px;font-size:13px;font-weight:700;color:var(--pri-esc)}
+  .chips i{color:var(--cta);font-style:normal;margin-right:5px}
+  .warn{margin-top:14px;border:1px dashed var(--borda);background:var(--pri-cl);border-radius:12px;padding:12px 14px;font-size:13px;line-height:1.5;color:var(--texto)}
+  .warn b{display:block;color:var(--pri-esc);margin-bottom:2px}
+  .hquote{margin-top:14px;background:#fff;border:1px solid var(--borda);border-radius:14px;padding:14px 16px;font-size:14px}
+  .hquote .stars{color:#f5a623;letter-spacing:2px}.hquote b{color:var(--pri-esc)}.hquote .vf,.tst .vf{font-size:11px;color:#16a34a;font-weight:700;margin-left:8px}
+  .hquote p{margin:6px 0 0;font-style:italic;color:var(--texto);line-height:1.55}
+  .approved{margin:12px 0 6px;font-size:13px;color:var(--texto)}.approved b{color:var(--pri-esc)}.approved .dot{color:#16a34a}
+  details.acc{border-top:1px solid var(--borda);padding:13px 2px}details.acc:last-of-type{border-bottom:1px solid var(--borda)}
+  details.acc summary{cursor:pointer;font-weight:800;color:var(--pri-esc);list-style:none;display:flex;justify-content:space-between;align-items:center;font-size:15px}
+  details.acc summary::-webkit-details-marker{display:none}details.acc summary:after{content:"+";font-size:22px;line-height:1;color:var(--pri)}details.acc[open] summary:after{content:"–"}
+  details.acc p{margin:8px 0 0;font-size:14px;color:var(--texto);line-height:1.6}
+  .alert-lbl{font-size:11px;font-weight:800;letter-spacing:1.5px;color:var(--vermelho);margin:6px 0 2px}
+  .story{max-width:720px;margin:0 auto;text-align:center}
+  .story p{font-size:18px;line-height:1.65;margin:0 0 14px;color:var(--texto)}
+  .story p.big{font-size:21px;font-weight:700;color:var(--pri-esc);margin-bottom:8px}
+  .story p.punch{font-size:23px;font-weight:800;color:var(--pri);margin:18px 0}
+  .story h2{margin:34px 0 16px}.story small{font-size:13px;color:var(--cinza)}
+  .cyc-name{display:inline-block;background:var(--pri-esc);color:#fff;font-weight:800;letter-spacing:1px;border-radius:999px;padding:7px 18px;font-size:13px;margin:10px 0 2px}
+  .cycle{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:16px 0 22px}
+  .cycle .st{background:#fff;border:1px solid var(--borda);border-radius:18px;padding:18px 14px;text-align:center}
+  .cycle .st b{display:flex;align-items:center;justify-content:center;width:52px;height:52px;margin:0 auto 6px;border-radius:50%;background:var(--pri-cl);font-size:26px;color:var(--pri);font-family:'DM Serif Display',serif}
+  .cycle .st strong{display:block;font-size:16px;color:var(--pri-esc);margin-bottom:4px}.cycle .st span{font-size:13.5px;color:var(--cinza);line-height:1.45;display:block}
+  .fvid{max-width:440px;margin:22px auto 0;border-radius:24px;overflow:hidden;aspect-ratio:1;box-shadow:0 18px 40px rgba(0,0,0,.08)}
+  .fvid video{width:100%;height:100%;object-fit:cover;display:block}
+  .fgrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;max-width:640px;margin:20px auto 0}
+  .fgrid div{background:#fff;border:1px solid var(--borda);border-radius:12px;padding:12px 14px;font-weight:700;color:var(--pri-esc);font-size:14.5px;display:flex;gap:10px;align-items:center;text-align:left}
+  .fgrid div:before{content:"✓";color:#fff;background:var(--cta);border-radius:50%;width:22px;height:22px;display:inline-flex;align-items:center;justify-content:center;font-size:13px;flex:none}
+  .mechs{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-top:28px}
+  .mech{background:#fff;border:1px solid var(--borda);border-radius:20px;padding:20px 22px;text-align:left}
+  .mech .em{font-size:30px;line-height:1}.mech h3{font-size:18px;color:var(--pri-esc);margin:8px 0 6px}.mech p{font-size:14.5px;color:var(--texto);line-height:1.6;margin:0}
+  .bye{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:24px auto 0;max-width:760px}
+  .bye div{background:var(--pri-cl);border-radius:18px;padding:18px 8px;text-align:center;font-weight:800;color:var(--pri-esc);font-size:14.5px;line-height:1.25}
+  .bye div i{display:block;font-style:normal;font-size:34px;margin-bottom:8px}
+  .ativos{max-width:720px;margin:20px auto 0}
+  .ativo{background:#fff;border:1px solid var(--borda);border-radius:16px;margin-top:12px;overflow:hidden}
+  .ativo summary{cursor:pointer;list-style:none;padding:16px 18px;display:flex;align-items:center;gap:12px;font-weight:800;color:var(--pri-esc);font-size:17px}
+  .ativo summary::-webkit-details-marker{display:none}.ativo summary:after{content:"+";margin-left:auto;font-size:22px;color:var(--pri)}.ativo[open] summary:after{content:"–"}
+  .ativo summary small{font-size:10.5px;letter-spacing:1.5px;color:#fff;background:var(--pri);border-radius:999px;padding:4px 10px;font-weight:800;flex:none}
+  .ativo ul{list-style:none;margin:0;padding:0 18px 16px}.ativo li{padding:6px 0 6px 26px;position:relative;font-size:14.5px;color:var(--texto)}
+  .ativo li:before{content:"✓";position:absolute;left:0;color:var(--cta);font-weight:900}
+  .vs{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin:24px auto 0;max-width:820px}
+  .vs .col{border-radius:20px;padding:20px}.vs .bad{background:#f5f2ef;border:1px solid #e6e0da}.vs .good{background:var(--pri-cl);border:2px solid var(--pri)}
+  .vs h3{font-size:16px;margin:0 0 10px;color:var(--pri-esc)}.vs ul{margin:0;padding:0}.vs li{list-style:none;font-size:14.5px;padding:7px 0 7px 28px;position:relative;line-height:1.4}
+  .vs .bad li:before{content:"✕";position:absolute;left:0;color:#c0392b;font-weight:900}.vs .good li:before{content:"✓";position:absolute;left:0;color:var(--cta);font-weight:900}
+  .tsts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:24px}
+  .tst{background:#fff;border:1px solid var(--borda);border-radius:20px;padding:20px}.tst .stars{color:#f5a623;letter-spacing:2px}
+  .tst p{font-size:15px;font-style:italic;color:var(--texto);margin:10px 0 12px;line-height:1.6}.tst b{color:var(--pri-esc)}
+  @media(max-width:860px){.tsts{grid-template-columns:minmax(0,1fr)}}
+  @media(max-width:720px){.cycle,.mechs{grid-template-columns:minmax(0,1fr)}.ptitle{font-size:23px}}
+  @media(max-width:620px){.vs{grid-template-columns:minmax(0,1fr)}.bye{grid-template-columns:repeat(2,minmax(0,1fr))}.fgrid{grid-template-columns:minmax(0,1fr)}}
+
+  .mblocks{display:grid;gap:12px;margin:6px 0 18px;text-align:left}
+  .mblock{background:#fff;border-left:4px solid var(--pri);border-radius:12px;padding:14px 16px}
+  .mblock h3{font-size:16px;color:var(--pri-esc);margin:0 0 4px}.mblock p{font-size:15.5px !important;margin:0 !important;line-height:1.6}
+  .story .meta{font-style:italic;font-size:19px;color:var(--pri-esc);background:var(--pri-cl);border-radius:14px;padding:16px 18px;margin:6px 0 12px}
 </style>
 </head>
 <body>
@@ -473,10 +533,6 @@
 
       <div class="hero-left">
         <span class="patent">Canela de Ceilão · Cinnamomum zeylanicum</span>
-        <h1>Uma aliada natural para quem cuida <span class="hl">do açúcar no sangue</span></h1>
-        <p class="sub">— <b>Canela-do-ceilão</b>, a canela verdadeira, em cápsulas de 500mg. Baixo teor de cumarina, zero açúcar e zero glúten.</p>
-
-        <!-- Galeria: fotos e vídeo gerados com IA (pasta cinnavita-img/) -->
         <div class="slides" id="slides">
           <div class="slide photo on"><video class="loopvid" src="cinnavita-img/video-pouch.mp4" poster="cinnavita-img/pouch.webp" autoplay muted loop playsinline aria-label="Pacote de Cinnavita Canela de Ceilão, 120 cápsulas de 500mg"></video></div>
           <div class="slide photo"><img src="cinnavita-img/kit-3-pacotes.webp" alt="Kit com 3 pacotes de Cinnavita" loading="lazy" decoding="async"></div>
@@ -496,13 +552,12 @@
       </div>
 
       <div class="hero-right" id="offers">
-        <span class="eyebrow">Suplemento Alimentar · Canela em Cápsulas</span>
-        <h2>Cinnavita Canela de Ceilão 120 Cápsulas 500mg — A Canela Verdadeira + Frete Grátis</h2>
         <!-- EXEMPLO: troque a nota e a contagem pelos números reais das suas avaliações -->
-        <div class="rating-row"><span class="stars">★★★★★</span> <b>4,8</b> · 2.104 avaliações</div>
-
-        <div class="sel-label">Escolha o seu protocolo</div>
-        <div class="scarcity-line">🔥 Preço de lançamento · por tempo limitado</div>
+        <div class="rating-row"><span class="stars">★★★★★</span> Avaliado em <b>4,8</b> (2.104) · Excelente</div>
+        <h1 class="ptitle">Cinnavita — A aliada natural de quem cuida do açúcar no sangue, com a canela verdadeira</h1>
+        <p class="psub">Canela-do-ceilão em dose certa e sem gosto: rica em polifenóis e com baixo teor de cumarina — a canela indicada para o uso diário.</p>
+        <div class="sel-label">Escolha o seu kit</div>
+        <div class="scarcity-line">🔥 Lote de lançamento com preço especial</div>
         <div class="offers">
           <label class="offer" onclick="selOffer(this)" data-kit="k3">
             <span class="offer-tag tag-1">Mais Vendido</span>
@@ -527,28 +582,69 @@
           </label>
         </div>
         <a href="#" class="cta js-buy" data-buy-main><span class="cta-main">Comprar Agora →</span><span class="buy-kit"></span></a>
+        <div class="frete"><span class="cx">📦</span><div><b>Frete grátis com rastreio</b><p>Despacho em até 1 dia útil para todo o Brasil</p></div></div>
         <div class="paystrip">
           <span class="ps-lock">🔒 Pagamento 100% seguro · compra protegida</span>
           <div class="pays"><svg class="pi"><use href="#pi-visa"/></svg><svg class="pi"><use href="#pi-mc"/></svg><svg class="pi"><use href="#pi-elo"/></svg><svg class="pi"><use href="#pi-amex"/></svg><svg class="pi"><use href="#pi-pix"/></svg></div>
         </div>
-
-        <div class="frete">
-          <span class="cx">📦</span>
-          <div><b>Frete Grátis e embalagem discreta</b><p>Envio rápido com <b>código de rastreio</b></p></div>
-        </div>
-        <div class="anvisa">
-          <span class="cx">🌿</span>
-          <div><b>Fórmula limpa</b><p>100% canela-do-ceilão · Zero açúcar · Sem glúten · Sem lactose</p></div>
-        </div>
-        <div class="urg">
-          <div class="watch">🔥 Preço de lançamento — válido enquanto durar o lote atual.</div>
-          <div class="stock">⚠️ Produção em lotes pequenos para garantir qualidade e frescor.</div>
-        </div>
-        <div class="paybar">
-          <div class="checks"><span>Compra Segura</span><span>Garantia de 120 dias</span><span>Envio Discreto</span></div>
-        </div>
+        <div class="chips"><span><i>●</i>Mais vendido</span><span><i>●</i>Experimente por 120 dias</span><span><i>●</i>Fórmula limpa</span></div>
+        <div class="warn"><b>ⓘ Aviso sobre falsificações</b>A Cinnavita original é vendida somente neste site. Produtos com o mesmo nome em marketplaces não são originais.</div>
+        <!-- EXEMPLO: depoimento ilustrativo — troque por um depoimento real -->
+        <div class="hquote"><span class="stars">★★★★★</span><br><b>Regina S., 53 anos</b><span class="vf">✓ Compra verificada</span><p>“Depois do almoço eu precisava de um doce — e aí vinha um sono que não me deixava trabalhar. No último exame a glicose veio no limite e eu me assustei. Comecei a cuidar da alimentação e a tomar a Cinnavita junto das refeições. A vontade de doce diminuiu muito e eu me sinto bem mais disposta.”</p></div>
+        <div class="approved"><span class="dot">●</span> <b>Aprovado por quem usa</b> — escolhido por quem quer cuidar do açúcar no sangue todos os dias.</div>
+        <details class="acc"><summary>Como funciona</summary><p>A canela-do-ceilão é uma das especiarias mais estudadas quando o assunto é açúcar no sangue. Tomada junto com as refeições, ela é uma aliada natural de quem cuida da glicose, ao lado da alimentação e do acompanhamento médico.</p></details>
+        <details class="acc"><summary>Modo de uso</summary><p>2 cápsulas por dia: 1 no almoço e 1 no jantar, com um copo de água. Cada pacote rende 60 dias.</p></details>
+        <details class="acc"><summary>Ingredientes principais</summary><p>Canela-do-ceilão (Cinnamomum zeylanicum), a canela verdadeira, com baixo teor de cumarina. 500mg por cápsula. Zero açúcar, sem glúten e sem lactose.</p></details>
+        <details class="acc"><summary>Garantia de reembolso</summary><p>Você tem 120 dias para experimentar. Se não sentir a diferença, devolvemos 100% do valor pago.</p></details>
       </div>
 
+    </div>
+  </div>
+</section>
+
+<!-- AUTOAVALIAÇÃO -->
+<section class="sec-white">
+  <div class="wrap">
+    <div class="quiz-badge">🩺 Teste rápido · leva 30 segundos</div>
+    <h2 class="center">Vontade de doce não é falta de força de vontade.<br><span class="red">Reconheça os sinais.</span></h2>
+    <p class="miniclaim">Faça o teste: marque os sinais que você sente. Cada um deles pode ser um sinal de <b>açúcar no sangue fora do equilíbrio</b>.</p>
+    <div class="quiz-cta"><span>👉 Toque nos sinais que você sente para ver o seu resultado</span><span class="arrow">👇</span></div>
+    <div class="checklist hint" id="checklist">
+      <label class="chk" onclick="toggleChk(this)"><span class="box"></span><span class="chk-txt"><span class="sname">Sono pesado depois do almoço</span><span class="sexp">Você almoça e, meia hora depois, os olhos começam a fechar.</span></span></label>
+      <label class="chk" onclick="toggleChk(this)"><span class="box"></span><span class="chk-txt"><span class="sname">Vontade de doce depois das refeições</span><span class="sexp">A sobremesa parece obrigatória — e um pedaço vira dois.</span></span></label>
+      <label class="chk" onclick="toggleChk(this)"><span class="box"></span><span class="chk-txt"><span class="sname">Sede frequente e boca seca</span><span class="sexp">Você bebe água o dia todo e a sede não passa — vale investigar.</span></span></label>
+      <label class="chk" onclick="toggleChk(this)"><span class="box"></span><span class="chk-txt"><span class="sname">Levantar à noite para ir ao banheiro</span><span class="sexp">Idas frequentes, principalmente de madrugada, merecem atenção médica.</span></span></label>
+      <label class="chk" onclick="toggleChk(this)"><span class="box"></span><span class="chk-txt"><span class="sname">Barriga crescendo mesmo comendo “normal”</span><span class="sexp">A calça aperta na cintura mesmo sem você comer mais.</span></span></label>
+      <label class="chk" onclick="toggleChk(this)"><span class="box"></span><span class="chk-txt"><span class="sname">Já ouviu “glicose alta” ou “pré-diabetes”</span><span class="sexp">O médico acendeu o alerta — e é hora de criar hábitos.</span></span></label>
+    </div>
+    <div class="chk-result">
+      <div class="chk-count"><span id="chkNum">0</span> de 6 sinais marcados</div>
+      <div class="alert-lbl">⚠️ NÍVEL DE ALERTA</div>
+      <div class="chk-verdict" id="chkVerdict">Marque os sinais que você sente para ver o seu resultado.</div>
+      <div class="chk-bar"><i id="chkBar"></i></div>
+      <p class="chk-note">Este teste é apenas informativo e não substitui uma avaliação médica. Só um exame de sangue mede a sua glicose — converse com o seu médico.</p>
+    </div>
+  </div>
+</section>
+
+<!-- HISTÓRIA -->
+<section>
+  <div class="wrap">
+    <div class="story">
+      <p class="eyebrow-c">O que está por trás da vontade de doce e do sono depois do almoço</p>
+      <p class="big">A vontade de doce não é falta de força de vontade.</p>
+      <p class="big">O sono depois do almoço não é preguiça.</p>
+      <p class="big">E a barriga que cresce não é só a idade.</p>
+      <p class="punch">São três partes diferentes do mesmo ciclo.</p>
+      <p>E enquanto você corta o doce na força de vontade, cede no fim de semana e se culpa na segunda, o açúcar continua no comando. Todos os dias.</p>
+      <p class="big">Deixa eu te explicar o que está realmente acontecendo dentro de você.</p>
+      <h2 class="center">O seu corpo está numa <span class="hl">montanha-russa de açúcar</span></h2>
+      <div class="mblocks"><div class="mblock"><h3>O pico</h3><p>Pão, massa, arroz branco, doce e refrigerante viram açúcar no sangue muito rápido. O corpo responde com um pico de insulina para dar conta de tudo.</p></div><div class="mblock"><h3>A queda</h3><p>Depois do pico, vem a queda: a energia despenca, o sono bate e o cérebro pede mais açúcar para subir de novo. É por isso que a vontade de doce aparece logo depois de comer.</p></div><div class="mblock"><h3>O resultado</h3><p>Com os anos, essa montanha-russa cansa o organismo: o açúcar fica mais tempo alto, a barriga cresce e os exames começam a acender o alerta. Mais de 15 milhões de brasileiros adultos convivem com diabetes — e muitos nem sabem.</p></div></div>
+      <p class="meta">É como jogar açúcar no tanque do carro: o motor até anda, mas vai engasgando e se desgastando por dentro.</p>
+      <span class="cyc-name">O CICLO P-Q-V</span>
+      <div class="cycle"><div class="st"><b>P</b><strong>Pico</strong><span>A refeição vira açúcar no sangue rápido demais.</span></div><div class="st"><b>Q</b><strong>Queda</strong><span>A insulina derruba o açúcar e a energia despenca.</span></div><div class="st"><b>V</b><strong>Vontade</strong><span>O corpo pede mais doce — e o ciclo recomeça.</span></div></div>
+      <p>O sono depois do almoço, a vontade de doce e a barriga são o seu corpo pedindo equilíbrio.</p>
+      <p class="punch">Uma aliada simples está na sua cozinha — mas, quase sempre, na versão errada.</p>
     </div>
   </div>
 </section>
@@ -591,134 +687,40 @@
   </div>
 </section>
 
-<!-- AUTOAVALIAÇÃO -->
+<!-- FÓRMULA -->
 <section class="sec-white">
   <div class="wrap">
-    <div class="quiz-badge">🩺 Autoavaliação gratuita · leva 30 segundos</div>
-    <h2 class="center">Você chama de "vontade de doce".<br><span class="red">O seu corpo chama de alerta.</span></h2>
-    <p class="miniclaim">Marque os sinais que você sente com frequência. Muitos deles podem estar ligados ao <b>açúcar no sangue fora do equilíbrio</b>.</p>
-    <div class="quiz-cta"><span>👉 Toque nos sinais que você sente para ver o seu resultado</span><span class="arrow">👇</span></div>
-    <div class="checklist hint" id="checklist">
-      <label class="chk" onclick="toggleChk(this)"><span class="box"></span><span class="chk-txt"><span class="sname">Sono e cansaço logo depois do almoço</span><span class="sexp">Refeições ricas em açúcar e farinha fazem a energia subir rápido e despencar depois.</span></span></label>
-      <label class="chk" onclick="toggleChk(this)"><span class="box"></span><span class="chk-txt"><span class="sname">Vontade de doce depois das refeições</span><span class="sexp">Os picos e quedas de açúcar no sangue alimentam a vontade de mais açúcar.</span></span></label>
-      <label class="chk" onclick="toggleChk(this)"><span class="box"></span><span class="chk-txt"><span class="sname">Sede frequente e boca seca</span><span class="sexp">Pode ser um sinal de açúcar alto e merece atenção.</span></span></label>
-      <label class="chk" onclick="toggleChk(this)"><span class="box"></span><span class="chk-txt"><span class="sname">Levantar à noite para ir ao banheiro</span><span class="sexp">Idas frequentes ao banheiro, principalmente à noite, merecem investigação.</span></span></label>
-      <label class="chk" onclick="toggleChk(this)"><span class="box"></span><span class="chk-txt"><span class="sname">Barriga crescendo mesmo comendo "normal"</span><span class="sexp">O açúcar que sobra tende a virar gordura na região da barriga.</span></span></label>
-      <label class="chk" onclick="toggleChk(this)"><span class="box"></span><span class="chk-txt"><span class="sname">Fome pouco tempo depois de comer</span><span class="sexp">Quando o açúcar cai rápido, a fome volta mais cedo.</span></span></label>
-      <label class="chk" onclick="toggleChk(this)"><span class="box"></span><span class="chk-txt"><span class="sname">Visão embaçada de vez em quando</span><span class="sexp">Oscilações de açúcar podem afetar a visão — vale contar ao seu médico.</span></span></label>
-      <label class="chk" onclick="toggleChk(this)"><span class="box"></span><span class="chk-txt"><span class="sname">Machucados que demoram a cicatrizar</span><span class="sexp">Cicatrização lenta é um sinal que precisa de avaliação médica.</span></span></label>
-      <label class="chk" onclick="toggleChk(this)"><span class="box"></span><span class="chk-txt"><span class="sname">Já ouviu "glicose alta" ou "pré-diabetes" num exame</span><span class="sexp">Esse é o momento de criar hábitos — com acompanhamento do seu médico.</span></span></label>
-    </div>
-    <div class="chk-result">
-      <div class="chk-count"><span id="chkNum">0</span> de 9 sinais marcados</div>
-      <div class="chk-verdict" id="chkVerdict">Marque os sinais que você sente para ver o seu resultado.</div>
-      <div class="chk-bar"><i id="chkBar"></i></div>
-      <p class="chk-note">Este teste é apenas informativo e não substitui uma avaliação médica. Só um exame de sangue mede a sua glicose — converse com o seu médico.</p>
-    </div>
+    <p class="eyebrow-c">A fórmula que todos estão falando</p>
+    <h2 class="center" id="stickyTrigger">A canela verdadeira <span class="hl">que todos estão falando</span></h2>
+    <div class="fvid"><video src="cinnavita-img/video-pouch.mp4" poster="cinnavita-img/pouch.webp" autoplay muted loop playsinline aria-label="Embalagem de Cinnavita"></video></div>
+    <p class="lead" style="max-width:660px;margin:20px auto 0">A Cinnavita é canela-do-ceilão pura, a “canela verdadeira”. Diferente da canela comum (cássia), ela tem baixíssimo teor de cumarina — por isso é a escolha indicada para o uso diário.</p>
+    <div class="fgrid"><div>Aliada da glicemia</div><div>Aliada contra a vontade de doce</div><div>Rica em antioxidantes</div><div>Baixo teor de cumarina</div><div>Zero açúcar</div><div>Sem gosto</div></div>
+    <div class="mechs"><div class="mech"><div class="em">🍽️</div><h3>Junto com a refeição</h3><p>Tomada no almoço e no jantar, a canela acompanha o momento em que o açúcar chega ao sangue.</p></div><div class="mech"><div class="em">🛡️</div><h3>Rica em polifenóis</h3><p>A canela é uma das especiarias com mais antioxidantes naturais.</p></div><div class="mech"><div class="em">🌿</div><h3>A canela verdadeira</h3><p>Centenas de vezes menos cumarina que a canela cássia, a mais vendida no mercado.</p></div><div class="mech"><div class="em">📈</div><h3>Melhora progressiva</h3><p>É um hábito diário: muita gente percebe diferença na vontade de doce entre 2 e 4 semanas.</p></div></div>
   </div>
 </section>
 
-<!-- TEXTO -->
+<!-- DIGA ADEUS -->
 <section>
   <div class="wrap">
-    <div class="prose">
-      <p>Se você sente esses sinais, não é falta de força de vontade. O prato moderno é cheio de açúcar e farinha branca — e o corpo vive numa <b>montanha-russa de picos e quedas</b> de açúcar no sangue.</p>
-      <div class="oseja">Ou seja…</div>
-      <p>É como <span class="em">jogar açúcar no tanque do carro</span>: o motor até anda, mas vai engasgando, gastando mais e se desgastando por dentro. Cuidar do açúcar é cuidar do motor — todos os dias.</p>
-    </div>
+    <h2 class="center">Diga adeus para:</h2>
+    <div class="bye"><div><i>🍰</i>Vontade de doce</div><div><i>😴</i>Sono pós-almoço</div><div><i>🎢</i>Picos de açúcar</div><div><i>👖</i>Calça apertando</div><div><i>🍞</i>Fome de pão</div><div><i>😟</i>Exame no limite</div></div>
   </div>
 </section>
 
-<!-- O VILÃO -->
-<section>
-  <div class="wrap">
-    <p class="eyebrow-c">Por que o açúcar sobe</p>
-    <h2 class="center">A <span class="hl">montanha-russa do açúcar</span> que ninguém vê</h2>
-    <div class="prose">
-      <p>Pão, massa, arroz branco, doce e refrigerante viram açúcar no sangue muito rápido. O corpo responde com picos de insulina, a energia despenca e a vontade de doce volta. Com os anos, esse ciclo <b>cansa o organismo</b>.</p>
-    </div>
-    <div class="data">
-      A <span class="n">canela</span> é uma das especiarias <span class="n">mais estudadas do mundo</span> em pesquisas sobre açúcar no sangue.
-      <span class="src">Base de dados científica PubMed, pesquisas sobre canela e glicemia.</span>
-    </div>
-  </div>
-</section>
-
-<!-- POR QUE NADA RESOLVEU -->
+<!-- ATIVOS -->
 <section class="sec-white">
+  <div class="wrap">
+    <h2 class="center"><span class="hl">Canela verdadeira.</span> 3 frentes.</h2>
+    <p class="subh">Canela-do-ceilão (Cinnamomum zeylanicum) — a versão indicada para o uso diário.</p>
+    <div class="ativos"><details class="ativo" open><summary><small>FRENTE 01</small>Glicemia</summary><ul><li>Aliada de quem cuida do açúcar no sangue</li><li>Tomada junto com as refeições</li><li>Com alimentação equilibrada e acompanhamento médico</li></ul></details><details class="ativo"><summary><small>FRENTE 02</small>Antioxidante</summary><ul><li>Rica em polifenóis</li><li>Proteção para o dia a dia</li><li>Uma das especiarias mais estudadas do mundo</li></ul></details><details class="ativo"><summary><small>FRENTE 03</small>Segurança</summary><ul><li>Baixíssimo teor de cumarina</li><li>Indicada para uso diário</li><li>Diferente da canela cássia do mercado</li></ul></details></div>
+  </div>
+</section>
+
+<!-- COMPARATIVO -->
+<section>
   <div class="wrap">
     <h2 class="center">Por que nada do que você <span class="hl">tentou resolveu</span></h2>
-    <p class="subh">Cortar o doce na força, trocar por adoçante e usar a "canela do mercado" falham pelo mesmo motivo: ou não duram, ou não entregam o que prometem.</p>
-    <div class="faillist">
-      <div class="fail"><span class="x">✕</span><div><b>Cortar tudo na força de vontade</b><span>Funciona por uns dias. Depois a vontade de doce volta mais forte.</span></div></div>
-      <div class="fail"><span class="x">✕</span><div><b>Trocar o açúcar por adoçante</b><span>Tira as calorias, mas mantém o paladar viciado em doce.</span></div></div>
-      <div class="fail"><span class="x">✕</span><div><b>Canela do mercado (cássia)</b><span>A canela comum é a cássia, rica em cumarina — substância que, em excesso, pode sobrecarregar o fígado no uso diário.</span></div></div>
-      <div class="fail"><span class="x">✕</span><div><b>Chás e receitas milagrosas</b><span>Dose incerta, preparo trabalhoso e nenhuma constância.</span></div></div>
-    </div>
-    <p class="fail-close">Não foi falta de força de vontade. <span class="em">Faltou uma aliada diária, certa e fácil de tomar</span>.</p>
-  </div>
-</section>
-
-<!-- MECANISMO -->
-<section>
-  <div class="wrap">
-    <h2 class="center">Da cápsula ao <span class="hl">equilíbrio</span></h2>
-    <div class="prose">
-      <p>A canela-do-ceilão (Cinnamomum zeylanicum) é conhecida como a <b>"canela verdadeira"</b>. Diferente da canela comum (cássia), ela tem <b>baixíssimo teor de cumarina</b> — por isso é a escolha mais segura para o uso diário.</p>
-    </div>
-    <div class="chain">
-      <div class="lk"><span class="ic">🌿</span><b>Cápsula</b><small>Canela-do-ceilão, 500mg</small></div>
-      <div class="lk"><span class="ic">🍽️</span><b>Refeição</b><small>Tomada junto com o almoço e o jantar</small></div>
-      <div class="lk"><span class="ic">🛡️</span><b>Antioxidantes</b><small>Polifenóis naturais da canela</small></div>
-      <div class="lk"><span class="ic">⚖️</span><b>Rotina</b><small>Aliada de quem cuida do açúcar no sangue</small></div>
-    </div>
-    <div class="data">
-      A canela-do-ceilão tem <span class="n">centenas de vezes menos cumarina</span> que a canela cássia, a mais vendida nos mercados.
-      <span class="src">Wang Y. H. et al. J. Agric. Food Chem., 2013 — teor de cumarina em canelas.</span>
-    </div>
-  </div>
-</section>
-
-<!-- UMA ESPECIARIA, VÁRIAS FRENTES -->
-<section class="sec-white">
-  <div class="wrap">
-    <h2 class="center" id="stickyTrigger">Uma especiaria, <span class="hl">várias frentes</span></h2>
-    <div class="prose">
-      <p>A Cinnavita é <b>canela-do-ceilão pura</b>, sem misturas. Uma especiaria só, agindo em várias frentes:</p>
-    </div>
-    <div class="ing3">
-      <div class="card"><span class="tag">Glicemia</span><h3>Aliada do açúcar no sangue</h3><p>Uma aliada natural para quem cuida da glicose, junto com alimentação e acompanhamento médico.</p></div>
-      <div class="card"><span class="tag">Antioxidante</span><h3>Rica em polifenóis</h3><p>A canela é uma das especiarias com mais antioxidantes naturais.</p></div>
-      <div class="card"><span class="tag">Segurança</span><h3>Baixo teor de cumarina</h3><p>A canela verdadeira, mais indicada para o uso diário que a canela comum.</p></div>
-      <div class="card"><span class="tag">Paladar</span><h3>Menos dependência do doce</h3><p>Uma ajuda para quem está mudando o paladar e reduzindo o açúcar no dia a dia.</p></div>
-      <div class="card"><span class="tag">Fórmula limpa</span><h3>100% canela</h3><p>Zero açúcar, sem glúten, sem lactose e sem enchimentos.</p></div>
-      <div class="card"><span class="tag">Rendimento</span><h3>60 dias por pacote</h3><p>São 120 cápsulas por pacote. Com 2 por dia, cada pacote dura dois meses.</p></div>
-    </div>
-    <p class="comp-note" style="margin-top:20px">Tome junto com as refeições.</p>
-  </div>
-</section>
-
-<!-- VS CANELA DO MERCADO -->
-<section>
-  <div class="wrap">
-    <h2 class="center">Cinnavita vs. <span class="hl">canela do mercado</span></h2>
-    <div class="prose">
-      <p>A canela em pó do mercado quase sempre é a cássia — mais barata, mais forte e com muito mais cumarina. Usada todos os dias, em quantidade, ela não é a melhor escolha. Com a Cinnavita, você recebe <b>canela-do-ceilão, a canela verdadeira</b>, na dose certa e sem precisar polvilhar nada.</p>
-      <p>É a diferença entre um tempero e um cuidado diário. <b>Canela só ajuda se você toma todo dia — e se for a canela certa.</b></p>
-    </div>
-  </div>
-</section>
-
-<!-- APRESENTAÇÃO -->
-<section>
-  <div class="wrap">
-    <div class="present">
-      <span class="badge">A solução completa</span>
-      <h2>Cinnavita — canela-do-ceilão em cápsulas de 500mg, para quem cuida do açúcar no sangue todos os dias</h2>
-      <div class="present-media"><img class="loopvid kb" src="cinnavita-img/pouch.webp" alt="Pacote de Cinnavita com 120 cápsulas de 500mg" loading="lazy" decoding="async"></div>
-      <p>Se o cansaço depois do almoço, a vontade de doce e os exames no limite já fazem parte da sua rotina, a Cinnavita foi criada para você. São <b>120 cápsulas de 500mg de canela-do-ceilão</b> — <b>zero açúcar, sem glúten e com baixo teor de cumarina</b>, numa cápsula fácil de tomar junto com a refeição.</p>
-      <p>Uma especiaria usada há milhares de anos e hoje entre as mais estudadas do mundo — na sua versão verdadeira.</p>
-    </div>
+    <div class="vs"><div class="col bad"><h3>Adoçante, dieta na força e canela do mercado</h3><ul><li>Adoçante mantém o paladar viciado em doce</li><li>Cortar tudo na força dura poucos dias</li><li>A canela do mercado é cássia, rica em cumarina</li><li>Chás e receitas têm dose incerta</li></ul></div><div class="col good"><h3>Cinnavita</h3><ul><li>Canela verdadeira do Ceilão</li><li>Dose certa, sem gosto</li><li>Baixo teor de cumarina</li><li>Aliada da glicemia</li><li>Zero açúcar e sem glúten</li><li>Garantia de 120 dias</li></ul></div></div>
   </div>
 </section>
 
@@ -735,62 +737,25 @@
   </div>
 </section>
 
-<!-- COMPOSIÇÃO -->
+<!-- DEPOIMENTOS -->
+<!-- EXEMPLO: depoimentos ilustrativos — troque por depoimentos reais de clientes antes de publicar. -->
 <section class="sec-white">
   <div class="wrap">
-    <h2 class="center">O que tem em <span class="hl">cada cápsula</span></h2>
-    <p class="lead">Um ingrediente só. Você sabe exatamente o que está tomando.</p>
-    <div class="comp">
-      <div class="h">Composição · por cápsula</div>
-      <div class="row"><b>Canela-do-ceilão (Cinnamomum zeylanicum) em pó</b><span>500mg</span></div>
-      <div class="row"><b>Baixo teor de cumarina</b><span>✓</span></div>
-      <div class="row"><b>Zero açúcar</b><span>✓</span></div>
-      <div class="row"><b>Sem glúten · Sem lactose</b><span>✓</span></div>
-      <div class="row"><b>Cápsulas por pacote</b><span>120 (60 dias)</span></div>
-    </div>
-    <p class="comp-note">100% natural · Uso adulto · Tome junto com as refeições.</p>
-    <div class="experts">
-      <span class="ic">🌿</span>
-      <div><b>Fórmula de ingrediente único</b><p>Nada de misturas para encher a fórmula: 100% canela-do-ceilão, a canela verdadeira.</p></div>
-    </div>
+    <h2 class="center">O que diz quem confia na <span class="hl">Cinnavita</span></h2>
+    <div class="tsts"><div class="tst"><span class="stars">★★★★★</span><p>“Eu colocava canela em pó no café achando que estava me cuidando, e descobri que era cássia. Troquei pela canela do Ceilão em cápsula e não volto mais.”</p><b>Denise A., 50 anos</b><span class="vf">✓ Compra verificada</span></div><div class="tst"><span class="stars">★★★★★</span><p>“O médico disse que minha glicose estava no limite. Mudei a alimentação, comecei a caminhar e incluí a canela na rotina. Saí da última consulta bem mais tranquilo.”</p><b>Paulo H., 58 anos</b><span class="vf">✓ Compra verificada</span></div><div class="tst"><span class="stars">★★★★★</span><p>“Aquele sono pesado depois do almoço que me derrubava melhorou bastante. Tomo no almoço e no jantar e nem sinto o gosto.”</p><b>Fátima R., 61 anos</b><span class="vf">✓ Compra verificada</span></div></div>
   </div>
 </section>
 
-<!-- BENEFÍCIOS -->
+<!-- GARANTIA -->
 <section>
   <div class="wrap">
-    <h2 class="center">Benefícios da <span class="hl">Cinnavita</span></h2>
-    <p class="subh">O que você pode sentir com a canela fazendo parte da sua rotina:*</p>
-    <div class="ben-list">
-      <div class="ben"><span class="ck">✓</span><div><b>Aliada da glicemia</b><span>Apoio natural para quem cuida do <b>açúcar no sangue</b>, junto com alimentação equilibrada.</span></div></div>
-      <div class="ben"><span class="ck">✓</span><div><b>Paladar menos dependente de doce</b><span>Uma ajuda para quem está <b>reduzindo o açúcar</b> no dia a dia.</span></div></div>
-      <div class="ben"><span class="ck">✓</span><div><b>Refeições mais leves</b><span>Para quem quer fugir do <b>sono pesado depois do almoço</b>.</span></div></div>
-      <div class="ben"><span class="ck">✓</span><div><b>Ação antioxidante</b><span>A canela é rica em <b>polifenóis</b>, antioxidantes naturais.</span></div></div>
-      <div class="ben"><span class="ck">✓</span><div><b>Canela verdadeira</b><span><b>Baixo teor de cumarina</b>, mais indicada para o uso diário.</span></div></div>
-      <div class="ben"><span class="ck">✓</span><div><b>Zero açúcar</b><span><b>Sem açúcar, sem glúten</b> e sem lactose.</span></div></div>
-      <div class="ben"><span class="ck">✓</span><div><b>Sem sabor</b><span>Toda a canela numa cápsula: <b>sem gosto e sem ardência</b>.</span></div></div>
-      <div class="ben"><span class="ck">✓</span><div><b>Fácil de manter</b><span><b>2 cápsulas por dia</b>, junto com as refeições.</span></div></div>
+    <div class="guar">
+      <h2>Experimente sem risco por 120 dias</h2>
+      <p class="txt">Use a Cinnavita por 120 dias. Se você não sentir diferença na vontade de doce e na disposição, devolvemos 100% do seu dinheiro. Sem perguntas, sem burocracia.</p>
+      <div class="pill">Nossa promessa para você</div>
+      <div class="seal"><span class="ring">Garantia</span><span class="big">120</span><span class="d">DIAS</span></div>
     </div>
-  </div>
-</section>
-
-<!-- RESULTADOS -->
-<!-- EXEMPLO: as porcentagens abaixo são ilustrativas. Substitua pelos resultados de uma pesquisa real com os seus clientes. -->
-<section class="sec-white">
-  <div class="wrap">
-    <p class="eyebrow-c">Pesquisa com clientes</p>
-    <h2 class="center">O que os nossos <span class="hl">clientes relatam</span></h2>
-    <p class="lead">Em pesquisa recente com quem usa a Cinnavita:</p>
-    <div class="stats">
-      <div class="stat"><div class="n">81%</div><p>sentiram menos vontade de doce nas primeiras semanas</p></div>
-      <div class="stat"><div class="n">74%</div><p>relataram mais disposição depois das refeições</p></div>
-      <div class="stat"><div class="n">69%</div><p>disseram que ficou mais fácil manter a alimentação equilibrada</p></div>
-      <div class="stat"><div class="n">90%</div><p>pretendem continuar usando a Cinnavita no dia a dia</p></div>
-    </div>
-    <p class="stats-note">*Resultados de pesquisa voluntária e autodeclarada com clientes. Resultados individuais podem variar.</p>
-    <div class="narr">
-      <p>Quando o açúcar para de mandar no seu dia, tudo muda. Você almoça e volta ao trabalho sem aquele sono pesado, passa pela padaria sem precisar do doce e chega na consulta com mais tranquilidade. <b>Não é milagre — é um hábito diário, com uma aliada da natureza.</b></p>
-    </div>
+    <a href="#" class="cta sm js-buy">Quero experimentar sem risco →</a>
   </div>
 </section>
 
@@ -821,18 +786,6 @@
       <div class="rev"><div class="top"><div class="av">M</div><div><div class="name">Márcia T.</div><div class="verif">✓ Compra verificada</div></div></div><div class="stars">★★★★★</div><p>"Comprei pra minha mãe, com o aval do médico dela. Ela gostou muito e não esquece de tomar."</p><div class="date">14 de setembro de 2026</div></div>
       <div class="rev"><div class="top"><div class="av">L</div><div><div class="name">Luciana B.</div><div class="verif">✓ Compra verificada</div></div></div><div class="stars">★★★★★</div><p>"Me ajudou a segurar o doce no meio da tarde."</p><div class="date">10 de setembro de 2026</div></div>
       <div class="rev"><div class="top"><div class="av">A</div><div><div class="name">Antônia M.</div><div class="verif">✓ Compra verificada</div></div></div><div class="stars">★★★★★</div><p>"Comprei o kit de 3 para fazer os 6 meses certinho."</p><div class="date">6 de setembro de 2026</div></div>
-    </div>
-  </div>
-</section>
-
-<!-- GARANTIA -->
-<section class="sec-white">
-  <div class="wrap">
-    <div class="guar">
-      <h2>Garantia de 120 dias</h2>
-      <p class="txt">Se você não ficar satisfeito em até 120 dias, basta entrar em contato com o nosso suporte para receber o reembolso total — sem burocracia.</p>
-      <div class="pill">Experimente hoje mesmo sem riscos!</div>
-      <div class="seal"><span class="ring">Garantia</span><span class="big">120</span><span class="d">DIAS</span></div>
     </div>
   </div>
 </section>
@@ -885,6 +838,27 @@
       <div class="trow"><span class="ic">🌿</span><div><b>Fórmula limpa e transparente</b><p>100% canela-do-ceilão, zero açúcar, sem glúten e sem lactose. Você sabe exatamente o que está tomando.</p></div></div>
     </div>
     <a href="#" class="cta sm js-buy">Quero minha Cinnavita com frete grátis →</a>
+  </div>
+</section>
+
+<!-- COMPOSIÇÃO -->
+<section class="sec-white">
+  <div class="wrap">
+    <h2 class="center">O que tem em <span class="hl">cada cápsula</span></h2>
+    <p class="lead">Um ingrediente só. Você sabe exatamente o que está tomando.</p>
+    <div class="comp">
+      <div class="h">Composição · por cápsula</div>
+      <div class="row"><b>Canela-do-ceilão (Cinnamomum zeylanicum) em pó</b><span>500mg</span></div>
+      <div class="row"><b>Baixo teor de cumarina</b><span>✓</span></div>
+      <div class="row"><b>Zero açúcar</b><span>✓</span></div>
+      <div class="row"><b>Sem glúten · Sem lactose</b><span>✓</span></div>
+      <div class="row"><b>Cápsulas por pacote</b><span>120 (60 dias)</span></div>
+    </div>
+    <p class="comp-note">100% natural · Uso adulto · Tome junto com as refeições.</p>
+    <div class="experts">
+      <span class="ic">🌿</span>
+      <div><b>Fórmula de ingrediente único</b><p>Nada de misturas para encher a fórmula: 100% canela-do-ceilão, a canela verdadeira.</p></div>
+    </div>
   </div>
 </section>
 
@@ -1024,9 +998,9 @@
     document.getElementById('chkNum').textContent = n;
     document.getElementById('chkBar').style.width = (n === 0 ? 0 : 40 + (n - 1) / (total - 1) * 60) + '%';
     var v = document.getElementById('chkVerdict');
-    var msg = n === 0 ? VEREDITOS.zero : n <= 2 ? VEREDITOS.baixo : n <= 5 ? VEREDITOS.medio : VEREDITOS.alto;
+    var msg = n === 0 ? VEREDITOS.zero : n <= 1 ? VEREDITOS.baixo : n <= 3 ? VEREDITOS.medio : VEREDITOS.alto;
     v.textContent = msg;
-    v.classList.toggle('alert', n > 2);
+    v.classList.toggle('alert', n > 1);
   }
 
   /* animações de entrada ao rolar */

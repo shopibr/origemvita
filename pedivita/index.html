@@ -431,6 +431,66 @@
   .anim{opacity:0;transform:translateY(28px);transition:opacity .7s ease,transform .7s cubic-bezier(.2,.7,.2,1)}
   .anim.in{opacity:1;transform:none}
   @media(prefers-reduced-motion:reduce){.anim,.anim.in{opacity:1!important;transform:none!important;transition:none!important}.cell,.kwbar .track{animation-play-state:paused}.kb{animation:none}}
+
+  /* ===== v3: componentes no estilo da página de referência ===== */
+  .ptitle{font-size:27px;line-height:1.18;color:var(--pri-esc);font-weight:800;margin:8px 0 8px;text-transform:none}
+  .psub{font-size:15px;color:var(--texto);margin:0 0 14px;line-height:1.55}
+  .chips{display:flex;flex-wrap:wrap;gap:6px 16px;margin:14px 0 2px;font-size:13px;font-weight:700;color:var(--pri-esc)}
+  .chips i{color:var(--cta);font-style:normal;margin-right:5px}
+  .warn{margin-top:14px;border:1px dashed var(--borda);background:var(--pri-cl);border-radius:12px;padding:12px 14px;font-size:13px;line-height:1.5;color:var(--texto)}
+  .warn b{display:block;color:var(--pri-esc);margin-bottom:2px}
+  .hquote{margin-top:14px;background:#fff;border:1px solid var(--borda);border-radius:14px;padding:14px 16px;font-size:14px}
+  .hquote .stars{color:#f5a623;letter-spacing:2px}.hquote b{color:var(--pri-esc)}.hquote .vf,.tst .vf{font-size:11px;color:#16a34a;font-weight:700;margin-left:8px}
+  .hquote p{margin:6px 0 0;font-style:italic;color:var(--texto);line-height:1.55}
+  .approved{margin:12px 0 6px;font-size:13px;color:var(--texto)}.approved b{color:var(--pri-esc)}.approved .dot{color:#16a34a}
+  details.acc{border-top:1px solid var(--borda);padding:13px 2px}details.acc:last-of-type{border-bottom:1px solid var(--borda)}
+  details.acc summary{cursor:pointer;font-weight:800;color:var(--pri-esc);list-style:none;display:flex;justify-content:space-between;align-items:center;font-size:15px}
+  details.acc summary::-webkit-details-marker{display:none}details.acc summary:after{content:"+";font-size:22px;line-height:1;color:var(--pri)}details.acc[open] summary:after{content:"–"}
+  details.acc p{margin:8px 0 0;font-size:14px;color:var(--texto);line-height:1.6}
+  .alert-lbl{font-size:11px;font-weight:800;letter-spacing:1.5px;color:var(--vermelho);margin:6px 0 2px}
+  .story{max-width:720px;margin:0 auto;text-align:center}
+  .story p{font-size:18px;line-height:1.65;margin:0 0 14px;color:var(--texto)}
+  .story p.big{font-size:21px;font-weight:700;color:var(--pri-esc);margin-bottom:8px}
+  .story p.punch{font-size:23px;font-weight:800;color:var(--pri);margin:18px 0}
+  .story h2{margin:34px 0 16px}.story small{font-size:13px;color:var(--cinza)}
+  .cyc-name{display:inline-block;background:var(--pri-esc);color:#fff;font-weight:800;letter-spacing:1px;border-radius:999px;padding:7px 18px;font-size:13px;margin:10px 0 2px}
+  .cycle{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:16px 0 22px}
+  .cycle .st{background:#fff;border:1px solid var(--borda);border-radius:18px;padding:18px 14px;text-align:center}
+  .cycle .st b{display:flex;align-items:center;justify-content:center;width:52px;height:52px;margin:0 auto 6px;border-radius:50%;background:var(--pri-cl);font-size:26px;color:var(--pri);font-family:'DM Serif Display',serif}
+  .cycle .st strong{display:block;font-size:16px;color:var(--pri-esc);margin-bottom:4px}.cycle .st span{font-size:13.5px;color:var(--cinza);line-height:1.45;display:block}
+  .fvid{max-width:440px;margin:22px auto 0;border-radius:24px;overflow:hidden;aspect-ratio:1;box-shadow:0 18px 40px rgba(0,0,0,.08)}
+  .fvid video{width:100%;height:100%;object-fit:cover;display:block}
+  .fgrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;max-width:640px;margin:20px auto 0}
+  .fgrid div{background:#fff;border:1px solid var(--borda);border-radius:12px;padding:12px 14px;font-weight:700;color:var(--pri-esc);font-size:14.5px;display:flex;gap:10px;align-items:center;text-align:left}
+  .fgrid div:before{content:"✓";color:#fff;background:var(--cta);border-radius:50%;width:22px;height:22px;display:inline-flex;align-items:center;justify-content:center;font-size:13px;flex:none}
+  .mechs{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-top:28px}
+  .mech{background:#fff;border:1px solid var(--borda);border-radius:20px;padding:20px 22px;text-align:left}
+  .mech .em{font-size:30px;line-height:1}.mech h3{font-size:18px;color:var(--pri-esc);margin:8px 0 6px}.mech p{font-size:14.5px;color:var(--texto);line-height:1.6;margin:0}
+  .bye{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:24px auto 0;max-width:760px}
+  .bye div{background:var(--pri-cl);border-radius:18px;padding:18px 8px;text-align:center;font-weight:800;color:var(--pri-esc);font-size:14.5px;line-height:1.25}
+  .bye div i{display:block;font-style:normal;font-size:34px;margin-bottom:8px}
+  .ativos{max-width:720px;margin:20px auto 0}
+  .ativo{background:#fff;border:1px solid var(--borda);border-radius:16px;margin-top:12px;overflow:hidden}
+  .ativo summary{cursor:pointer;list-style:none;padding:16px 18px;display:flex;align-items:center;gap:12px;font-weight:800;color:var(--pri-esc);font-size:17px}
+  .ativo summary::-webkit-details-marker{display:none}.ativo summary:after{content:"+";margin-left:auto;font-size:22px;color:var(--pri)}.ativo[open] summary:after{content:"–"}
+  .ativo summary small{font-size:10.5px;letter-spacing:1.5px;color:#fff;background:var(--pri);border-radius:999px;padding:4px 10px;font-weight:800;flex:none}
+  .ativo ul{list-style:none;margin:0;padding:0 18px 16px}.ativo li{padding:6px 0 6px 26px;position:relative;font-size:14.5px;color:var(--texto)}
+  .ativo li:before{content:"✓";position:absolute;left:0;color:var(--cta);font-weight:900}
+  .vs{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin:24px auto 0;max-width:820px}
+  .vs .col{border-radius:20px;padding:20px}.vs .bad{background:#f5f2ef;border:1px solid #e6e0da}.vs .good{background:var(--pri-cl);border:2px solid var(--pri)}
+  .vs h3{font-size:16px;margin:0 0 10px;color:var(--pri-esc)}.vs ul{margin:0;padding:0}.vs li{list-style:none;font-size:14.5px;padding:7px 0 7px 28px;position:relative;line-height:1.4}
+  .vs .bad li:before{content:"✕";position:absolute;left:0;color:#c0392b;font-weight:900}.vs .good li:before{content:"✓";position:absolute;left:0;color:var(--cta);font-weight:900}
+  .tsts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:24px}
+  .tst{background:#fff;border:1px solid var(--borda);border-radius:20px;padding:20px}.tst .stars{color:#f5a623;letter-spacing:2px}
+  .tst p{font-size:15px;font-style:italic;color:var(--texto);margin:10px 0 12px;line-height:1.6}.tst b{color:var(--pri-esc)}
+  @media(max-width:860px){.tsts{grid-template-columns:minmax(0,1fr)}}
+  @media(max-width:720px){.cycle,.mechs{grid-template-columns:minmax(0,1fr)}.ptitle{font-size:23px}}
+  @media(max-width:620px){.vs{grid-template-columns:minmax(0,1fr)}.bye{grid-template-columns:repeat(2,minmax(0,1fr))}.fgrid{grid-template-columns:minmax(0,1fr)}}
+
+  .mblocks{display:grid;gap:12px;margin:6px 0 18px;text-align:left}
+  .mblock{background:#fff;border-left:4px solid var(--pri);border-radius:12px;padding:14px 16px}
+  .mblock h3{font-size:16px;color:var(--pri-esc);margin:0 0 4px}.mblock p{font-size:15.5px !important;margin:0 !important;line-height:1.6}
+  .story .meta{font-style:italic;font-size:19px;color:var(--pri-esc);background:var(--pri-cl);border-radius:14px;padding:16px 18px;margin:6px 0 12px}
 </style>
 </head>
 <body>
@@ -473,10 +533,6 @@
 
       <div class="hero-left">
         <span class="patent">Gel Massageador · Arnica + Mentol + Cânfora</span>
-        <h1>Pés e pernas cansados? <span class="hl">Frescor imediato</span> a cada massagem</h1>
-        <p class="sub">— <b>Gel massageador com arnica, mentol e cânfora</b>. Efeito gelado em segundos, absorção rápida e toque seco.</p>
-
-        <!-- Galeria: fotos e vídeo gerados com IA (pasta pedivita-img/) -->
         <div class="slides" id="slides">
           <div class="slide photo on"><video class="loopvid" src="pedivita-img/video-pouch.mp4" poster="pedivita-img/pouch.webp" autoplay muted loop playsinline aria-label="Bisnaga de Pedivita gel massageador para pés e pernas, 200g"></video></div>
           <div class="slide photo"><img src="pedivita-img/kit-3-pacotes.webp" alt="Kit com 3 bisnagas de Pedivita" loading="lazy" decoding="async"></div>
@@ -496,13 +552,12 @@
       </div>
 
       <div class="hero-right" id="offers">
-        <span class="eyebrow">Gel Massageador · Uso Externo</span>
-        <h2>Pedivita Gel Massageador Pés &amp; Pernas 200g — Efeito Gelado + Frete Grátis</h2>
         <!-- EXEMPLO: troque a nota e a contagem pelos números reais das suas avaliações -->
-        <div class="rating-row"><span class="stars">★★★★★</span> <b>4,8</b> · 1.874 avaliações</div>
-
-        <div class="sel-label">Escolha o seu protocolo</div>
-        <div class="scarcity-line">🔥 Preço de lançamento · por tempo limitado</div>
+        <div class="rating-row"><span class="stars">★★★★★</span> Avaliado em <b>4,8</b> (1.874) · Excelente</div>
+        <h1 class="ptitle">Pedivita — Frescor imediato para pés que esquentam e pernas cansadas, com 3 ativos</h1>
+        <p class="psub">Gel massageador com mentol, cânfora e arnica: o efeito gelado aparece em segundos e a massagem relaxa pés e pernas — direto onde você sente.</p>
+        <div class="sel-label">Escolha o seu kit</div>
+        <div class="scarcity-line">🔥 Lote de lançamento com preço especial</div>
         <div class="offers">
           <label class="offer" onclick="selOffer(this)" data-kit="k3">
             <span class="offer-tag tag-1">Mais Vendido</span>
@@ -527,28 +582,70 @@
           </label>
         </div>
         <a href="#" class="cta js-buy" data-buy-main><span class="cta-main">Comprar Agora →</span><span class="buy-kit"></span></a>
+        <div class="frete"><span class="cx">📦</span><div><b>Frete grátis com rastreio</b><p>Despacho em até 1 dia útil para todo o Brasil</p></div></div>
         <div class="paystrip">
           <span class="ps-lock">🔒 Pagamento 100% seguro · compra protegida</span>
           <div class="pays"><svg class="pi"><use href="#pi-visa"/></svg><svg class="pi"><use href="#pi-mc"/></svg><svg class="pi"><use href="#pi-elo"/></svg><svg class="pi"><use href="#pi-amex"/></svg><svg class="pi"><use href="#pi-pix"/></svg></div>
         </div>
-
-        <div class="frete">
-          <span class="cx">📦</span>
-          <div><b>Frete Grátis e embalagem discreta</b><p>Envio rápido com <b>código de rastreio</b></p></div>
-        </div>
-        <div class="anvisa">
-          <span class="cx">🌿</span>
-          <div><b>Ativos naturais</b><p>Arnica · Mentol · Cânfora · Não oleoso · Uso externo</p></div>
-        </div>
-        <div class="urg">
-          <div class="watch">🔥 Preço de lançamento — válido enquanto durar o lote atual.</div>
-          <div class="stock">⚠️ Produção em lotes pequenos para garantir qualidade e frescor.</div>
-        </div>
-        <div class="paybar">
-          <div class="checks"><span>Compra Segura</span><span>Garantia de 120 dias</span><span>Envio Discreto</span></div>
-        </div>
+        <div class="chips"><span><i>●</i>Mais vendido</span><span><i>●</i>Experimente por 120 dias</span><span><i>●</i>Fórmula limpa</span></div>
+        <div class="warn"><b>ⓘ Aviso sobre falsificações</b>A Pedivita original é vendida somente neste site. Produtos com o mesmo nome em marketplaces não são originais.</div>
+        <!-- EXEMPLO: depoimento ilustrativo — troque por um depoimento real -->
+        <div class="hquote"><span class="stars">★★★★★</span><br><b>Iolanda P., 64 anos</b><span class="vf">✓ Compra verificada</span><p>“Meus pés esquentavam tanto à noite que eu dormia com eles para fora da coberta, e mesmo assim acordava de madrugada. Agora eu passo a Pedivita antes de deitar, sinto aquele geladinho e consigo relaxar e dormir. Foi a melhor coisa que eu comprei este ano.”</p></div>
+        <div class="approved"><span class="dot">●</span> <b>Aprovado por quem usa</b> — escolhido por quem quer deitar e dormir com os pés frescos.</div>
+        <details class="acc"><summary>Como funciona</summary><p>O mentol ativa os sensores de frio da pele (TRPM8) e o cérebro passa a sentir frescor no lugar do calor. A cânfora completa a sensação refrescante e a arnica é tradicional nas massagens para pernas cansadas.</p></details>
+        <details class="acc"><summary>Modo de uso</summary><p>Aplique uma camada fina nos pés, tornozelos e pernas, de manhã e antes de dormir. Massageie até absorver. Uma bisnaga rende cerca de 30 dias.</p></details>
+        <details class="acc"><summary>Ingredientes principais</summary><p>Gel massageador com mentol, cânfora e arnica montana. Uso externo.</p></details>
+        <details class="acc"><summary>Garantia de reembolso</summary><p>Você tem 120 dias para experimentar. Se não sentir a diferença, devolvemos 100% do valor pago.</p></details>
       </div>
 
+    </div>
+  </div>
+</section>
+
+<!-- AUTOAVALIAÇÃO -->
+<section class="sec-white">
+  <div class="wrap">
+    <div class="quiz-badge">🩺 Teste rápido · leva 30 segundos</div>
+    <h2 class="center">Pé quente e cansado não é frescura.<br><span class="red">Reconheça os sinais.</span></h2>
+    <p class="miniclaim">Faça o teste: marque os sinais que você sente. Cada um deles é um sinal de <b>pés e pernas sobrecarregados</b>.</p>
+    <div class="quiz-cta"><span>👉 Toque nos sinais que você sente para ver o seu resultado</span><span class="arrow">👇</span></div>
+    <div class="checklist hint" id="checklist">
+      <label class="chk" onclick="toggleChk(this)"><span class="box"></span><span class="chk-txt"><span class="sname">Pés quentes, ardendo no fim do dia</span><span class="sexp">Parece que os pés passaram o dia dentro de um forno.</span></span></label>
+      <label class="chk" onclick="toggleChk(this)"><span class="box"></span><span class="chk-txt"><span class="sname">Sensação de queimação na hora de deitar</span><span class="sexp">Você deita, relaxa — e é justamente aí que o desconforto aparece.</span></span></label>
+      <label class="chk" onclick="toggleChk(this)"><span class="box"></span><span class="chk-txt"><span class="sname">Pés para fora da coberta</span><span class="sexp">Você procura o lado frio do lençol a noite inteira.</span></span></label>
+      <label class="chk" onclick="toggleChk(this)"><span class="box"></span><span class="chk-txt"><span class="sname">Pernas pesadas e cansadas</span><span class="sexp">Depois de um dia em pé, cada passo pesa o dobro.</span></span></label>
+      <label class="chk" onclick="toggleChk(this)"><span class="box"></span><span class="chk-txt"><span class="sname">Pés sensíveis até ao toque do lençol</span><span class="sexp">Qualquer coisa encostando incomoda.</span></span></label>
+      <label class="chk" onclick="toggleChk(this)"><span class="box"></span><span class="chk-txt"><span class="sname">Acordar de madrugada por causa dos pés</span><span class="sexp">E depois não conseguir pegar no sono de novo.</span></span></label>
+    </div>
+    <div class="chk-result">
+      <div class="chk-count"><span id="chkNum">0</span> de 6 sinais marcados</div>
+      <div class="alert-lbl">⚠️ NÍVEL DE ALERTA</div>
+      <div class="chk-verdict" id="chkVerdict">Marque os sinais que você sente para ver o seu resultado.</div>
+      <div class="chk-bar"><i id="chkBar"></i></div>
+      <p class="chk-note">Este teste é apenas informativo e não substitui uma avaliação médica. Queimação, formigamento ou dormência constantes nos pés — principalmente em quem tem diabetes — precisam de avaliação médica.</p>
+    </div>
+  </div>
+</section>
+
+<!-- HISTÓRIA -->
+<section>
+  <div class="wrap">
+    <div class="story">
+      <p class="eyebrow-c">O que está por trás dos pés que esquentam</p>
+      <p class="big">O calor que você sente nos pés não é culpa do sapato.</p>
+      <p class="big">As pernas pesadas não são “só cansaço”.</p>
+      <p class="big">E as noites mal dormidas não são insônia sem motivo.</p>
+      <p class="punch">São três partes diferentes do mesmo ciclo.</p>
+      <p>E enquanto você troca de chinelo, coloca o pé na bacia de água fria e espera passar, o calor volta toda noite. Todos os dias.</p>
+      <p class="big">Deixa eu te explicar o que está acontecendo.</p>
+      <h2 class="center">Os seus pés estão <span class="hl">acumulando calor</span> o dia inteiro</h2>
+      <div class="mblocks"><div class="mblock"><h3>Milhares de terminações nervosas</h3><p>A sola do pé é uma das partes mais sensíveis do corpo. Depois de horas em pé, com sapato fechado, calor e a circulação mais lenta nas pernas, essas terminações ficam sobrecarregadas.</p></div><div class="mblock"><h3>O calor que não vai embora</h3><p>Durante o dia você nem percebe — está ocupado. Mas quando deita, o corpo desacelera e o desconforto aparece com força: calor, peso, sensibilidade.</p></div><div class="mblock"><h3>O resultado</h3><p>Pés para fora da coberta, madrugadas acordado e um cansaço que começa o dia seguinte antes mesmo de você levantar.</p></div></div>
+      <p class="meta">É como um motor que não esfria: roda o dia inteiro e, quando você desliga, continua quente.</p>
+      <span class="cyc-name">O CICLO C-P-I</span>
+      <div class="cycle"><div class="st"><b>C</b><strong>Calor</strong><span>Horas em pé acumulam calor e cansaço nos pés.</span></div><div class="st"><b>P</b><strong>Peso</strong><span>As pernas pesam e a sensibilidade aumenta à noite.</span></div><div class="st"><b>I</b><strong>Insônia</strong><span>Você dorme mal, acorda cansado e o ciclo recomeça.</span></div></div>
+      <p>O calor, o peso e as noites mal dormidas são os seus pés pedindo um resfriamento.</p>
+      <p><small>Atenção: queimação, formigamento ou dormência constantes — principalmente em quem tem diabetes — precisam de avaliação médica.</small></p>
+      <p class="punch">A solução é mais simples do que parece — e cabe na sua mesa de cabeceira.</p>
     </div>
   </div>
 </section>
@@ -591,134 +688,40 @@
   </div>
 </section>
 
-<!-- AUTOAVALIAÇÃO -->
+<!-- FÓRMULA -->
 <section class="sec-white">
   <div class="wrap">
-    <div class="quiz-badge">🩺 Autoavaliação gratuita · leva 30 segundos</div>
-    <h2 class="center">Você chama de "cansaço".<br><span class="red">Os seus pés chamam de alerta.</span></h2>
-    <p class="miniclaim">Marque o que você sente com frequência. Muitos desses sinais pioram com <b>calor, tempo em pé e circulação lenta</b>.</p>
-    <div class="quiz-cta"><span>👉 Toque nos sinais que você sente para ver o seu resultado</span><span class="arrow">👇</span></div>
-    <div class="checklist hint" id="checklist">
-      <label class="chk" onclick="toggleChk(this)"><span class="box"></span><span class="chk-txt"><span class="sname">Pés quentes, ardendo no fim do dia</span><span class="sexp">O calor e o cansaço se acumulam nos pés depois de horas em pé.</span></span></label>
-      <label class="chk" onclick="toggleChk(this)"><span class="box"></span><span class="chk-txt"><span class="sname">Sensação de queimação nos pés na hora de deitar</span><span class="sexp">Muita gente sente o desconforto piorar à noite, justamente na hora de descansar.</span></span></label>
-      <label class="chk" onclick="toggleChk(this)"><span class="box"></span><span class="chk-txt"><span class="sname">Pernas pesadas e inchadas à noite</span><span class="sexp">A circulação mais lenta nas pernas deixa aquela sensação de peso.</span></span></label>
-      <label class="chk" onclick="toggleChk(this)"><span class="box"></span><span class="chk-txt"><span class="sname">Formigamento ou "agulhadas" nos pés</span><span class="sexp">Sinal que merece atenção — e avaliação médica se for constante.</span></span></label>
-      <label class="chk" onclick="toggleChk(this)"><span class="box"></span><span class="chk-txt"><span class="sname">Câimbras nas pernas ou nos pés</span><span class="sexp">Músculos cansados podem contrair de repente, principalmente à noite.</span></span></label>
-      <label class="chk" onclick="toggleChk(this)"><span class="box"></span><span class="chk-txt"><span class="sname">Pés sensíveis até ao toque do lençol</span><span class="sexp">Quando o pé está sobrecarregado, qualquer toque incomoda.</span></span></label>
-      <label class="chk" onclick="toggleChk(this)"><span class="box"></span><span class="chk-txt"><span class="sname">Dificuldade para ficar muito tempo em pé</span><span class="sexp">Depois de alguns minutos, o desconforto já começa.</span></span></label>
-      <label class="chk" onclick="toggleChk(this)"><span class="box"></span><span class="chk-txt"><span class="sname">Acordar de madrugada por causa dos pés</span><span class="sexp">O desconforto noturno atrapalha o sono e o descanso.</span></span></label>
-      <label class="chk" onclick="toggleChk(this)"><span class="box"></span><span class="chk-txt"><span class="sname">Tem diabetes ou circulação ruim nas pernas</span><span class="sexp">Quem tem diabetes ou má circulação precisa de cuidado redobrado com os pés — e acompanhamento médico.</span></span></label>
-    </div>
-    <div class="chk-result">
-      <div class="chk-count"><span id="chkNum">0</span> de 9 sinais marcados</div>
-      <div class="chk-verdict" id="chkVerdict">Marque os sinais que você sente para ver o seu resultado.</div>
-      <div class="chk-bar"><i id="chkBar"></i></div>
-      <p class="chk-note">Este teste é apenas informativo e não substitui uma avaliação médica. Queimação, formigamento ou dormência constantes nos pés — principalmente em quem tem diabetes — precisam de avaliação médica.</p>
-    </div>
+    <p class="eyebrow-c">A fórmula que todos estão falando</p>
+    <h2 class="center" id="stickyTrigger">O gel para os pés <span class="hl">que todos estão falando</span></h2>
+    <div class="fvid"><video src="pedivita-img/video-pouch.mp4" poster="pedivita-img/pouch.webp" autoplay muted loop playsinline aria-label="Embalagem de Pedivita"></video></div>
+    <p class="lead" style="max-width:660px;margin:20px auto 0">A Pedivita junta 3 ativos clássicos das massagens: mentol, que traz o efeito gelado, cânfora, que completa o frescor, e arnica, tradicional para pernas cansadas.</p>
+    <div class="fgrid"><div>Frescor em segundos</div><div>Pés relaxados</div><div>Pernas mais leves</div><div>Noites mais confortáveis</div><div>Não gruda, absorve rápido</div><div>Sem comprimidos</div></div>
+    <div class="mechs"><div class="mech"><div class="em">❄️</div><h3>Frescor em segundos</h3><p>O mentol ativa o sensor de frio da pele (TRPM8) — descoberta premiada com o Nobel de Medicina de 2021.</p></div><div class="mech"><div class="em">🌿</div><h3>Massagem que relaxa</h3><p>A cânfora e a arnica completam a massagem e ajudam a soltar a tensão de um dia inteiro em pé.</p></div><div class="mech"><div class="em">🦵</div><h3>Pernas mais leves</h3><p>Massagear dos pés em direção à panturrilha deixa a sensação de peso para trás.</p></div><div class="mech"><div class="em">🌙</div><h3>Noites mais confortáveis</h3><p>Aplicado antes de deitar, deixa os pés frescos na hora de dormir.</p></div></div>
   </div>
 </section>
 
-<!-- TEXTO -->
+<!-- DIGA ADEUS -->
 <section>
   <div class="wrap">
-    <div class="prose">
-      <p>Se você sente esses sinais, você não está exagerando. Os pés carregam o corpo inteiro o dia todo — e são a parte que mais sofre com <b>calor, sapato fechado, tempo em pé e circulação lenta</b>.</p>
-      <div class="oseja">Ou seja…</div>
-      <p>É como um <span class="em">motor que não esfria</span>: roda o dia inteiro e, quando você desliga, continua quente. O pé precisa de um "resfriamento" no fim do dia — e é exatamente essa sensação que a massagem com a Pedivita traz.</p>
-    </div>
+    <h2 class="center">Diga adeus para:</h2>
+    <div class="bye"><div><i>🔥</i>Pés quentes</div><div><i>🦶</i>Pés cansados</div><div><i>🦵</i>Pernas pesadas</div><div><i>😖</i>Sensibilidade</div><div><i>🌙</i>Noites mal dormidas</div><div><i>🧊</i>Bacia de água fria</div></div>
   </div>
 </section>
 
-<!-- O VILÃO -->
-<section>
-  <div class="wrap">
-    <p class="eyebrow-c">Por que os pés esquentam</p>
-    <h2 class="center">O <span class="hl">calor acumulado</span> que ninguém vê</h2>
-    <div class="prose">
-      <p>Horas em pé, sapato fechado, calor e circulação mais lenta nas pernas: tudo isso se acumula ao longo do dia. À noite, quando você finalmente para, o desconforto aparece com força — <b>calor, peso e sensibilidade</b>.</p>
-    </div>
-    <div class="data">
-      A sola de cada pé tem <span class="n">milhares de terminações nervosas</span> — por isso pés cansados <span class="n">roubam o descanso do corpo inteiro</span>.
-      <span class="src">Anatomia e fisiologia do pé.</span>
-    </div>
-  </div>
-</section>
-
-<!-- POR QUE NADA RESOLVEU -->
+<!-- ATIVOS -->
 <section class="sec-white">
+  <div class="wrap">
+    <h2 class="center">Com apenas <span class="hl">3 ativos</span></h2>
+    <p class="subh">Clássicos das massagens, numa fórmula simples.</p>
+    <div class="ativos"><details class="ativo" open><summary><small>ATIVO 01</small>Mentol</summary><ul><li>Ativa o sensor de frio da pele (TRPM8)</li><li>Efeito gelado em segundos</li><li>Troca a sensação de calor por frescor</li></ul></details><details class="ativo"><summary><small>ATIVO 02</small>Cânfora</summary><ul><li>Completa a sensação refrescante</li><li>Clássica dos géis de massagem</li><li>Ajuda a relaxar</li></ul></details><details class="ativo"><summary><small>ATIVO 03</small>Arnica montana</summary><ul><li>Tradicional nas massagens para pernas cansadas</li><li>Completa o cuidado diário</li><li>Origem vegetal</li></ul></details></div>
+  </div>
+</section>
+
+<!-- COMPARATIVO -->
+<section>
   <div class="wrap">
     <h2 class="center">Por que nada do que você <span class="hl">tentou resolveu</span></h2>
-    <p class="subh">Bacia de água fria, creme comum e "deixar pra lá" falham pelo mesmo motivo: ou o efeito some em minutos, ou não foram feitos para pés cansados.</p>
-    <div class="faillist">
-      <div class="fail"><span class="x">✕</span><div><b>Bacia de água fria</b><span>Alivia na hora, mas o frescor some assim que você seca o pé.</span></div></div>
-      <div class="fail"><span class="x">✕</span><div><b>Cremes hidratantes comuns</b><span>Hidratam a pele, mas não trazem frescor nem relaxam pés e pernas cansados.</span></div></div>
-      <div class="fail"><span class="x">✕</span><div><b>Analgésico por conta própria</b><span>Não é para usar todo dia sem orientação — e não cuida do cansaço dos pés.</span></div></div>
-      <div class="fail"><span class="x">✕</span><div><b>Palmilhas e chinelos especiais</b><span>Ajudam durante o dia, mas não fazem nada pelo calor e pelo peso que ficam à noite.</span></div></div>
-    </div>
-    <p class="fail-close">Não foi falta de cuidado. <span class="em">Faltou um cuidado feito para os pés</span> — todos os dias.</p>
-  </div>
-</section>
-
-<!-- MECANISMO -->
-<section>
-  <div class="wrap">
-    <h2 class="center">Da massagem ao <span class="hl">frescor</span></h2>
-    <div class="prose">
-      <p>A Pedivita junta três ativos clássicos dos géis massageadores: <b>mentol</b>, que traz o efeito gelado, <b>cânfora</b>, que completa a sensação refrescante, e <b>arnica</b>, tradicional nas massagens para pernas e pés cansados.</p>
-    </div>
-    <div class="chain">
-      <div class="lk"><span class="ic">💧</span><b>Massagem</b><small>Gel de absorção rápida</small></div>
-      <div class="lk"><span class="ic">❄️</span><b>Frescor</b><small>O mentol ativa os sensores de frio da pele</small></div>
-      <div class="lk"><span class="ic">🌼</span><b>Relaxamento</b><small>A massagem solta a musculatura cansada</small></div>
-      <div class="lk"><span class="ic">🌙</span><b>Descanso</b><small>Pés e pernas leves na hora de deitar</small></div>
-    </div>
-    <div class="data">
-      O efeito gelado vem do <span class="n">sensor TRPM8</span> — o "termômetro de frio" da pele que o mentol ativa, cuja descoberta ganhou o <span class="n">Nobel de Medicina de 2021</span>.
-      <span class="src">Prêmio Nobel de Fisiologia ou Medicina 2021.</span>
-    </div>
-  </div>
-</section>
-
-<!-- UM GEL, VÁRIAS FRENTES -->
-<section class="sec-white">
-  <div class="wrap">
-    <h2 class="center" id="stickyTrigger">Um gel, <span class="hl">várias frentes</span></h2>
-    <div class="prose">
-      <p>A Pedivita é um gel massageador feito para <b>pés e pernas</b>, agindo em várias frentes ao mesmo tempo:</p>
-    </div>
-    <div class="ing3">
-      <div class="card"><span class="tag">Frescor</span><h3>Efeito gelado em segundos</h3><p>O mentol traz uma sensação de frescor que alivia a sensação de calor nos pés.</p></div>
-      <div class="card"><span class="tag">Relaxamento</span><h3>Pernas mais leves</h3><p>A massagem com cânfora e arnica relaxa e ajuda a tirar a sensação de peso.</p></div>
-      <div class="card"><span class="tag">Noite</span><h3>Descanso mais confortável</h3><p>Aplicar antes de deitar deixa os pés frescos na hora de dormir.</p></div>
-      <div class="card"><span class="tag">Textura</span><h3>Não oleoso</h3><p>Absorve rápido e não deixa o pé escorregadio nem mancha o lençol.</p></div>
-      <div class="card"><span class="tag">Ativos</span><h3>Arnica · Mentol · Cânfora</h3><p>Ativos clássicos dos géis massageadores, numa fórmula simples.</p></div>
-      <div class="card"><span class="tag">Rendimento</span><h3>30 dias por bisnaga</h3><p>São 200g por bisnaga. Usando de manhã e à noite, rende cerca de um mês.</p></div>
-    </div>
-    <p class="comp-note" style="margin-top:20px">Uso externo. Não aplicar em feridas ou pele machucada.</p>
-  </div>
-</section>
-
-<!-- VS ÁGUA FRIA -->
-<section>
-  <div class="wrap">
-    <h2 class="center">Pedivita vs. <span class="hl">bacia de água fria</span></h2>
-    <div class="prose">
-      <p>A bacia de água fria alivia — por cinco minutos. Assim que você seca o pé, o calor volta. Com a Pedivita, o frescor <b>fica na pele</b>, junto com uma massagem que relaxa pés e pernas, sem bagunça e sem molhar o chão.</p>
-      <p>É a diferença entre um alívio de minutos e um cuidado de todo dia. <b>Pé cansado precisa de cuidado diário.</b></p>
-    </div>
-  </div>
-</section>
-
-<!-- APRESENTAÇÃO -->
-<section>
-  <div class="wrap">
-    <div class="present">
-      <span class="badge">A solução completa</span>
-      <h2>Pedivita — gel massageador com arnica, mentol e cânfora, para pés e pernas frescos e leves todos os dias</h2>
-      <div class="present-media"><img class="loopvid kb" src="pedivita-img/pouch.webp" alt="Bisnaga de Pedivita gel massageador 200g" loading="lazy" decoding="async"></div>
-      <p>Se o fim do dia chega com os pés quentes, as pernas pesadas e a dificuldade de relaxar na cama, a Pedivita foi criada para você. São <b>200g de gel massageador com arnica, mentol e cânfora</b> — <b>efeito gelado, absorção rápida e toque seco</b>, para usar de manhã e à noite.</p>
-      <p>Três ativos usados há gerações nas massagens — agora num gel feito para os seus pés.</p>
-    </div>
+    <div class="vs"><div class="col bad"><h3>Água fria, cremes comuns e analgésicos</h3><ul><li>Água fria alivia só até secar o pé</li><li>Hidratante comum não refresca nem relaxa</li><li>Analgésico não é para usar todo dia sem orientação</li><li>Palmilhas não ajudam à noite</li></ul></div><div class="col good"><h3>Pedivita</h3><ul><li>Frescor imediato que fica na pele</li><li>Massagem relaxante</li><li>Absorção rápida, não gruda</li><li>Direto onde você sente</li><li>Uso externo, sem comprimidos</li><li>Garantia de 120 dias</li></ul></div></div>
   </div>
 </section>
 
@@ -735,63 +738,25 @@
   </div>
 </section>
 
-<!-- COMPOSIÇÃO -->
-<!-- CONFIRA: ajuste os ativos e o peso de acordo com o rótulo do gel que você vai vender -->
+<!-- DEPOIMENTOS -->
+<!-- EXEMPLO: depoimentos ilustrativos — troque por depoimentos reais de clientes antes de publicar. -->
 <section class="sec-white">
   <div class="wrap">
-    <h2 class="center">O que tem em <span class="hl">cada aplicação</span></h2>
-    <p class="lead">Ativos clássicos, numa fórmula simples.</p>
-    <div class="comp">
-      <div class="h">Ativos · gel massageador</div>
-      <div class="row"><b>Arnica montana</b><span>✓</span></div>
-      <div class="row"><b>Mentol</b><span>✓</span></div>
-      <div class="row"><b>Cânfora</b><span>✓</span></div>
-      <div class="row"><b>Gel de rápida absorção, não oleoso</b><span>✓</span></div>
-      <div class="row"><b>Conteúdo por bisnaga</b><span>200g (30 dias)</span></div>
-    </div>
-    <p class="comp-note">Uso externo · Uso adulto · Não aplicar em feridas, mucosas ou pele irritada.</p>
-    <div class="experts">
-      <span class="ic">🌿</span>
-      <div><b>Feito para pés e pernas</b><p>Textura em gel que absorve rápido e não deixa o pé escorregadio — para usar antes de calçar o sapato ou antes de deitar.</p></div>
-    </div>
+    <h2 class="center">O que diz quem confia na <span class="hl">Pedivita</span></h2>
+    <div class="tsts"><div class="tst"><span class="stars">★★★★★</span><p>“Trabalho o dia inteiro em pé no balcão. Chegava em casa com as pernas latejando. Agora passo a Pedivita depois do banho e parece que tiro um peso das pernas.”</p><b>Geraldo M., 57 anos</b><span class="vf">✓ Compra verificada</span></div><div class="tst"><span class="stars">★★★★★</span><p>“Minha mãe tem 74 anos e reclamava dos pés todo santo dia. Agora ela mesma pede pra eu passar a Pedivita antes de dormir — e dorme a noite toda.”</p><b>Cida F., 48 anos</b><span class="vf">✓ Compra verificada</span></div><div class="tst"><span class="stars">★★★★★</span><p>“Já usei pomada de farmácia com cheiro forte que deixava o pé melado. Essa tem um cheirinho bom de menta, gela na hora e absorve rápido.”</p><b>Elza N., 62 anos</b><span class="vf">✓ Compra verificada</span></div></div>
   </div>
 </section>
 
-<!-- BENEFÍCIOS -->
+<!-- GARANTIA -->
 <section>
   <div class="wrap">
-    <h2 class="center">Benefícios da <span class="hl">Pedivita</span></h2>
-    <p class="subh">O que você pode sentir com os pés recebendo esse cuidado todos os dias:*</p>
-    <div class="ben-list">
-      <div class="ben"><span class="ck">✓</span><div><b>Frescor imediato</b><span>Efeito gelado <b>em segundos</b> depois da aplicação.</span></div></div>
-      <div class="ben"><span class="ck">✓</span><div><b>Pés relaxados</b><span>A massagem ajuda a <b>soltar a tensão</b> de um dia inteiro em pé.</span></div></div>
-      <div class="ben"><span class="ck">✓</span><div><b>Pernas mais leves</b><span>Menos <b>sensação de peso</b> no fim do dia.</span></div></div>
-      <div class="ben"><span class="ck">✓</span><div><b>Noites mais confortáveis</b><span>Pés frescos na hora de <b>deitar e relaxar</b>.</span></div></div>
-      <div class="ben"><span class="ck">✓</span><div><b>Absorção rápida</b><span><b>Não oleoso</b> e não mancha o lençol.</span></div></div>
-      <div class="ben"><span class="ck">✓</span><div><b>Ativos naturais</b><span><b>Arnica, mentol e cânfora</b> numa fórmula simples.</span></div></div>
-      <div class="ben"><span class="ck">✓</span><div><b>Sem comprimidos</b><span>Cuidado <b>direto na pele</b>, onde você sente.</span></div></div>
-      <div class="ben"><span class="ck">✓</span><div><b>Fácil de manter</b><span><b>2 aplicações por dia</b>, em poucos minutos.</span></div></div>
+    <div class="guar">
+      <h2>Experimente sem risco por 120 dias</h2>
+      <p class="txt">Use a Pedivita por 120 dias. Se você não sentir os pés mais frescos e as pernas mais leves, devolvemos 100% do seu dinheiro. Sem perguntas, sem burocracia.</p>
+      <div class="pill">Nossa promessa para você</div>
+      <div class="seal"><span class="ring">Garantia</span><span class="big">120</span><span class="d">DIAS</span></div>
     </div>
-  </div>
-</section>
-
-<!-- RESULTADOS -->
-<!-- EXEMPLO: as porcentagens abaixo são ilustrativas. Substitua pelos resultados de uma pesquisa real com os seus clientes. -->
-<section class="sec-white">
-  <div class="wrap">
-    <p class="eyebrow-c">Pesquisa com clientes</p>
-    <h2 class="center">O que os nossos <span class="hl">clientes relatam</span></h2>
-    <p class="lead">Em pesquisa recente com quem usa a Pedivita:</p>
-    <div class="stats">
-      <div class="stat"><div class="n">86%</div><p>sentiram frescor logo na primeira aplicação</p></div>
-      <div class="stat"><div class="n">79%</div><p>relataram pernas mais leves no fim do dia</p></div>
-      <div class="stat"><div class="n">74%</div><p>disseram relaxar melhor na hora de dormir</p></div>
-      <div class="stat"><div class="n">92%</div><p>pretendem continuar usando a Pedivita no dia a dia</p></div>
-    </div>
-    <p class="stats-note">*Resultados de pesquisa voluntária e autodeclarada com clientes. Resultados individuais podem variar.</p>
-    <div class="narr">
-      <p>Quando os pés param de esquentar, a noite inteira muda. Você deita, relaxa e dorme sem ficar procurando o lado frio do lençol. Volta a caminhar, a passear e a ficar em pé na cozinha sem contar os minutos. <b>Não é milagre — é cuidado diário com quem carrega você o dia inteiro.</b></p>
-    </div>
+    <a href="#" class="cta sm js-buy">Quero experimentar sem risco →</a>
   </div>
 </section>
 
@@ -822,18 +787,6 @@
       <div class="rev"><div class="top"><div class="av">R</div><div><div class="name">Rogério T.</div><div class="verif">✓ Compra verificada</div></div></div><div class="stars">★★★★★</div><p>"Uso depois da caminhada. As pernas ficam bem mais leves."</p><div class="date">14 de setembro de 2026</div></div>
       <div class="rev"><div class="top"><div class="av">E</div><div><div class="name">Elza N.</div><div class="verif">✓ Compra verificada</div></div></div><div class="stars">★★★★★</div><p>"Já tinha usado pomada de farmácia com cheiro forte. Essa tem um cheirinho bom de menta."</p><div class="date">10 de setembro de 2026</div></div>
       <div class="rev"><div class="top"><div class="av">M</div><div><div class="name">Marlene C.</div><div class="verif">✓ Compra verificada</div></div></div><div class="stars">★★★★★</div><p>"Comprei o kit de 3 para fazer os 90 dias. Recomendo."</p><div class="date">6 de setembro de 2026</div></div>
-    </div>
-  </div>
-</section>
-
-<!-- GARANTIA -->
-<section class="sec-white">
-  <div class="wrap">
-    <div class="guar">
-      <h2>Garantia de 120 dias</h2>
-      <p class="txt">Se você não ficar satisfeito em até 120 dias, basta entrar em contato com o nosso suporte para receber o reembolso total — sem burocracia.</p>
-      <div class="pill">Experimente hoje mesmo sem riscos!</div>
-      <div class="seal"><span class="ring">Garantia</span><span class="big">120</span><span class="d">DIAS</span></div>
     </div>
   </div>
 </section>
@@ -886,6 +839,28 @@
       <div class="trow"><span class="ic">🌿</span><div><b>Ativos clássicos e transparentes</b><p>Arnica, mentol e cânfora num gel não oleoso. Você sabe exatamente o que está passando na pele.</p></div></div>
     </div>
     <a href="#" class="cta sm js-buy">Quero minha Pedivita com frete grátis →</a>
+  </div>
+</section>
+
+<!-- COMPOSIÇÃO -->
+<!-- CONFIRA: ajuste os ativos e o peso de acordo com o rótulo do gel que você vai vender -->
+<section class="sec-white">
+  <div class="wrap">
+    <h2 class="center">O que tem em <span class="hl">cada aplicação</span></h2>
+    <p class="lead">Ativos clássicos, numa fórmula simples.</p>
+    <div class="comp">
+      <div class="h">Ativos · gel massageador</div>
+      <div class="row"><b>Arnica montana</b><span>✓</span></div>
+      <div class="row"><b>Mentol</b><span>✓</span></div>
+      <div class="row"><b>Cânfora</b><span>✓</span></div>
+      <div class="row"><b>Gel de rápida absorção, não oleoso</b><span>✓</span></div>
+      <div class="row"><b>Conteúdo por bisnaga</b><span>200g (30 dias)</span></div>
+    </div>
+    <p class="comp-note">Uso externo · Uso adulto · Não aplicar em feridas, mucosas ou pele irritada.</p>
+    <div class="experts">
+      <span class="ic">🌿</span>
+      <div><b>Feito para pés e pernas</b><p>Textura em gel que absorve rápido e não deixa o pé escorregadio — para usar antes de calçar o sapato ou antes de deitar.</p></div>
+    </div>
   </div>
 </section>
 
@@ -1025,9 +1000,9 @@
     document.getElementById('chkNum').textContent = n;
     document.getElementById('chkBar').style.width = (n === 0 ? 0 : 40 + (n - 1) / (total - 1) * 60) + '%';
     var v = document.getElementById('chkVerdict');
-    var msg = n === 0 ? VEREDITOS.zero : n <= 2 ? VEREDITOS.baixo : n <= 5 ? VEREDITOS.medio : VEREDITOS.alto;
+    var msg = n === 0 ? VEREDITOS.zero : n <= 1 ? VEREDITOS.baixo : n <= 3 ? VEREDITOS.medio : VEREDITOS.alto;
     v.textContent = msg;
-    v.classList.toggle('alert', n > 2);
+    v.classList.toggle('alert', n > 1);
   }
 
   /* animações de entrada ao rolar */

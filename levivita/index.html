@@ -432,6 +432,66 @@
   .anim{opacity:0;transform:translateY(28px);transition:opacity .7s ease,transform .7s cubic-bezier(.2,.7,.2,1)}
   .anim.in{opacity:1;transform:none}
   @media(prefers-reduced-motion:reduce){.anim,.anim.in{opacity:1!important;transform:none!important;transition:none!important}.cell,.kwbar .track{animation-play-state:paused}.kb{animation:none}}
+
+  /* ===== v3: componentes no estilo da página de referência ===== */
+  .ptitle{font-size:27px;line-height:1.18;color:var(--pri-esc);font-weight:800;margin:8px 0 8px;text-transform:none}
+  .psub{font-size:15px;color:var(--texto);margin:0 0 14px;line-height:1.55}
+  .chips{display:flex;flex-wrap:wrap;gap:6px 16px;margin:14px 0 2px;font-size:13px;font-weight:700;color:var(--pri-esc)}
+  .chips i{color:var(--cta);font-style:normal;margin-right:5px}
+  .warn{margin-top:14px;border:1px dashed var(--borda);background:var(--pri-cl);border-radius:12px;padding:12px 14px;font-size:13px;line-height:1.5;color:var(--texto)}
+  .warn b{display:block;color:var(--pri-esc);margin-bottom:2px}
+  .hquote{margin-top:14px;background:#fff;border:1px solid var(--borda);border-radius:14px;padding:14px 16px;font-size:14px}
+  .hquote .stars{color:#f5a623;letter-spacing:2px}.hquote b{color:var(--pri-esc)}.hquote .vf,.tst .vf{font-size:11px;color:#16a34a;font-weight:700;margin-left:8px}
+  .hquote p{margin:6px 0 0;font-style:italic;color:var(--texto);line-height:1.55}
+  .approved{margin:12px 0 6px;font-size:13px;color:var(--texto)}.approved b{color:var(--pri-esc)}.approved .dot{color:#16a34a}
+  details.acc{border-top:1px solid var(--borda);padding:13px 2px}details.acc:last-of-type{border-bottom:1px solid var(--borda)}
+  details.acc summary{cursor:pointer;font-weight:800;color:var(--pri-esc);list-style:none;display:flex;justify-content:space-between;align-items:center;font-size:15px}
+  details.acc summary::-webkit-details-marker{display:none}details.acc summary:after{content:"+";font-size:22px;line-height:1;color:var(--pri)}details.acc[open] summary:after{content:"–"}
+  details.acc p{margin:8px 0 0;font-size:14px;color:var(--texto);line-height:1.6}
+  .alert-lbl{font-size:11px;font-weight:800;letter-spacing:1.5px;color:var(--vermelho);margin:6px 0 2px}
+  .story{max-width:720px;margin:0 auto;text-align:center}
+  .story p{font-size:18px;line-height:1.65;margin:0 0 14px;color:var(--texto)}
+  .story p.big{font-size:21px;font-weight:700;color:var(--pri-esc);margin-bottom:8px}
+  .story p.punch{font-size:23px;font-weight:800;color:var(--pri);margin:18px 0}
+  .story h2{margin:34px 0 16px}.story small{font-size:13px;color:var(--cinza)}
+  .cyc-name{display:inline-block;background:var(--pri-esc);color:#fff;font-weight:800;letter-spacing:1px;border-radius:999px;padding:7px 18px;font-size:13px;margin:10px 0 2px}
+  .cycle{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:16px 0 22px}
+  .cycle .st{background:#fff;border:1px solid var(--borda);border-radius:18px;padding:18px 14px;text-align:center}
+  .cycle .st b{display:flex;align-items:center;justify-content:center;width:52px;height:52px;margin:0 auto 6px;border-radius:50%;background:var(--pri-cl);font-size:26px;color:var(--pri);font-family:'DM Serif Display',serif}
+  .cycle .st strong{display:block;font-size:16px;color:var(--pri-esc);margin-bottom:4px}.cycle .st span{font-size:13.5px;color:var(--cinza);line-height:1.45;display:block}
+  .fvid{max-width:440px;margin:22px auto 0;border-radius:24px;overflow:hidden;aspect-ratio:1;box-shadow:0 18px 40px rgba(0,0,0,.08)}
+  .fvid video{width:100%;height:100%;object-fit:cover;display:block}
+  .fgrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;max-width:640px;margin:20px auto 0}
+  .fgrid div{background:#fff;border:1px solid var(--borda);border-radius:12px;padding:12px 14px;font-weight:700;color:var(--pri-esc);font-size:14.5px;display:flex;gap:10px;align-items:center;text-align:left}
+  .fgrid div:before{content:"✓";color:#fff;background:var(--cta);border-radius:50%;width:22px;height:22px;display:inline-flex;align-items:center;justify-content:center;font-size:13px;flex:none}
+  .mechs{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-top:28px}
+  .mech{background:#fff;border:1px solid var(--borda);border-radius:20px;padding:20px 22px;text-align:left}
+  .mech .em{font-size:30px;line-height:1}.mech h3{font-size:18px;color:var(--pri-esc);margin:8px 0 6px}.mech p{font-size:14.5px;color:var(--texto);line-height:1.6;margin:0}
+  .bye{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:24px auto 0;max-width:760px}
+  .bye div{background:var(--pri-cl);border-radius:18px;padding:18px 8px;text-align:center;font-weight:800;color:var(--pri-esc);font-size:14.5px;line-height:1.25}
+  .bye div i{display:block;font-style:normal;font-size:34px;margin-bottom:8px}
+  .ativos{max-width:720px;margin:20px auto 0}
+  .ativo{background:#fff;border:1px solid var(--borda);border-radius:16px;margin-top:12px;overflow:hidden}
+  .ativo summary{cursor:pointer;list-style:none;padding:16px 18px;display:flex;align-items:center;gap:12px;font-weight:800;color:var(--pri-esc);font-size:17px}
+  .ativo summary::-webkit-details-marker{display:none}.ativo summary:after{content:"+";margin-left:auto;font-size:22px;color:var(--pri)}.ativo[open] summary:after{content:"–"}
+  .ativo summary small{font-size:10.5px;letter-spacing:1.5px;color:#fff;background:var(--pri);border-radius:999px;padding:4px 10px;font-weight:800;flex:none}
+  .ativo ul{list-style:none;margin:0;padding:0 18px 16px}.ativo li{padding:6px 0 6px 26px;position:relative;font-size:14.5px;color:var(--texto)}
+  .ativo li:before{content:"✓";position:absolute;left:0;color:var(--cta);font-weight:900}
+  .vs{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin:24px auto 0;max-width:820px}
+  .vs .col{border-radius:20px;padding:20px}.vs .bad{background:#f5f2ef;border:1px solid #e6e0da}.vs .good{background:var(--pri-cl);border:2px solid var(--pri)}
+  .vs h3{font-size:16px;margin:0 0 10px;color:var(--pri-esc)}.vs ul{margin:0;padding:0}.vs li{list-style:none;font-size:14.5px;padding:7px 0 7px 28px;position:relative;line-height:1.4}
+  .vs .bad li:before{content:"✕";position:absolute;left:0;color:#c0392b;font-weight:900}.vs .good li:before{content:"✓";position:absolute;left:0;color:var(--cta);font-weight:900}
+  .tsts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:24px}
+  .tst{background:#fff;border:1px solid var(--borda);border-radius:20px;padding:20px}.tst .stars{color:#f5a623;letter-spacing:2px}
+  .tst p{font-size:15px;font-style:italic;color:var(--texto);margin:10px 0 12px;line-height:1.6}.tst b{color:var(--pri-esc)}
+  @media(max-width:860px){.tsts{grid-template-columns:minmax(0,1fr)}}
+  @media(max-width:720px){.cycle,.mechs{grid-template-columns:minmax(0,1fr)}.ptitle{font-size:23px}}
+  @media(max-width:620px){.vs{grid-template-columns:minmax(0,1fr)}.bye{grid-template-columns:repeat(2,minmax(0,1fr))}.fgrid{grid-template-columns:minmax(0,1fr)}}
+
+  .mblocks{display:grid;gap:12px;margin:6px 0 18px;text-align:left}
+  .mblock{background:#fff;border-left:4px solid var(--pri);border-radius:12px;padding:14px 16px}
+  .mblock h3{font-size:16px;color:var(--pri-esc);margin:0 0 4px}.mblock p{font-size:15.5px !important;margin:0 !important;line-height:1.6}
+  .story .meta{font-style:italic;font-size:19px;color:var(--pri-esc);background:var(--pri-cl);border-radius:14px;padding:16px 18px;margin:6px 0 12px}
 </style>
 </head>
 <body>
@@ -474,10 +534,6 @@
 
       <div class="hero-left">
         <span class="patent">Fibra Solúvel · Plantago ovata</span>
-        <h1>Intestino em dia e <span class="hl">barriga leve</span>, do jeito natural</h1>
-        <p class="sub">— <b>Psyllium (Plantago ovata)</b> em cápsulas de 500mg. 100% natural, sem glúten e sem lactose.</p>
-
-        <!-- Galeria: fotos e vídeo gerados com IA (pasta levivita-img/) -->
         <div class="slides" id="slides">
           <div class="slide photo on"><video class="loopvid" src="levivita-img/video-pouch.mp4" poster="levivita-img/pouch.webp" autoplay muted loop playsinline aria-label="Pacote de Levivita Psyllium, 120 cápsulas de 500mg"></video></div>
           <div class="slide photo"><img src="levivita-img/kit-3-pacotes.webp" alt="Kit com 3 pacotes de Levivita" loading="lazy" decoding="async"></div>
@@ -497,13 +553,12 @@
       </div>
 
       <div class="hero-right" id="offers">
-        <span class="eyebrow">Suplemento Alimentar · Psyllium em Cápsulas</span>
-        <h2>Levivita Psyllium 120 Cápsulas 500mg — Fibra Solúvel Natural + Frete Grátis</h2>
         <!-- EXEMPLO: troque a nota e a contagem pelos números reais das suas avaliações -->
-        <div class="rating-row"><span class="stars">★★★★★</span> <b>4,8</b> · 1.947 avaliações</div>
-
-        <div class="sel-label">Escolha o seu protocolo</div>
-        <div class="scarcity-line">🔥 Preço de lançamento · por tempo limitado</div>
+        <div class="rating-row"><span class="stars">★★★★★</span> Avaliado em <b>4,8</b> (1.947) · Excelente</div>
+        <h1 class="ptitle">Levivita — Intestino funcionando todo dia e a barriga leve, com 1 fibra pura</h1>
+        <p class="psub">Fibra solúvel que vira gel dentro de você: dá volume, amolece e ajuda o intestino a funcionar todos os dias — sem forçar como um laxante.</p>
+        <div class="sel-label">Escolha o seu kit</div>
+        <div class="scarcity-line">🔥 Lote de lançamento com preço especial</div>
         <div class="offers">
           <label class="offer" onclick="selOffer(this)" data-kit="k3">
             <span class="offer-tag tag-1">Mais Vendido</span>
@@ -528,28 +583,69 @@
           </label>
         </div>
         <a href="#" class="cta js-buy" data-buy-main><span class="cta-main">Comprar Agora →</span><span class="buy-kit"></span></a>
+        <div class="frete"><span class="cx">📦</span><div><b>Frete grátis com rastreio</b><p>Despacho em até 1 dia útil para todo o Brasil</p></div></div>
         <div class="paystrip">
           <span class="ps-lock">🔒 Pagamento 100% seguro · compra protegida</span>
           <div class="pays"><svg class="pi"><use href="#pi-visa"/></svg><svg class="pi"><use href="#pi-mc"/></svg><svg class="pi"><use href="#pi-elo"/></svg><svg class="pi"><use href="#pi-amex"/></svg><svg class="pi"><use href="#pi-pix"/></svg></div>
         </div>
-
-        <div class="frete">
-          <span class="cx">📦</span>
-          <div><b>Frete Grátis e embalagem discreta</b><p>Envio rápido com <b>código de rastreio</b></p></div>
-        </div>
-        <div class="anvisa">
-          <span class="cx">🌿</span>
-          <div><b>Fórmula limpa</b><p>100% psyllium · Sem glúten · Sem lactose · Sem conservantes</p></div>
-        </div>
-        <div class="urg">
-          <div class="watch">🔥 Preço de lançamento — válido enquanto durar o lote atual.</div>
-          <div class="stock">⚠️ Produção em lotes pequenos para garantir qualidade e frescor.</div>
-        </div>
-        <div class="paybar">
-          <div class="checks"><span>Compra Segura</span><span>Garantia de 120 dias</span><span>Envio Discreto</span></div>
-        </div>
+        <div class="chips"><span><i>●</i>Mais vendido</span><span><i>●</i>Experimente por 120 dias</span><span><i>●</i>Fórmula limpa</span></div>
+        <div class="warn"><b>ⓘ Aviso sobre falsificações</b>A Levivita original é vendida somente neste site. Produtos com o mesmo nome em marketplaces não são originais.</div>
+        <!-- EXEMPLO: depoimento ilustrativo — troque por um depoimento real -->
+        <div class="hquote"><span class="stars">★★★★★</span><br><b>Juliana M., 41 anos</b><span class="vf">✓ Compra verificada</span><p>“Eu passava 4, 5 dias sem ir ao banheiro. A barriga estufava tanto que no fim do dia eu tinha que abrir o botão da calça. Na segunda semana tomando a Levivita com bastante água, meu intestino começou a funcionar todo dia de manhã. Eu me sinto leve de novo.”</p></div>
+        <div class="approved"><span class="dot">●</span> <b>Aprovado por quem usa</b> — escolhido por quem quer acordar leve, com o intestino em dia.</div>
+        <details class="acc"><summary>Como funciona</summary><p>O psyllium é uma fibra solúvel que, em contato com a água, forma um gel macio. Esse gel dá volume e maciez, ajuda o intestino a funcionar no ritmo certo e aumenta a saciedade.</p></details>
+        <details class="acc"><summary>Modo de uso</summary><p>2 cápsulas pela manhã e 2 à noite, sempre com um copo grande de água. Cada pacote rende 30 dias.</p></details>
+        <details class="acc"><summary>Ingredientes principais</summary><p>Psyllium (Plantago ovata) — casca da semente, fibra solúvel natural. 500mg por cápsula. Sem glúten, sem lactose e sem conservantes.</p></details>
+        <details class="acc"><summary>Garantia de reembolso</summary><p>Você tem 120 dias para experimentar. Se não sentir a diferença, devolvemos 100% do valor pago.</p></details>
       </div>
 
+    </div>
+  </div>
+</section>
+
+<!-- AUTOAVALIAÇÃO -->
+<section class="sec-white">
+  <div class="wrap">
+    <div class="quiz-badge">🩺 Teste rápido · leva 30 segundos</div>
+    <h2 class="center">Intestino preso não é normal.<br><span class="red">Reconheça os sinais.</span></h2>
+    <p class="miniclaim">Faça o teste: marque os sinais que você sente. Cada um deles é um sinal de <b>intestino trabalhando sem o material de que precisa</b>.</p>
+    <div class="quiz-cta"><span>👉 Toque nos sinais que você sente para ver o seu resultado</span><span class="arrow">👇</span></div>
+    <div class="checklist hint" id="checklist">
+      <label class="chk" onclick="toggleChk(this)"><span class="box"></span><span class="chk-txt"><span class="sname">2, 3 dias ou mais sem ir ao banheiro</span><span class="sexp">E quando vai, é com esforço — e a sensação de que não saiu tudo.</span></span></label>
+      <label class="chk" onclick="toggleChk(this)"><span class="box"></span><span class="chk-txt"><span class="sname">Barriga estufada no fim do dia</span><span class="sexp">De manhã a calça fecha; à noite, você precisa abrir o botão.</span></span></label>
+      <label class="chk" onclick="toggleChk(this)"><span class="box"></span><span class="chk-txt"><span class="sname">Esforço e dor para evacuar</span><span class="sexp">Fezes duras e secas machucam — e, com o tempo, podem causar hemorroidas.</span></span></label>
+      <label class="chk" onclick="toggleChk(this)"><span class="box"></span><span class="chk-txt"><span class="sname">Gases e cólicas que incomodam</span><span class="sexp">O que fica parado no intestino fermenta e vira gás.</span></span></label>
+      <label class="chk" onclick="toggleChk(this)"><span class="box"></span><span class="chk-txt"><span class="sname">Fome fora de hora e vontade de beliscar</span><span class="sexp">Refeições pobres em fibra saciam pouco — e a fome volta rápido.</span></span></label>
+      <label class="chk" onclick="toggleChk(this)"><span class="box"></span><span class="chk-txt"><span class="sname">Já depende de laxante ou chá</span><span class="sexp">E cada vez precisa de mais para funcionar.</span></span></label>
+    </div>
+    <div class="chk-result">
+      <div class="chk-count"><span id="chkNum">0</span> de 6 sinais marcados</div>
+      <div class="alert-lbl">⚠️ NÍVEL DE ALERTA</div>
+      <div class="chk-verdict" id="chkVerdict">Marque os sinais que você sente para ver o seu resultado.</div>
+      <div class="chk-bar"><i id="chkBar"></i></div>
+      <p class="chk-note">Este teste é apenas informativo e não substitui uma avaliação médica. Dor forte, mudança brusca no intestino ou sangue nas fezes precisam de avaliação médica.</p>
+    </div>
+  </div>
+</section>
+
+<!-- HISTÓRIA -->
+<section>
+  <div class="wrap">
+    <div class="story">
+      <p class="eyebrow-c">O que está por trás do intestino preso e da barriga estufada</p>
+      <p class="big">A barriga estufada não é culpa da calça apertada.</p>
+      <p class="big">O intestino preso não é “jeito do seu corpo”.</p>
+      <p class="big">E a fome fora de hora não é falta de força de vontade.</p>
+      <p class="punch">São três partes diferentes do mesmo problema.</p>
+      <p>E enquanto você toma mais um chá laxante e espera, o intestino fica cada vez mais preguiçoso e dependente. Crescendo. Todos os dias.</p>
+      <p class="big">Deixa eu te explicar o que está realmente acontecendo dentro de você.</p>
+      <h2 class="center">O seu intestino está trabalhando <span class="hl">sem o material de que precisa</span></h2>
+      <div class="mblocks"><div class="mblock"><h3>O intestino precisa de fibra</h3><p>É a fibra que segura água, dá volume e deixa tudo macio para seguir o caminho. A OMS recomenda pelo menos 25g por dia — e a maioria das pessoas não chega nem perto.</p></div><div class="mblock"><h3>O ressecamento silencioso</h3><p>Sem fibra, as fezes perdem água, endurecem e ficam paradas. O intestino precisa fazer força dobrada — e mesmo assim não consegue empurrar tudo.</p></div><div class="mblock"><h3>O resultado</h3><p>Barriga estufada, gases, esforço no banheiro e aquela sensação de peso que não vai embora.</p></div></div>
+      <p class="meta">É como tentar empurrar areia seca por um cano: trava, arranha e não anda. Agora imagine essa areia virando um gel macio — ela desliza.</p>
+      <span class="cyc-name">O CICLO S-P-D</span>
+      <div class="cycle"><div class="st"><b>S</b><strong>Seca</strong><span>Sem fibra, as fezes perdem água e endurecem.</span></div><div class="st"><b>P</b><strong>Preso</strong><span>O intestino trava, a barriga incha e os gases aumentam.</span></div><div class="st"><b>D</b><strong>Dependência</strong><span>O laxante força a saída — e o intestino fica cada vez mais preguiçoso.</span></div></div>
+      <p>O intestino preso, a barriga inchada e o peso são o seu corpo pedindo socorro: ele precisa de fibra.</p>
+      <p class="punch">A solução é mais simples do que parece: devolver ao corpo a fibra que sumiu do prato.</p>
     </div>
   </div>
 </section>
@@ -592,134 +688,40 @@
   </div>
 </section>
 
-<!-- AUTOAVALIAÇÃO -->
+<!-- FÓRMULA -->
 <section class="sec-white">
   <div class="wrap">
-    <div class="quiz-badge">🩺 Autoavaliação gratuita · leva 30 segundos</div>
-    <h2 class="center">Você chama de "normal".<br><span class="red">O seu intestino chama de alerta.</span></h2>
-    <p class="miniclaim">Marque os sinais que você sente com frequência. Muitos deles têm <b>a mesma origem: falta de fibra</b>.</p>
-    <div class="quiz-cta"><span>👉 Toque nos sinais que você sente para ver o seu resultado</span><span class="arrow">👇</span></div>
-    <div class="checklist hint" id="checklist">
-      <label class="chk" onclick="toggleChk(this)"><span class="box"></span><span class="chk-txt"><span class="sname">Intestino preso: 2, 3 dias ou mais sem ir ao banheiro</span><span class="sexp">Sem fibra, as fezes ficam secas e duras, e o intestino perde o ritmo.</span></span></label>
-      <label class="chk" onclick="toggleChk(this)"><span class="box"></span><span class="chk-txt"><span class="sname">Barriga inchada e estufada no fim do dia</span><span class="sexp">O que fica parado no intestino fermenta e gera gases e aquela sensação de estufamento.</span></span></label>
-      <label class="chk" onclick="toggleChk(this)"><span class="box"></span><span class="chk-txt"><span class="sname">Esforço e desconforto na hora de evacuar</span><span class="sexp">Fezes ressecadas exigem força — e isso, com o tempo, pode machucar e causar hemorroidas.</span></span></label>
-      <label class="chk" onclick="toggleChk(this)"><span class="box"></span><span class="chk-txt"><span class="sname">Sensação de que não esvaziou por completo</span><span class="sexp">Sem volume e maciez suficientes, o intestino não consegue empurrar tudo de uma vez.</span></span></label>
-      <label class="chk" onclick="toggleChk(this)"><span class="box"></span><span class="chk-txt"><span class="sname">Fome fora de hora e vontade de beliscar</span><span class="sexp">Refeições pobres em fibra saciam pouco e fazem a fome voltar rápido.</span></span></label>
-      <label class="chk" onclick="toggleChk(this)"><span class="box"></span><span class="chk-txt"><span class="sname">Peso e lentidão depois de comer</span><span class="sexp">A digestão fica arrastada quando falta o "volume macio" que a fibra dá.</span></span></label>
-      <label class="chk" onclick="toggleChk(this)"><span class="box"></span><span class="chk-txt"><span class="sname">Gases frequentes e cólicas</span><span class="sexp">Um intestino desregulado fermenta mais — e incomoda mais.</span></span></label>
-      <label class="chk" onclick="toggleChk(this)"><span class="box"></span><span class="chk-txt"><span class="sname">Colesterol ou glicemia acima do ideal</span><span class="sexp">Alimentação pobre em fibra solúvel costuma andar junto com colesterol e açúcar no sangue mais altos.</span></span></label>
-      <label class="chk" onclick="toggleChk(this)"><span class="box"></span><span class="chk-txt"><span class="sname">Já depende de laxante ou chá para ir ao banheiro</span><span class="sexp">Laxantes forçam o intestino a funcionar e, com o tempo, ele pode ficar cada vez mais "preguiçoso".</span></span></label>
-    </div>
-    <div class="chk-result">
-      <div class="chk-count"><span id="chkNum">0</span> de 9 sinais marcados</div>
-      <div class="chk-verdict" id="chkVerdict">Marque os sinais que você sente para ver o seu resultado.</div>
-      <div class="chk-bar"><i id="chkBar"></i></div>
-      <p class="chk-note">Este teste é apenas informativo e não substitui uma avaliação médica. Dor forte, mudança brusca no intestino ou sangue nas fezes precisam de avaliação médica.</p>
-    </div>
+    <p class="eyebrow-c">A fórmula que todos estão falando</p>
+    <h2 class="center" id="stickyTrigger">A fibra <span class="hl">que todos estão falando</span></h2>
+    <div class="fvid"><video src="levivita-img/video-pouch.mp4" poster="levivita-img/pouch.webp" autoplay muted loop playsinline aria-label="Embalagem de Levivita"></video></div>
+    <p class="lead" style="max-width:660px;margin:20px auto 0">A Levivita é psyllium puro em cápsulas — uma das fibras solúveis mais estudadas do mundo. Em contato com a água, ela vira um gel macio que regula o intestino nos dois sentidos, sem gosma no copo e sem gosto.</p>
+    <div class="fgrid"><div>Intestino no ritmo</div><div>Barriga mais leve</div><div>Mais saciedade</div><div>Aliada do colesterol e da glicemia</div><div>Não é laxante</div><div>Sem gosto, sem gosma</div></div>
+    <div class="mechs"><div class="mech"><div class="em">💧</div><h3>Vira gel com a água</h3><p>A fibra absorve água e forma um gel macio que hidrata e dá volume.</p></div><div class="mech"><div class="em">🌀</div><h3>Intestino no ritmo</h3><p>O gel amolece o que está preso e dá consistência ao que está solto — regulando nos dois sentidos.</p></div><div class="mech"><div class="em">🍽️</div><h3>Mais saciedade</h3><p>O gel ocupa espaço e deixa a digestão mais lenta: você belisca menos.</p></div><div class="mech"><div class="em">📈</div><h3>Melhora progressiva</h3><p>Muita gente sente diferença nos primeiros dias; o ritmo costuma se estabilizar entre 2 e 3 semanas.</p></div></div>
   </div>
 </section>
 
-<!-- TEXTO -->
+<!-- DIGA ADEUS -->
 <section>
   <div class="wrap">
-    <div class="prose">
-      <p>Se você sente esses sinais, o problema provavelmente não é ter nascido com intestino "preguiçoso". Pode ser simplesmente <b>falta de fibra</b>. Sem fibra, as fezes perdem água, ficam duras e secas, e o intestino precisa trabalhar dobrado para empurrar.</p>
-      <div class="oseja">Ou seja…</div>
-      <p>É como tentar <span class="em">empurrar areia seca por um cano</span>: trava, arranha e não anda. Agora imagine essa mesma areia virando um gel macio — ela desliza. É exatamente isso que a fibra solúvel faz. A culpa não é sua: o prato moderno simplesmente tirou a fibra da sua rotina.</p>
-    </div>
+    <h2 class="center">Diga adeus para:</h2>
+    <div class="bye"><div><i>🎈</i>Barriga estufada</div><div><i>🚽</i>Intestino preso</div><div><i>😣</i>Esforço no banheiro</div><div><i>💨</i>Gases</div><div><i>🍪</i>Fome fora de hora</div><div><i>🍵</i>Chá laxante</div></div>
   </div>
 </section>
 
-<!-- O VILÃO -->
-<section>
-  <div class="wrap">
-    <p class="eyebrow-c">Por que o intestino trava</p>
-    <h2 class="center">A fibra que <span class="hl">sumiu do seu prato</span></h2>
-    <div class="prose">
-      <p>Antigamente, a alimentação tinha muito mais grãos inteiros, legumes, frutas e sementes. Hoje, a rotina corrida empurra pão branco, massa, lanche e comida pronta — tudo pobre em fibra. Resultado: o intestino perde o <b>"material"</b> de que precisa para formar fezes macias e manter o ritmo.</p>
-    </div>
-    <div class="data">
-      Para chegar aos <span class="n">25g de fibra por dia</span>, seria preciso comer várias porções de frutas, verduras, legumes e grãos integrais <span class="n">todos os dias</span> — algo que pouca gente consegue manter na rotina.
-      <span class="src">Recomendação da OMS para o consumo diário de fibras.</span>
-    </div>
-  </div>
-</section>
-
-<!-- POR QUE NADA RESOLVEU -->
+<!-- ATIVOS -->
 <section class="sec-white">
+  <div class="wrap">
+    <h2 class="center"><span class="hl">1 fibra pura.</span> 4 frentes.</h2>
+    <p class="subh">Psyllium (Plantago ovata): uma das fibras solúveis mais estudadas do mundo.</p>
+    <div class="ativos"><details class="ativo" open><summary><small>FRENTE 01</small>Intestino regular</summary><ul><li>Dá volume e maciez</li><li>Ajuda o intestino a funcionar todo dia</li><li>Não força como o laxante</li></ul></details><details class="ativo"><summary><small>FRENTE 02</small>Saciedade</summary><ul><li>Forma gel no estômago</li><li>Deixa a digestão mais lenta</li><li>Menos vontade de beliscar</li></ul></details><details class="ativo"><summary><small>FRENTE 03</small>Colesterol</summary><ul><li>A fibra solúvel ajuda a diminuir a absorção de gordura</li><li>Junto com alimentação equilibrada</li><li>Cuidado diário para o coração</li></ul></details><details class="ativo"><summary><small>FRENTE 04</small>Glicemia</summary><ul><li>Deixa a absorção do açúcar mais lenta</li><li>Ajuda a evitar picos depois das refeições</li><li>Aliada de quem cuida da glicose</li></ul></details></div>
+  </div>
+</section>
+
+<!-- COMPARATIVO -->
+<section>
   <div class="wrap">
     <h2 class="center">Por que nada do que você <span class="hl">tentou resolveu</span></h2>
-    <p class="subh">Laxante, chá e "comer mais salada" falham pelo mesmo motivo: ou forçam o intestino, ou não entregam fibra suficiente todos os dias.</p>
-    <div class="faillist">
-      <div class="fail"><span class="x">✕</span><div><b>Laxantes de farmácia</b><span>Forçam o intestino a contrair. Funcionam na hora, mas com o uso frequente ele pode ficar dependente e cada vez mais lento.</span></div></div>
-      <div class="fail"><span class="x">✕</span><div><b>Chás "detox" e laxativos</b><span>Mesma lógica do laxante: irritam o intestino para ele soltar. Alívio de um dia, cólica e efeito rebote depois.</span></div></div>
-      <div class="fail"><span class="x">✕</span><div><b>"Comer mais salada"</b><span>Ajuda, mas para chegar à fibra de que o corpo precisa você teria que comer bem mais do que cabe na rotina.</span></div></div>
-      <div class="fail"><span class="x">✕</span><div><b>Psyllium em pó</b><span>Funciona, mas vira uma gosma no copo, tem textura ruim e dá trabalho. A maioria desiste em poucos dias.</span></div></div>
-    </div>
-    <p class="fail-close">Não foi falta de força de vontade. <span class="em">Faltou uma fibra fácil de tomar todo dia</span> — sem forçar o intestino.</p>
-  </div>
-</section>
-
-<!-- MECANISMO -->
-<section>
-  <div class="wrap">
-    <h2 class="center">Da cápsula ao <span class="hl">intestino em dia</span></h2>
-    <div class="prose">
-      <p>O psyllium é a casca da semente da <b>Plantago ovata</b> — uma das fibras solúveis mais estudadas do mundo. O segredo dela é simples: <b>em contato com a água, vira gel</b>.</p>
-    </div>
-    <div class="chain">
-      <div class="lk"><span class="ic">🌱</span><b>Cápsula</b><small>Psyllium puro, 500mg</small></div>
-      <div class="lk"><span class="ic">💧</span><b>Gel</b><small>Absorve água e forma um gel macio</small></div>
-      <div class="lk"><span class="ic">🫧</span><b>Volume</b><small>Dá volume e amolece as fezes</small></div>
-      <div class="lk"><span class="ic">✨</span><b>Ritmo</b><small>O intestino volta a funcionar no tempo certo</small></div>
-    </div>
-    <div class="data">
-      O gel do psyllium <span class="n">regula nos dois sentidos</span>: amolece o que está preso e dá consistência ao que está solto. Por isso ele é usado tanto para <span class="n">intestino preso</span> quanto para trânsito irregular.
-      <span class="src">Literatura científica sobre psyllium (Plantago ovata) e trânsito intestinal.</span>
-    </div>
-  </div>
-</section>
-
-<!-- UMA FIBRA, VÁRIAS FRENTES -->
-<section class="sec-white">
-  <div class="wrap">
-    <h2 class="center" id="stickyTrigger">Uma fibra, <span class="hl">várias frentes</span></h2>
-    <div class="prose">
-      <p>A Levivita é <b>psyllium puro</b>, sem misturas. Uma fibra só, agindo em várias frentes ao mesmo tempo:</p>
-    </div>
-    <div class="ing3">
-      <div class="card"><span class="tag">Intestino</span><h3>Trânsito regular</h3><p>O gel macio dá volume e amolece as fezes, para o intestino funcionar sem esforço.</p></div>
-      <div class="card"><span class="tag">Saciedade</span><h3>Menos fome fora de hora</h3><p>O gel ocupa espaço no estômago e deixa a digestão mais lenta: você fica satisfeito por mais tempo.</p></div>
-      <div class="card"><span class="tag">Equilíbrio</span><h3>Colesterol e glicemia</h3><p>A fibra solúvel ajuda a diminuir a absorção de gordura e açúcar da refeição, junto com uma alimentação equilibrada.</p></div>
-      <div class="card"><span class="tag">Fórmula limpa</span><h3>100% psyllium</h3><p>Sem conservantes, sem aditivos artificiais, sem glúten e sem lactose.</p></div>
-      <div class="card"><span class="tag">Praticidade</span><h3>Sem gosma, sem gosto</h3><p>Toda a fibra do psyllium numa cápsula que você engole com água — nada de pó gelatinoso no copo.</p></div>
-      <div class="card"><span class="tag">Rendimento</span><h3>30 dias por pacote</h3><p>São 120 cápsulas por pacote. Com 4 por dia, cada pacote dura um mês.</p></div>
-    </div>
-    <p class="comp-note" style="margin-top:20px">Tome sempre com bastante água.</p>
-  </div>
-</section>
-
-<!-- VS PÓ -->
-<section>
-  <div class="wrap">
-    <h2 class="center">Levivita vs. <span class="hl">psyllium em pó</span></h2>
-    <div class="prose">
-      <p>O psyllium em pó funciona — o problema é tomar. Ele engrossa em segundos, vira uma gosma no copo, gruda e tem uma textura difícil. Com a Levivita, você recebe a mesma fibra em cápsulas, <b>sem gosto e sem bagunça</b>, e o gel se forma onde tem que se formar: dentro de você.</p>
-      <p>É a diferença entre um hábito que você abandona na primeira semana e um que dura. <b>Fibra só funciona se você toma todo dia.</b></p>
-    </div>
-  </div>
-</section>
-
-<!-- APRESENTAÇÃO -->
-<section>
-  <div class="wrap">
-    <div class="present">
-      <span class="badge">A solução completa</span>
-      <h2>Levivita — psyllium puro em cápsulas de 500mg, para o seu intestino e a sua leveza todos os dias</h2>
-      <div class="present-media"><img class="loopvid kb" src="levivita-img/pouch.webp" alt="Pacote de Levivita com 120 cápsulas de 500mg" loading="lazy" decoding="async"></div>
-      <p>Se você está cansado de intestino preso, barriga estufada e de depender de laxante, a Levivita foi criada para você. São <b>120 cápsulas de 500mg de psyllium</b> (Plantago ovata), fibra solúvel natural — <b>sem conservantes, sem glúten e sem lactose</b>, numa cápsula sem gosto e fácil de tomar.</p>
-      <p>Uma fibra usada há gerações e hoje entre as mais estudadas do mundo — finalmente num formato que cabe na sua rotina.</p>
-    </div>
+    <div class="vs"><div class="col bad"><h3>Laxantes, chás e psyllium em pó</h3><ul><li>Laxantes forçam o intestino e criam dependência</li><li>Chás “detox” irritam e dão efeito rebote</li><li>Psyllium em pó vira gosma no copo</li><li>Difícil de manter todos os dias</li></ul></div><div class="col good"><h3>Levivita</h3><ul><li>Fibra solúvel pura</li><li>Regula sem forçar</li><li>Sem gosto e sem gosma</li><li>Mais saciedade</li><li>Sem glúten, lactose e conservantes</li><li>Garantia de 120 dias</li></ul></div></div>
   </div>
 </section>
 
@@ -736,62 +738,25 @@
   </div>
 </section>
 
-<!-- COMPOSIÇÃO -->
+<!-- DEPOIMENTOS -->
+<!-- EXEMPLO: depoimentos ilustrativos — troque por depoimentos reais de clientes antes de publicar. -->
 <section class="sec-white">
   <div class="wrap">
-    <h2 class="center">O que tem em <span class="hl">cada cápsula</span></h2>
-    <p class="lead">Um ingrediente só. Você sabe exatamente o que está tomando.</p>
-    <div class="comp">
-      <div class="h">Composição · por cápsula</div>
-      <div class="row"><b>Psyllium (Plantago ovata) — casca da semente</b><span>500mg</span></div>
-      <div class="row"><b>Fibra solúvel natural</b><span>✓</span></div>
-      <div class="row"><b>Sem glúten · Sem lactose</b><span>✓</span></div>
-      <div class="row"><b>Sem conservantes ou aditivos artificiais</b><span>✓</span></div>
-      <div class="row"><b>Cápsulas por pacote</b><span>120 (30 dias)</span></div>
-    </div>
-    <p class="comp-note">100% natural · Uso adulto · Tome sempre com bastante água.</p>
-    <div class="experts">
-      <span class="ic">🌱</span>
-      <div><b>Fórmula de ingrediente único</b><p>Nada de misturas para encher a fórmula: 100% casca de semente de psyllium, a parte mais rica em fibra solúvel.</p></div>
-    </div>
+    <h2 class="center">O que diz quem confia na <span class="hl">Levivita</span></h2>
+    <div class="tsts"><div class="tst"><span class="stars">★★★★★</span><p>“Já tinha tentado psyllium em pó e não aguentava a textura, parecia cola no copo. Em cápsula é outra coisa: tomo com água e esqueço. Meu intestino nunca funcionou tão certinho.”</p><b>Patrícia S., 38 anos</b><span class="vf">✓ Compra verificada</span></div><div class="tst"><span class="stars">★★★★★</span><p>“Eu tomava chá laxante toda noite havia anos e mesmo assim vivia estufada. Larguei o chá. Agora é tudo natural e a barriga parou de inchar no fim do dia.”</p><b>Denise L., 55 anos</b><span class="vf">✓ Compra verificada</span></div><div class="tst"><span class="stars">★★★★★</span><p>“Além do intestino, me ajudou a parar de beliscar à tarde. Recomendo seguir direitinho e beber bastante água — faz toda a diferença.”</p><b>Renata C., 46 anos</b><span class="vf">✓ Compra verificada</span></div></div>
   </div>
 </section>
 
-<!-- BENEFÍCIOS -->
+<!-- GARANTIA -->
 <section>
   <div class="wrap">
-    <h2 class="center">Benefícios da <span class="hl">Levivita</span></h2>
-    <p class="subh">O que você pode sentir com o seu intestino recebendo fibra todos os dias:*</p>
-    <div class="ben-list">
-      <div class="ben"><span class="ck">✓</span><div><b>Intestino regular</b><span>O gel do psyllium dá volume e maciez às fezes, para o intestino <b>funcionar todo dia</b>, sem esforço.</span></div></div>
-      <div class="ben"><span class="ck">✓</span><div><b>Barriga mais leve</b><span>Com o trânsito em dia, o estufamento e a sensação de peso <b>diminuem</b>.</span></div></div>
-      <div class="ben"><span class="ck">✓</span><div><b>Mais saciedade</b><span>A fibra deixa a digestão mais lenta e ajuda a <b>controlar a fome fora de hora</b>.</span></div></div>
-      <div class="ben"><span class="ck">✓</span><div><b>Aliada de quem cuida do peso</b><span>Menos fome e mais regularidade ajudam quem está emagrecendo, <b>junto com alimentação e movimento</b>.</span></div></div>
-      <div class="ben"><span class="ck">✓</span><div><b>Colesterol em equilíbrio</b><span>A fibra solúvel ajuda a <b>diminuir a absorção de gordura</b> da refeição.</span></div></div>
-      <div class="ben"><span class="ck">✓</span><div><b>Glicemia mais estável</b><span>O gel deixa a absorção do açúcar mais lenta, evitando <b>picos depois das refeições</b>.</span></div></div>
-      <div class="ben"><span class="ck">✓</span><div><b>Sem dependência</b><span>Diferente do laxante, a fibra <b>não força</b> o intestino: ajuda ele a funcionar do jeito natural.</span></div></div>
-      <div class="ben"><span class="ck">✓</span><div><b>Fácil de manter</b><span>Cápsulas sem gosto, sem pó e sem gosma. <b>Simples de encaixar na rotina</b>.</span></div></div>
+    <div class="guar">
+      <h2>Experimente sem risco por 120 dias</h2>
+      <p class="txt">Use a Levivita por 120 dias. Se o seu intestino não ficar mais regular e a barriga mais leve, devolvemos 100% do seu dinheiro. Sem perguntas, sem burocracia.</p>
+      <div class="pill">Nossa promessa para você</div>
+      <div class="seal"><span class="ring">Garantia</span><span class="big">120</span><span class="d">DIAS</span></div>
     </div>
-  </div>
-</section>
-
-<!-- RESULTADOS -->
-<!-- EXEMPLO: as porcentagens abaixo são ilustrativas. Substitua pelos resultados de uma pesquisa real com os seus clientes. -->
-<section class="sec-white">
-  <div class="wrap">
-    <p class="eyebrow-c">Pesquisa com clientes</p>
-    <h2 class="center">O que os nossos <span class="hl">clientes relatam</span></h2>
-    <p class="lead">Em pesquisa recente com quem usa a Levivita:</p>
-    <div class="stats">
-      <div class="stat"><div class="n">83%</div><p>sentiram o intestino mais regular nas primeiras semanas</p></div>
-      <div class="stat"><div class="n">76%</div><p>relataram a barriga menos estufada no fim do dia</p></div>
-      <div class="stat"><div class="n">71%</div><p>sentiram mais saciedade entre as refeições</p></div>
-      <div class="stat"><div class="n">90%</div><p>pretendem continuar usando a Levivita no dia a dia</p></div>
-    </div>
-    <p class="stats-note">*Resultados de pesquisa voluntária e autodeclarada com clientes. Resultados individuais podem variar.</p>
-    <div class="narr">
-      <p>Quando o intestino volta ao ritmo, o dia inteiro muda. Você acorda leve, a roupa veste melhor, a barriga não incha à tarde e você para de pensar nisso o tempo todo. <b>Não é milagre — é o seu corpo recebendo a fibra que faltava.</b></p>
-    </div>
+    <a href="#" class="cta sm js-buy">Quero experimentar sem risco →</a>
   </div>
 </section>
 
@@ -822,18 +787,6 @@
       <div class="rev"><div class="top"><div class="av">D</div><div><div class="name">Denise L.</div><div class="verif">✓ Compra verificada</div></div></div><div class="stars">★★★★★</div><p>"Larguei o chá laxante que eu tomava toda noite. Agora é tudo natural."</p><div class="date">13 de setembro de 2026</div></div>
       <div class="rev"><div class="top"><div class="av">F</div><div><div class="name">Fernanda T.</div><div class="verif">✓ Compra verificada</div></div></div><div class="stars">★★★★★</div><p>"Meu médico recomendou mais fibra e eu achei prático assim. Sem gosto nenhum."</p><div class="date">9 de setembro de 2026</div></div>
       <div class="rev"><div class="top"><div class="av">S</div><div><div class="name">Sônia P.</div><div class="verif">✓ Compra verificada</div></div></div><div class="stars">★★★★★</div><p>"Comprei o kit de 3 para fazer os 90 dias. Recomendo seguir direitinho e beber bastante água."</p><div class="date">5 de setembro de 2026</div></div>
-    </div>
-  </div>
-</section>
-
-<!-- GARANTIA -->
-<section class="sec-white">
-  <div class="wrap">
-    <div class="guar">
-      <h2>Garantia de 120 dias</h2>
-      <p class="txt">Se você não ficar satisfeito em até 120 dias, basta entrar em contato com o nosso suporte para receber o reembolso total — sem burocracia.</p>
-      <div class="pill">Experimente hoje mesmo sem riscos!</div>
-      <div class="seal"><span class="ring">Garantia</span><span class="big">120</span><span class="d">DIAS</span></div>
     </div>
   </div>
 </section>
@@ -886,6 +839,27 @@
       <div class="trow"><span class="ic">🌿</span><div><b>Fórmula limpa e transparente</b><p>100% psyllium, sem glúten, sem lactose, sem conservantes e sem aditivos artificiais. Você sabe exatamente o que está tomando.</p></div></div>
     </div>
     <a href="#" class="cta sm js-buy">Quero minha Levivita com frete grátis →</a>
+  </div>
+</section>
+
+<!-- COMPOSIÇÃO -->
+<section class="sec-white">
+  <div class="wrap">
+    <h2 class="center">O que tem em <span class="hl">cada cápsula</span></h2>
+    <p class="lead">Um ingrediente só. Você sabe exatamente o que está tomando.</p>
+    <div class="comp">
+      <div class="h">Composição · por cápsula</div>
+      <div class="row"><b>Psyllium (Plantago ovata) — casca da semente</b><span>500mg</span></div>
+      <div class="row"><b>Fibra solúvel natural</b><span>✓</span></div>
+      <div class="row"><b>Sem glúten · Sem lactose</b><span>✓</span></div>
+      <div class="row"><b>Sem conservantes ou aditivos artificiais</b><span>✓</span></div>
+      <div class="row"><b>Cápsulas por pacote</b><span>120 (30 dias)</span></div>
+    </div>
+    <p class="comp-note">100% natural · Uso adulto · Tome sempre com bastante água.</p>
+    <div class="experts">
+      <span class="ic">🌱</span>
+      <div><b>Fórmula de ingrediente único</b><p>Nada de misturas para encher a fórmula: 100% casca de semente de psyllium, a parte mais rica em fibra solúvel.</p></div>
+    </div>
   </div>
 </section>
 
@@ -1030,9 +1004,9 @@
     document.getElementById('chkNum').textContent = n;
     document.getElementById('chkBar').style.width = (n === 0 ? 0 : 40 + (n - 1) / (total - 1) * 60) + '%';
     var v = document.getElementById('chkVerdict');
-    var msg = n === 0 ? VEREDITOS.zero : n <= 2 ? VEREDITOS.baixo : n <= 5 ? VEREDITOS.medio : VEREDITOS.alto;
+    var msg = n === 0 ? VEREDITOS.zero : n <= 1 ? VEREDITOS.baixo : n <= 3 ? VEREDITOS.medio : VEREDITOS.alto;
     v.textContent = msg;
-    v.classList.toggle('alert', n > 2);
+    v.classList.toggle('alert', n > 1);
   }
 
   /* animações de entrada ao rolar */

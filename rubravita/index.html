@@ -433,6 +433,66 @@
   .anim{opacity:0;transform:translateY(28px);transition:opacity .7s ease,transform .7s cubic-bezier(.2,.7,.2,1)}
   .anim.in{opacity:1;transform:none}
   @media(prefers-reduced-motion:reduce){.anim,.anim.in{opacity:1!important;transform:none!important;transition:none!important}.cell,.kwbar .track{animation-play-state:paused}.kb{animation:none}}
+
+  /* ===== v3: componentes no estilo da página de referência ===== */
+  .ptitle{font-size:27px;line-height:1.18;color:var(--pri-esc);font-weight:800;margin:8px 0 8px;text-transform:none}
+  .psub{font-size:15px;color:var(--texto);margin:0 0 14px;line-height:1.55}
+  .chips{display:flex;flex-wrap:wrap;gap:6px 16px;margin:14px 0 2px;font-size:13px;font-weight:700;color:var(--pri-esc)}
+  .chips i{color:var(--cta);font-style:normal;margin-right:5px}
+  .warn{margin-top:14px;border:1px dashed var(--borda);background:var(--pri-cl);border-radius:12px;padding:12px 14px;font-size:13px;line-height:1.5;color:var(--texto)}
+  .warn b{display:block;color:var(--pri-esc);margin-bottom:2px}
+  .hquote{margin-top:14px;background:#fff;border:1px solid var(--borda);border-radius:14px;padding:14px 16px;font-size:14px}
+  .hquote .stars{color:#f5a623;letter-spacing:2px}.hquote b{color:var(--pri-esc)}.hquote .vf,.tst .vf{font-size:11px;color:#16a34a;font-weight:700;margin-left:8px}
+  .hquote p{margin:6px 0 0;font-style:italic;color:var(--texto);line-height:1.55}
+  .approved{margin:12px 0 6px;font-size:13px;color:var(--texto)}.approved b{color:var(--pri-esc)}.approved .dot{color:#16a34a}
+  details.acc{border-top:1px solid var(--borda);padding:13px 2px}details.acc:last-of-type{border-bottom:1px solid var(--borda)}
+  details.acc summary{cursor:pointer;font-weight:800;color:var(--pri-esc);list-style:none;display:flex;justify-content:space-between;align-items:center;font-size:15px}
+  details.acc summary::-webkit-details-marker{display:none}details.acc summary:after{content:"+";font-size:22px;line-height:1;color:var(--pri)}details.acc[open] summary:after{content:"–"}
+  details.acc p{margin:8px 0 0;font-size:14px;color:var(--texto);line-height:1.6}
+  .alert-lbl{font-size:11px;font-weight:800;letter-spacing:1.5px;color:var(--vermelho);margin:6px 0 2px}
+  .story{max-width:720px;margin:0 auto;text-align:center}
+  .story p{font-size:18px;line-height:1.65;margin:0 0 14px;color:var(--texto)}
+  .story p.big{font-size:21px;font-weight:700;color:var(--pri-esc);margin-bottom:8px}
+  .story p.punch{font-size:23px;font-weight:800;color:var(--pri);margin:18px 0}
+  .story h2{margin:34px 0 16px}.story small{font-size:13px;color:var(--cinza)}
+  .cyc-name{display:inline-block;background:var(--pri-esc);color:#fff;font-weight:800;letter-spacing:1px;border-radius:999px;padding:7px 18px;font-size:13px;margin:10px 0 2px}
+  .cycle{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:16px 0 22px}
+  .cycle .st{background:#fff;border:1px solid var(--borda);border-radius:18px;padding:18px 14px;text-align:center}
+  .cycle .st b{display:flex;align-items:center;justify-content:center;width:52px;height:52px;margin:0 auto 6px;border-radius:50%;background:var(--pri-cl);font-size:26px;color:var(--pri);font-family:'DM Serif Display',serif}
+  .cycle .st strong{display:block;font-size:16px;color:var(--pri-esc);margin-bottom:4px}.cycle .st span{font-size:13.5px;color:var(--cinza);line-height:1.45;display:block}
+  .fvid{max-width:440px;margin:22px auto 0;border-radius:24px;overflow:hidden;aspect-ratio:1;box-shadow:0 18px 40px rgba(0,0,0,.08)}
+  .fvid video{width:100%;height:100%;object-fit:cover;display:block}
+  .fgrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;max-width:640px;margin:20px auto 0}
+  .fgrid div{background:#fff;border:1px solid var(--borda);border-radius:12px;padding:12px 14px;font-weight:700;color:var(--pri-esc);font-size:14.5px;display:flex;gap:10px;align-items:center;text-align:left}
+  .fgrid div:before{content:"✓";color:#fff;background:var(--cta);border-radius:50%;width:22px;height:22px;display:inline-flex;align-items:center;justify-content:center;font-size:13px;flex:none}
+  .mechs{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-top:28px}
+  .mech{background:#fff;border:1px solid var(--borda);border-radius:20px;padding:20px 22px;text-align:left}
+  .mech .em{font-size:30px;line-height:1}.mech h3{font-size:18px;color:var(--pri-esc);margin:8px 0 6px}.mech p{font-size:14.5px;color:var(--texto);line-height:1.6;margin:0}
+  .bye{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:24px auto 0;max-width:760px}
+  .bye div{background:var(--pri-cl);border-radius:18px;padding:18px 8px;text-align:center;font-weight:800;color:var(--pri-esc);font-size:14.5px;line-height:1.25}
+  .bye div i{display:block;font-style:normal;font-size:34px;margin-bottom:8px}
+  .ativos{max-width:720px;margin:20px auto 0}
+  .ativo{background:#fff;border:1px solid var(--borda);border-radius:16px;margin-top:12px;overflow:hidden}
+  .ativo summary{cursor:pointer;list-style:none;padding:16px 18px;display:flex;align-items:center;gap:12px;font-weight:800;color:var(--pri-esc);font-size:17px}
+  .ativo summary::-webkit-details-marker{display:none}.ativo summary:after{content:"+";margin-left:auto;font-size:22px;color:var(--pri)}.ativo[open] summary:after{content:"–"}
+  .ativo summary small{font-size:10.5px;letter-spacing:1.5px;color:#fff;background:var(--pri);border-radius:999px;padding:4px 10px;font-weight:800;flex:none}
+  .ativo ul{list-style:none;margin:0;padding:0 18px 16px}.ativo li{padding:6px 0 6px 26px;position:relative;font-size:14.5px;color:var(--texto)}
+  .ativo li:before{content:"✓";position:absolute;left:0;color:var(--cta);font-weight:900}
+  .vs{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin:24px auto 0;max-width:820px}
+  .vs .col{border-radius:20px;padding:20px}.vs .bad{background:#f5f2ef;border:1px solid #e6e0da}.vs .good{background:var(--pri-cl);border:2px solid var(--pri)}
+  .vs h3{font-size:16px;margin:0 0 10px;color:var(--pri-esc)}.vs ul{margin:0;padding:0}.vs li{list-style:none;font-size:14.5px;padding:7px 0 7px 28px;position:relative;line-height:1.4}
+  .vs .bad li:before{content:"✕";position:absolute;left:0;color:#c0392b;font-weight:900}.vs .good li:before{content:"✓";position:absolute;left:0;color:var(--cta);font-weight:900}
+  .tsts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:24px}
+  .tst{background:#fff;border:1px solid var(--borda);border-radius:20px;padding:20px}.tst .stars{color:#f5a623;letter-spacing:2px}
+  .tst p{font-size:15px;font-style:italic;color:var(--texto);margin:10px 0 12px;line-height:1.6}.tst b{color:var(--pri-esc)}
+  @media(max-width:860px){.tsts{grid-template-columns:minmax(0,1fr)}}
+  @media(max-width:720px){.cycle,.mechs{grid-template-columns:minmax(0,1fr)}.ptitle{font-size:23px}}
+  @media(max-width:620px){.vs{grid-template-columns:minmax(0,1fr)}.bye{grid-template-columns:repeat(2,minmax(0,1fr))}.fgrid{grid-template-columns:minmax(0,1fr)}}
+
+  .mblocks{display:grid;gap:12px;margin:6px 0 18px;text-align:left}
+  .mblock{background:#fff;border-left:4px solid var(--pri);border-radius:12px;padding:14px 16px}
+  .mblock h3{font-size:16px;color:var(--pri-esc);margin:0 0 4px}.mblock p{font-size:15.5px !important;margin:0 !important;line-height:1.6}
+  .story .meta{font-style:italic;font-size:19px;color:var(--pri-esc);background:var(--pri-cl);border-radius:14px;padding:16px 18px;margin:6px 0 12px}
 </style>
 </head>
 <body>
@@ -476,10 +536,6 @@
 
       <div class="hero-left">
         <span class="patent">Fórmula Tripla · Fonte Natural de Nitratos</span>
-        <h1>Ajuda o sangue a <span class="hl">circular livre</span> e devolve a sua energia</h1>
-        <p class="sub">— <b>Beterraba + Semente de Uva + MC Vermelha</b> em cápsulas de 500mg. Zero glúten, lactose e açúcar.</p>
-
-        <!-- Galeria: fotos e vídeo gerados com IA (pasta rubravita-img/) -->
         <div class="slides" id="slides">
           <div class="slide photo on"><video class="loopvid" src="rubravita-img/video-pouch.mp4" poster="rubravita-img/pouch.webp" autoplay muted loop playsinline aria-label="Pacote de Rubravita Beterraba + Semente de Uva + MC Vermelha, 120 cápsulas de 500mg"></video></div>
           <div class="slide photo"><img src="rubravita-img/kit-3-pacotes.webp" alt="Kit com 3 pacotes de Rubravita" loading="lazy" decoding="async"></div>
@@ -499,13 +555,12 @@
       </div>
 
       <div class="hero-right" id="offers">
-        <span class="eyebrow">Suplemento Alimentar em Cápsulas · Fórmula Tripla</span>
-        <h2>Rubravita Beterraba + Semente de Uva + MC Vermelha — 120 Cápsulas de 500mg + Frete Grátis</h2>
         <!-- EXEMPLO: troque a nota e a contagem pelos números reais das suas avaliações -->
-        <div class="rating-row"><span class="stars">★★★★★</span> <b>4,8</b> · 2.316 avaliações</div>
-
-        <div class="sel-label">Escolha o seu protocolo</div>
-        <div class="scarcity-line">🔥 Preço de lançamento · por tempo limitado</div>
+        <div class="rating-row"><span class="stars">★★★★★</span> Avaliado em <b>4,8</b> (2.316) · Excelente</div>
+        <h1 class="ptitle">Rubravita — Pernas leves, mãos quentes e energia de volta, com 3 ativos naturais</h1>
+        <p class="psub">Complexo com nitratos naturais que ajudam o corpo a produzir óxido nítrico — o sinal que relaxa os vasos e deixa o sangue circular.</p>
+        <div class="sel-label">Escolha o seu kit</div>
+        <div class="scarcity-line">🔥 Lote de lançamento com preço especial</div>
         <div class="offers">
           <label class="offer" onclick="selOffer(this)" data-kit="k3">
             <span class="offer-tag tag-1">Mais Vendido</span>
@@ -529,31 +584,79 @@
             <span class="offer-price"><span class="offer-old">R$ 299,90</span><span class="offer-new">R$ 149,90</span></span>
           </label>
         </div>
-
         <a href="#" class="cta js-buy" data-buy-main><span class="cta-main">Comprar Agora →</span><span class="buy-kit"></span></a>
+        <div class="frete"><span class="cx">📦</span><div><b>Frete grátis com rastreio</b><p>Despacho em até 1 dia útil para todo o Brasil</p></div></div>
         <div class="paystrip">
           <span class="ps-lock">🔒 Pagamento 100% seguro · compra protegida</span>
           <div class="pays"><svg class="pi"><use href="#pi-visa"/></svg><svg class="pi"><use href="#pi-mc"/></svg><svg class="pi"><use href="#pi-elo"/></svg><svg class="pi"><use href="#pi-amex"/></svg><svg class="pi"><use href="#pi-pix"/></svg></div>
         </div>
-
-        <div class="frete">
-          <span class="cx">📦</span>
-          <div><b>Frete Grátis para todo o Brasil</b><p>Envio rápido com <b>código de rastreio</b></p></div>
-        </div>
-        <div class="anvisa">
-          <span class="cx">🌿</span>
-          <div><b>Fórmula limpa</b><p>Zero glúten · Zero lactose · Zero açúcar</p></div>
-        </div>
-        <div class="urg">
-          <div class="watch">🔥 Preço de lançamento — válido enquanto durar o lote atual.</div>
-          <div class="stock">⚠️ Produção em lotes pequenos para garantir frescor e pureza.</div>
-        </div>
-        <div class="paybar">
-          <div class="checks"><span>Compra Segura</span><span>Garantia de 120 dias</span><span>Envio Rápido</span></div>
-        </div>
+        <div class="chips"><span><i>●</i>Mais vendido</span><span><i>●</i>Experimente por 120 dias</span><span><i>●</i>Fórmula limpa</span></div>
+        <div class="warn"><b>ⓘ Aviso sobre falsificações</b>A Rubravita original é vendida somente neste site. Produtos com o mesmo nome em marketplaces não são originais.</div>
+        <!-- EXEMPLO: depoimento ilustrativo — troque por um depoimento real -->
+        <div class="hquote"><span class="stars">★★★★★</span><br><b>Rosângela M., 54 anos</b><span class="vf">✓ Compra verificada</span><p>“Eu chegava do trabalho com as pernas tão pesadas que precisava deitar com os pés para cima antes de fazer o jantar. As mãos viviam geladas, até no verão. Depois de umas três semanas tomando a Rubravita todo dia, percebi que estava terminando o dia de pé, com disposição. Parece que o sangue voltou a correr.”</p></div>
+        <div class="approved"><span class="dot">●</span> <b>Aprovado por quem usa</b> — escolhido por quem quer terminar o dia com as pernas leves e energia.</div>
+        <details class="acc"><summary>Como funciona</summary><p>O nitrato natural da fórmula é convertido pelo seu corpo em óxido nítrico, a molécula que sinaliza para os vasos relaxarem. Os antioxidantes da semente de uva ajudam a proteger esse processo. Resultado: um caminho mais livre para o sangue — e mais energia no dia a dia.</p></details>
+        <details class="acc"><summary>Modo de uso</summary><p>Tome 2 cápsulas por dia, com um copo de água, junto com uma refeição. Cada pacote rende 60 dias.</p></details>
+        <details class="acc"><summary>Ingredientes principais</summary><p>Beterraba (fonte natural de nitratos), semente de uva (antioxidantes) e MC vermelha. 500mg por cápsula. Zero glúten, lactose e açúcar.</p></details>
+        <details class="acc"><summary>Garantia de reembolso</summary><p>Você tem 120 dias para experimentar. Se não sentir a diferença, devolvemos 100% do valor pago.</p></details>
       </div>
 
     </div>
+  </div>
+</section>
+
+<!-- AUTOAVALIAÇÃO -->
+<section class="sec-white">
+  <div class="wrap">
+    <div class="quiz-badge">🩺 Teste rápido · leva 30 segundos</div>
+    <h2 class="center">Perna pesada não é cansaço normal.<br><span class="red">Reconheça os sinais.</span></h2>
+    <p class="miniclaim">Faça o teste: marque os sinais que você sente. Cada um deles é um sinal de <b>sangue circulando no freio de mão</b>.</p>
+    <div class="quiz-cta"><span>👉 Toque nos sinais que você sente para ver o seu resultado</span><span class="arrow">👇</span></div>
+    <div class="checklist hint" id="checklist">
+      <label class="chk" onclick="toggleChk(this)"><span class="box"></span><span class="chk-txt"><span class="sname">Pernas pesadas como chumbo no fim do dia</span><span class="sexp">Aquela vontade de deitar e colocar as pernas para cima assim que chega em casa.</span></span></label>
+      <label class="chk" onclick="toggleChk(this)"><span class="box"></span><span class="chk-txt"><span class="sname">Mãos e pés gelados, mesmo no calor</span><span class="sexp">Você dorme de meia e, ainda assim, os pés não esquentam.</span></span></label>
+      <label class="chk" onclick="toggleChk(this)"><span class="box"></span><span class="chk-txt"><span class="sname">Cansaço que bate no meio da tarde</span><span class="sexp">Às 3 da tarde a energia acaba — e nem o café resolve.</span></span></label>
+      <label class="chk" onclick="toggleChk(this)"><span class="box"></span><span class="chk-txt"><span class="sname">Formigamento quando fica muito tempo sentado</span><span class="sexp">A perna “adormece” no carro, no sofá, na cadeira do trabalho.</span></span></label>
+      <label class="chk" onclick="toggleChk(this)"><span class="box"></span><span class="chk-txt"><span class="sname">Fôlego curto na escada</span><span class="sexp">Você para no meio do lance para respirar — coisa que antes não acontecia.</span></span></label>
+      <label class="chk" onclick="toggleChk(this)"><span class="box"></span><span class="chk-txt"><span class="sname">Tornozelos inchados à noite</span><span class="sexp">A marca da meia fica funda na pele no fim do dia.</span></span></label>
+    </div>
+    <div class="chk-result">
+      <div class="chk-count"><span id="chkNum">0</span> de 6 sinais marcados</div>
+      <div class="alert-lbl">⚠️ NÍVEL DE ALERTA</div>
+      <div class="chk-verdict" id="chkVerdict">Marque os sinais que você sente para ver o seu resultado.</div>
+      <div class="chk-bar"><i id="chkBar"></i></div>
+      <p class="chk-note">Este teste é apenas informativo e não substitui uma avaliação médica.</p>
+    </div>
+  </div>
+</section>
+
+<!-- HISTÓRIA -->
+<section>
+  <div class="wrap">
+    <div class="story">
+      <p class="eyebrow-c">O que está por trás das pernas pesadas, das mãos frias e do cansaço</p>
+      <p class="big">O peso que você sente nas pernas não é culpa da idade.</p>
+      <p class="big">As mãos geladas não são “jeito do seu corpo”.</p>
+      <p class="big">E o cansaço que derruba você no meio da tarde não é preguiça.</p>
+      <p class="punch">São três partes diferentes do mesmo problema.</p>
+      <p>E enquanto você toma mais um café, coloca as pernas para cima e espera passar, a causa continua lá dentro. Crescendo. Todos os dias.</p>
+      <p class="big">Deixa eu te explicar o que está realmente acontecendo dentro de você.</p>
+      <h2 class="center">O seu corpo está produzindo <span class="hl">cada vez menos óxido nítrico</span></h2>
+      <div class="mblocks"><div class="mblock"><h3>O mensageiro do fluxo</h3><p>O óxido nítrico é o sinal que avisa os seus vasos para relaxarem e abrirem caminho para o sangue. Com ele em alta, o sangue chega com força às pernas, às mãos e ao cérebro — levando oxigênio e energia.</p></div><div class="mblock"><h3>O freio de mão silencioso</h3><p>A partir dos 40 anos, o corpo produz cada vez menos óxido nítrico. Os vasos ficam tensos e mais estreitos, e o sangue passa devagar — principalmente nas partes mais distantes do coração: pernas, pés e mãos.</p></div><div class="mblock"><h3>O resultado</h3><p>Sangue lento significa menos oxigênio chegando aos músculos. As pernas pesam, as extremidades esfriam e a energia acaba antes do dia terminar.</p></div></div>
+      <p class="meta">É como uma mangueira de jardim sendo apertada aos poucos: a água ainda sai — mas fraca, sem força para chegar longe.</p>
+      <span class="cyc-name">O CICLO T-L-C</span>
+      <div class="cycle"><div class="st"><b>T</b><strong>Tensão</strong><span>Com menos óxido nítrico, os vasos ficam tensos e mais estreitos.</span></div><div class="st"><b>L</b><strong>Lentidão</strong><span>O sangue passa devagar e o oxigênio demora a chegar.</span></div><div class="st"><b>C</b><strong>Cansaço</strong><span>Pernas pesadas e energia lá embaixo fazem você se mexer menos — e o ciclo recomeça.</span></div></div>
+      <p>As pernas pesadas, as mãos frias e o cansaço da tarde são o seu corpo pedindo socorro: ele precisa de mais fluxo.</p>
+      <p class="punch">A boa notícia: a natureza tem uma fonte de nitratos que o seu corpo sabe transformar em óxido nítrico.</p>
+    </div>
+  </div>
+</section>
+
+<!-- VÍDEO: fluxo sanguíneo (gerado com IA) -->
+<section class="vslot-sec">
+  <div class="wrap">
+    <div class="vslot"><video class="loopvid" src="rubravita-img/video-fluxo.mp4" poster="rubravita-img/passo-2.webp" autoplay muted loop playsinline aria-label="Animação do sangue circulando livre dentro de um vaso relaxado"></video></div>
+    <p class="vslot-cap">Animação ilustrativa: vaso relaxado, sangue circulando livre.</p>
   </div>
 </section>
 
@@ -595,141 +698,40 @@
   </div>
 </section>
 
-<!-- AUTOAVALIAÇÃO -->
+<!-- FÓRMULA -->
 <section class="sec-white">
   <div class="wrap">
-    <div class="quiz-badge">🩺 Autoavaliação gratuita · leva 30 segundos</div>
-    <h2 class="center">Você chama de "cansaço".<br><span class="red">A sua circulação chama de alerta.</span></h2>
-    <p class="miniclaim">Faça o teste: marque os sinais que você sente com frequência. Cada um deles pode indicar que o sangue <b>não está chegando com força onde deveria</b>.</p>
-    <div class="quiz-cta"><span>👉 Toque nos sinais que você sente para ver o seu resultado</span><span class="arrow">👇</span></div>
-    <div class="checklist hint" id="checklist">
-      <label class="chk" onclick="toggleChk(this)"><span class="box"></span><span class="chk-txt"><span class="sname">Mãos e pés frios, até em dias quentes</span><span class="sexp">As extremidades são as primeiras a sentir quando o sangue circula com menos força — o corpo prioriza os órgãos centrais.</span></span></label>
-      <label class="chk" onclick="toggleChk(this)"><span class="box"></span><span class="chk-txt"><span class="sname">Pernas pesadas e cansadas no fim do dia</span><span class="sexp">Com a circulação lenta, o sangue demora a voltar ao coração e as pernas acumulam essa sensação de peso.</span></span></label>
-      <label class="chk" onclick="toggleChk(this)"><span class="box"></span><span class="chk-txt"><span class="sname">Cansaço no meio da tarde, mesmo dormindo bem</span><span class="sexp">Menos fluxo significa menos oxigênio e nutrientes chegando às células — e menos energia para você.</span></span></label>
-      <label class="chk" onclick="toggleChk(this)"><span class="box"></span><span class="chk-txt"><span class="sname">Falta de fôlego ao subir escadas ou caminhar rápido</span><span class="sexp">Os músculos recebem menos oxigênio do que precisam e se cansam muito antes do normal.</span></span></label>
-      <label class="chk" onclick="toggleChk(this)"><span class="box"></span><span class="chk-txt"><span class="sname">Demora para se recuperar depois de exercício</span><span class="sexp">É o sangue que leva nutrientes e retira resíduos dos músculos. Fluxo lento, recuperação lenta.</span></span></label>
-      <label class="chk" onclick="toggleChk(this)"><span class="box"></span><span class="chk-txt"><span class="sname">Câimbras e formigamento frequentes</span><span class="sexp">Músculos e nervos mal irrigados reclamam — principalmente à noite e nas pernas.</span></span></label>
-      <label class="chk" onclick="toggleChk(this)"><span class="box"></span><span class="chk-txt"><span class="sname">Tornozelos inchados no fim do dia</span><span class="sexp">Quando o retorno do sangue fica lento, o líquido tende a se acumular nas partes mais baixas do corpo.</span></span></label>
-      <label class="chk" onclick="toggleChk(this)"><span class="box"></span><span class="chk-txt"><span class="sname">Mente lenta e dificuldade de foco</span><span class="sexp">O cérebro consome cerca de 20% do oxigênio do corpo. Se o fluxo cai, a concentração é das primeiras a sentir.</span></span></label>
-      <label class="chk" onclick="toggleChk(this)"><span class="box"></span><span class="chk-txt"><span class="sname">Menos disposição para a intimidade</span><span class="sexp">A resposta do corpo na intimidade depende diretamente de fluxo sanguíneo — em homens e em mulheres.</span></span></label>
-    </div>
-    <div class="chk-result">
-      <div class="chk-count"><span id="chkNum">0</span> de 9 sinais marcados</div>
-      <div class="chk-verdict" id="chkVerdict">Marque os sinais que você sente para ver o seu resultado.</div>
-      <div class="chk-bar"><i id="chkBar"></i></div>
-      <p class="chk-note">Este teste é apenas informativo e não substitui uma avaliação médica.</p>
-    </div>
+    <p class="eyebrow-c">A fórmula que todos estão falando</p>
+    <h2 class="center" id="stickyTrigger">A fórmula para a circulação <span class="hl">que todos estão falando</span></h2>
+    <div class="fvid"><video src="rubravita-img/video-pouch.mp4" poster="rubravita-img/pouch.webp" autoplay muted loop playsinline aria-label="Embalagem de Rubravita"></video></div>
+    <p class="lead" style="max-width:660px;margin:20px auto 0">A Rubravita junta 3 ativos naturais que trabalham juntos: a beterraba fornece o nitrato, a semente de uva protege os vasos e a MC vermelha apoia a energia do dia a dia.</p>
+    <div class="fgrid"><div>Sangue circulando livre</div><div>Mãos e pés mais quentes</div><div>Pernas leves no fim do dia</div><div>Mais energia e disposição</div><div>Proteção antioxidante</div><div>Zero açúcar, glúten e lactose</div></div>
+    <div class="mechs"><div class="mech"><div class="em">🫀</div><h3>Do nitrato ao óxido nítrico</h3><p>O corpo transforma o nitrato natural da beterraba em óxido nítrico — o sinal que ajuda os vasos a relaxar.</p></div><div class="mech"><div class="em">🍇</div><h3>Proteção para os vasos</h3><p>Os antioxidantes da semente de uva ajudam a proteger o revestimento dos vasos contra o desgaste do dia a dia.</p></div><div class="mech"><div class="em">⚡</div><h3>Energia que dura o dia</h3><p>Com o sangue circulando melhor, o oxigênio chega mais fácil aos músculos — e o cansaço da tarde perde força.</p></div><div class="mech"><div class="em">📈</div><h3>Melhora progressiva</h3><p>Quanto mais tempo você usa, mais o corpo responde. Muita gente sente diferença entre 2 e 4 semanas de uso diário.</p></div></div>
   </div>
 </section>
 
-<!-- TEXTO -->
+<!-- DIGA ADEUS -->
 <section>
   <div class="wrap">
-    <div class="prose">
-      <p>Se você sente esses sinais no dia a dia, o problema pode não ser "a idade" nem "o estresse". Pode ser o <b>caminho por onde o seu sangue passa</b>. Quando os vasos perdem a capacidade de relaxar, o coração continua bombeando — mas o sangue chega com menos força às mãos, aos pés, aos músculos e ao cérebro.</p>
-      <div class="oseja">Ou seja…</div>
-      <p>É como regar um jardim com a <span class="em">mangueira dobrada</span>: a água existe, mas não chega onde precisa. Você dorme, come e se esforça — e mesmo assim falta energia, falta fôlego, falta disposição. A culpa não é sua: ninguém te contou que a circulação precisa de matéria-prima todos os dias.</p>
-    </div>
+    <h2 class="center">Diga adeus para:</h2>
+    <div class="bye"><div><i>🦵</i>Pernas pesadas</div><div><i>🥶</i>Mãos e pés frios</div><div><i>😴</i>Cansaço da tarde</div><div><i>🐢</i>Corpo lento</div><div><i>🪑</i>Formigamento</div><div><i>😩</i>Desânimo</div></div>
   </div>
 </section>
 
-<!-- O VILÃO -->
-<section>
-  <div class="wrap">
-    <p class="eyebrow-c">Por que a energia não volta</p>
-    <h2 class="center">O mensageiro que o seu corpo <span class="hl">parou de produzir</span></h2>
-    <div class="prose">
-      <p>Dentro de cada vaso sanguíneo existe uma camada fina de células — o <b>endotélio</b>. É ele que produz o <b>óxido nítrico</b>, o mensageiro que manda os vasos relaxarem e se abrirem para o sangue passar. Com os anos, o sedentarismo, o estresse e a comida industrializada, essa produção cai. E os vasos ficam cada vez mais "travados".</p>
-    </div>
-    <div class="data">
-      Pesquisas mostram que o nitrato da beterraba é convertido pelo próprio corpo em <span class="n">óxido nítrico</span>, com aumento dos níveis no sangue em cerca de <span class="n">2 a 3 horas</span> após o consumo.
-      <span class="src">Literatura científica sobre nitrato dietético e beterraba (beetroot nitrate).</span>
-    </div>
-  </div>
-</section>
-
-<!-- POR QUE NADA RESOLVEU -->
+<!-- ATIVOS -->
 <section class="sec-white">
+  <div class="wrap">
+    <h2 class="center">Com apenas <span class="hl">3 ativos naturais</span></h2>
+    <p class="subh">Escolhidos para agir no fluxo, na proteção dos vasos e na energia.</p>
+    <div class="ativos"><details class="ativo" open><summary><small>ATIVO 01</small>Beterraba</summary><ul><li>Fonte natural de nitratos</li><li>Ajuda o corpo a produzir óxido nítrico</li><li>Apoia o fluxo sanguíneo</li></ul></details><details class="ativo"><summary><small>ATIVO 02</small>Semente de uva</summary><ul><li>Rica em antioxidantes (proantocianidinas)</li><li>Ajuda a proteger os vasos</li><li>Completa a ação da beterraba</li></ul></details><details class="ativo"><summary><small>ATIVO 03</small>MC vermelha</summary><ul><li>Tradicionalmente usada para energia e disposição</li><li>Apoia o vigor do dia a dia</li><li>Fecha o trio da fórmula</li></ul></details></div>
+  </div>
+</section>
+
+<!-- COMPARATIVO -->
+<section>
   <div class="wrap">
     <h2 class="center">Por que nada do que você <span class="hl">tentou resolveu</span></h2>
-    <p class="subh">Café, energético, suco verde e até beterraba no prato falham pelo mesmo motivo: ou agem só no sintoma, ou não entregam uma dose constante, todos os dias.</p>
-    <div class="faillist">
-      <div class="fail"><span class="x">✕</span><div><b>Café e energéticos</b><span>Dão um pico de energia e uma queda logo depois. Não fazem nada pela circulação — e ainda podem atrapalhar o seu sono.</span></div></div>
-      <div class="fail"><span class="x">✕</span><div><b>Suco de beterraba</b><span>Gosto forte de terra, açúcar concentrado, mancha tudo e dá trabalho. A maioria desiste na primeira semana.</span></div></div>
-      <div class="fail"><span class="x">✕</span><div><b>Beterraba no prato</b><span>Seria preciso comer bastante, todos os dias. E o cozimento em água faz a beterraba perder boa parte dos nitratos.</span></div></div>
-      <div class="fail"><span class="x">✕</span><div><b>Pós e shakes</b><span>Sabor ruim, preparo chato e dose que muda a cada colherada. Sem constância, o corpo não sente diferença.</span></div></div>
-    </div>
-    <p class="fail-close">Não foi falta de esforço. <span class="em">Foi falta de uma dose constante e prática</span> — todos os dias, sem sofrimento.</p>
-  </div>
-</section>
-
-<!-- MECANISMO -->
-<section>
-  <div class="wrap">
-    <h2 class="center">Do nitrato ao <span class="hl">sangue circulando livre</span></h2>
-    <div class="prose">
-      <p>A beterraba é uma das fontes naturais mais ricas em <b>nitratos</b>. Depois que você engole a cápsula, o seu próprio corpo faz o resto: transforma esse nitrato, etapa por etapa, no óxido nítrico de que os seus vasos precisam para relaxar.</p>
-    </div>
-    <div class="chain">
-      <div class="lk"><span class="ic">🌱</span><b>Nitrato</b><small>Vem da beterraba, dentro da cápsula</small></div>
-      <div class="lk"><span class="ic">🔄</span><b>Nitrito</b><small>Bactérias boas da boca e do intestino fazem a conversão</small></div>
-      <div class="lk"><span class="ic">⚡</span><b>Óxido nítrico</b><small>Chega ao sangue e sinaliza os vasos</small></div>
-      <div class="lk"><span class="ic">🩸</span><b>Vasos relaxados</b><small>Mais fluxo, mais oxigênio, mais energia</small></div>
-    </div>
-    <div class="data">
-      Estudos com nitrato da beterraba associam o consumo regular a <span class="n">melhor fluxo sanguíneo</span> e a <span class="n">uso mais eficiente do oxigênio</span> pelos músculos durante o exercício.
-      <span class="src">Revisões científicas sobre suplementação de nitrato dietético.</span>
-    </div>
-  </div>
-</section>
-
-<!-- VÍDEO: fluxo sanguíneo (gerado com IA) -->
-<section class="vslot-sec">
-  <div class="wrap">
-    <div class="vslot"><video class="loopvid" src="rubravita-img/video-fluxo.mp4" poster="rubravita-img/passo-2.webp" autoplay muted loop playsinline aria-label="Animação do sangue circulando livre dentro de um vaso relaxado"></video></div>
-    <p class="vslot-cap">Animação ilustrativa: vaso relaxado, sangue circulando livre.</p>
-  </div>
-</section>
-
-<!-- POR QUE ESCOLHER -->
-<section class="sec-white">
-  <div class="wrap">
-    <h2 class="center" id="stickyTrigger">3 ingredientes, <span class="hl">3 frentes de ação</span></h2>
-    <div class="prose">
-      <p>A beterraba sozinha já ajuda. Mas a circulação precisa de mais de uma coisa: <b>matéria-prima, proteção e energia</b>. Por isso a Rubravita une três ingredientes que se completam:</p>
-    </div>
-    <div class="ing3">
-      <div class="card"><span class="tag">Ativo 1 · Circulação</span><h3>Beterraba</h3><p>Fonte natural de nitratos, que o corpo transforma em óxido nítrico para os vasos relaxarem e o sangue circular melhor.</p></div>
-      <div class="card"><span class="tag">Ativo 2 · Proteção</span><h3>Semente de Uva</h3><p>Rica em proantocianidinas, antioxidantes que ajudam a proteger os vasos dos radicais livres e apoiam a circulação das pernas.</p></div>
-      <div class="card"><span class="tag">Ativo 3 · Energia</span><h3>MC Vermelha</h3><p>Raiz andina usada há gerações para energia, disposição e vitalidade — o empurrão que completa a fórmula.</p></div>
-      <div class="card"><span class="tag">Fórmula limpa</span><h3>Zero glúten, lactose e açúcar</h3><p>Pode entrar na rotina de quem tem restrições ou cuida da alimentação.</p></div>
-      <div class="card"><span class="tag">Praticidade</span><h3>Cápsulas de 500mg</h3><p>Sem suco, sem pó, sem liquidificador e sem gosto de beterraba. A dose é sempre a mesma.</p></div>
-      <div class="card"><span class="tag">Rendimento</span><h3>60 dias por pacote</h3><p>São 120 cápsulas por pacote. Com 2 por dia, cada pacote dura 2 meses.</p></div>
-    </div>
-  </div>
-</section>
-
-<!-- VS COMUNS -->
-<section>
-  <div class="wrap">
-    <h2 class="center">Rubravita vs. <span class="hl">suco e beterraba no prato</span></h2>
-    <div class="prose">
-      <p>A beterraba sempre fez bem para a circulação. O problema nunca foi a beterraba — foi a <b>constância</b>. Ninguém aguenta um copo de suco com gosto de terra todo dia. Com a Rubravita, você recebe beterraba, semente de uva e MC vermelha em 2 cápsulas, sem gosto, sem açúcar e sem sujeira.</p>
-      <p>É a diferença entre ir à academia uma vez por mês e ir três vezes por semana. <b>Uma não muda nada. A outra muda tudo.</b></p>
-    </div>
-  </div>
-</section>
-
-<!-- APRESENTAÇÃO -->
-<section>
-  <div class="wrap">
-    <div class="present">
-      <span class="badge">A solução completa</span>
-      <h2>Rubravita — Beterraba + Semente de Uva + MC Vermelha, para a sua circulação e a sua energia todos os dias</h2>
-      <div class="present-media"><img class="loopvid kb" src="rubravita-img/pouch.webp" alt="Pacote de Rubravita com 120 cápsulas de 500mg" loading="lazy" decoding="async"></div>
-      <p>Se você está cansado de viver com mãos geladas, pernas pesadas, falta de fôlego e aquele cansaço que bate no meio da tarde, a Rubravita foi criada para você. São <b>120 cápsulas de 500mg</b> que unem a <b>beterraba</b> (fonte natural de nitratos), a <b>semente de uva</b> (antioxidante) e a <b>MC vermelha</b> (energia e disposição) — <b>zero glúten, zero lactose, zero açúcar</b> e sem gosto de beterraba.</p>
-      <p>Três alimentos valorizados há gerações, juntos numa cápsula que cabe na sua rotina.</p>
-    </div>
+    <div class="vs"><div class="col bad"><h3>Suco de beterraba, café e cremes</h3><ul><li>Dose de nitrato incerta a cada copo</li><li>O café dá energia emprestada e cobra depois</li><li>Cremes agem só na pele</li><li>Difícil de manter todos os dias</li></ul></div><div class="col good"><h3>Rubravita</h3><ul><li>3 ativos naturais na dose certa</li><li>Fonte de nitratos para o seu óxido nítrico</li><li>Antioxidantes para proteger os vasos</li><li>Energia sem cafeína</li><li>2 cápsulas por dia, sem preparo</li><li>Garantia de 120 dias</li></ul></div></div>
   </div>
 </section>
 
@@ -746,63 +748,25 @@
   </div>
 </section>
 
-<!-- COMPOSIÇÃO -->
+<!-- DEPOIMENTOS -->
+<!-- EXEMPLO: depoimentos ilustrativos — troque por depoimentos reais de clientes antes de publicar. -->
 <section class="sec-white">
   <div class="wrap">
-    <h2 class="center">O que tem em <span class="hl">cada porção</span></h2>
-    <p class="lead">Três ingredientes. Você sabe exatamente o que está tomando.</p>
-    <!-- Confira no rótulo do fabricante a dose recomendada e, se quiser, a quantidade de cada ingrediente por cápsula. -->
-    <div class="comp">
-      <div class="h">Composição · cápsulas de 500mg</div>
-      <div class="row"><b>Beterraba (Beta vulgaris)</b><span>✓</span></div>
-      <div class="row"><b>Semente de Uva (Vitis vinifera)</b><span>✓</span></div>
-      <div class="row"><b>MC Vermelha</b><span>✓</span></div>
-      <div class="row"><b>Peso por cápsula</b><span>500mg</span></div>
-      <div class="row"><b>Cápsulas por pacote</b><span>120 (60 dias)</span></div>
-    </div>
-    <p class="comp-note">Zero glúten · Zero lactose · Zero açúcar · Uso adulto · Uso oral · Peso líquido: 60g.</p>
-    <div class="experts">
-      <span class="ic">🍇</span>
-      <div><b>Fórmula tripla, sem enchimento</b><p>Três ingredientes que se completam: um ajuda o sangue a circular, outro protege os vasos e o terceiro traz energia e disposição.</p></div>
-    </div>
+    <h2 class="center">O que diz quem confia na <span class="hl">Rubravita</span></h2>
+    <div class="tsts"><div class="tst"><span class="stars">★★★★★</span><p>“Sempre tive mãos e pés gelados, até no verão — dormia de meia e mesmo assim acordava com os pés frios. Depois de um mês tomando certinho, minhas mãos estão quentinhas e eu termino o dia sem aquele peso nas pernas. Minha filha até comentou que eu estou mais animada.”</p><b>Sueli A., 61 anos</b><span class="vf">✓ Compra verificada</span></div><div class="tst"><span class="stars">★★★★★</span><p>“Trabalho sentado o dia inteiro e chegava em casa sem energia pra nada, só queria o sofá. Hoje voltei a caminhar à noite com a minha esposa. Coisa simples, mas fazia anos que eu não conseguia.”</p><b>Carlos H., 49 anos</b><span class="vf">✓ Compra verificada</span></div><div class="tst"><span class="stars">★★★★★</span><p>“Eu já tinha tentado de tudo para o cansaço da tarde: café, vitamina, até energético. Comprei a Rubravita desconfiada, mas a diferença foi clara. Já estou no segundo kit.”</p><b>Márcia F., 57 anos</b><span class="vf">✓ Compra verificada</span></div></div>
   </div>
 </section>
 
-<!-- BENEFÍCIOS -->
+<!-- GARANTIA -->
 <section>
   <div class="wrap">
-    <h2 class="center">Benefícios da <span class="hl">Rubravita</span></h2>
-    <p class="subh">O que você pode sentir com a sua circulação recebendo apoio todos os dias:*</p>
-    <div class="ben-list">
-      <div class="ben"><span class="ck">✓</span><div><b>Circulação saudável</b><span>O nitrato da beterraba vira óxido nítrico, que ajuda os vasos a relaxarem e o sangue a <b>circular com mais liberdade</b>.</span></div></div>
-      <div class="ben"><span class="ck">✓</span><div><b>Vasos protegidos</b><span>Os antioxidantes da <b>semente de uva</b> ajudam a proteger os vasos do desgaste causado pelos radicais livres.</span></div></div>
-      <div class="ben"><span class="ck">✓</span><div><b>Energia o dia inteiro</b><span>Mais oxigênio chegando às células e o reforço da <b>MC vermelha</b> significam <b>menos cansaço à tarde</b> e mais disposição.</span></div></div>
-      <div class="ben"><span class="ck">✓</span><div><b>Mais fôlego nos treinos e caminhadas</b><span>Estudos associam o nitrato da beterraba a um <b>uso melhor do oxigênio</b> pelos músculos durante o esforço.</span></div></div>
-      <div class="ben"><span class="ck">✓</span><div><b>Pernas mais leves</b><span>Com o sangue circulando melhor, aquela sensação de <b>pernas pesadas no fim do dia</b> tende a diminuir.</span></div></div>
-      <div class="ben"><span class="ck">✓</span><div><b>Mãos e pés aquecidos</b><span>Sangue chegando às extremidades é sinal de <b>circulação funcionando</b>.</span></div></div>
-      <div class="ben"><span class="ck">✓</span><div><b>Disposição e vitalidade</b><span>Mais energia para o trabalho, para os treinos e para <b>a vida a dois</b>.</span></div></div>
-      <div class="ben"><span class="ck">✓</span><div><b>Um hábito fácil de manter</b><span>2 cápsulas por dia, sem gosto, sem preparo e <b>zero açúcar</b>. O tipo de hábito que você <b>consegue manter</b>.</span></div></div>
+    <div class="guar">
+      <h2>Experimente sem risco por 120 dias</h2>
+      <p class="txt">Use a Rubravita por 120 dias. Se você não sentir as pernas mais leves e mais disposição no dia a dia, devolvemos 100% do seu dinheiro. Sem perguntas, sem burocracia.</p>
+      <div class="pill">Nossa promessa para você</div>
+      <div class="seal"><span class="ring">Garantia</span><span class="big">120</span><span class="d">DIAS</span></div>
     </div>
-  </div>
-</section>
-
-<!-- RESULTADOS -->
-<!-- EXEMPLO: as porcentagens abaixo são ilustrativas. Substitua pelos resultados de uma pesquisa real com os seus clientes. -->
-<section class="sec-white">
-  <div class="wrap">
-    <p class="eyebrow-c">Pesquisa com clientes</p>
-    <h2 class="center">O que os nossos <span class="hl">clientes relatam</span></h2>
-    <p class="lead">Em pesquisa recente com quem usa a Rubravita:</p>
-    <div class="stats">
-      <div class="stat"><div class="n">71%</div><p>ficaram satisfeitos com a qualidade e recomendam o produto</p></div>
-      <div class="stat"><div class="n">64%</div><p>acharam as cápsulas práticas e fáceis de encaixar na rotina</p></div>
-      <div class="stat"><div class="n">82%</div><p>sentiram que o produto apoiou as suas metas de bem-estar</p></div>
-      <div class="stat"><div class="n">91%</div><p>pretendem continuar usando a Rubravita no dia a dia</p></div>
-    </div>
-    <p class="stats-note">*Resultados de pesquisa voluntária e autodeclarada com clientes. Resultados individuais podem variar.</p>
-    <div class="narr">
-      <p>Quando o sangue volta a circular com força, o resto se encaixa. Você sobe a escada sem parar no meio. Chega ao fim do dia com energia para a família. Volta a treinar com vontade. <b>Não é milagre — é o seu corpo recebendo o que precisa.</b></p>
-    </div>
+    <a href="#" class="cta sm js-buy">Quero experimentar sem risco →</a>
   </div>
 </section>
 
@@ -833,18 +797,6 @@
       <div class="rev"><div class="top"><div class="av">F</div><div><div class="name">Fátima C.</div><div class="verif">✓ Compra verificada</div></div></div><div class="stars">★★★★★</div><p>"Uso junto com a minha caminhada diária. Mais fôlego na subida e mais disposição à tarde."</p><div class="date">12 de setembro de 2026</div></div>
       <div class="rev"><div class="top"><div class="av">J</div><div><div class="name">Jorge N.</div><div class="verif">✓ Compra verificada</div></div></div><div class="stars">★★★★★</div><p>"Mostrei ao meu médico, ele aprovou e incluí na rotina. Fácil de tomar, sem gosto e sem desconforto."</p><div class="date">8 de setembro de 2026</div></div>
       <div class="rev"><div class="top"><div class="av">C</div><div><div class="name">Cristina V.</div><div class="verif">✓ Compra verificada</div></div></div><div class="stars">★★★★★</div><p>"Comprei o kit de 3 para mim e para o meu marido. Os dois sentimos mais disposição no dia a dia."</p><div class="date">4 de setembro de 2026</div></div>
-    </div>
-  </div>
-</section>
-
-<!-- GARANTIA -->
-<section class="sec-white">
-  <div class="wrap">
-    <div class="guar">
-      <h2>Garantia de 120 dias</h2>
-      <p class="txt">Se você não ficar satisfeito em até 120 dias, basta entrar em contato com o nosso suporte para receber o reembolso total — sem burocracia.</p>
-      <div class="pill">Experimente hoje mesmo sem riscos!</div>
-      <div class="seal"><span class="ring">Garantia</span><span class="big">120</span><span class="d">DIAS</span></div>
     </div>
   </div>
 </section>
@@ -896,6 +848,28 @@
       <div class="trow"><span class="ic">🌿</span><div><b>Fórmula limpa e transparente</b><p>Zero glúten, zero lactose e zero açúcar. Você sabe exatamente o que está tomando: beterraba, semente de uva e MC vermelha, em cápsulas de 500mg.</p></div></div>
     </div>
     <a href="#" class="cta sm js-buy">Quero minha Rubravita com frete grátis →</a>
+  </div>
+</section>
+
+<!-- COMPOSIÇÃO -->
+<section class="sec-white">
+  <div class="wrap">
+    <h2 class="center">O que tem em <span class="hl">cada porção</span></h2>
+    <p class="lead">Três ingredientes. Você sabe exatamente o que está tomando.</p>
+    <!-- Confira no rótulo do fabricante a dose recomendada e, se quiser, a quantidade de cada ingrediente por cápsula. -->
+    <div class="comp">
+      <div class="h">Composição · cápsulas de 500mg</div>
+      <div class="row"><b>Beterraba (Beta vulgaris)</b><span>✓</span></div>
+      <div class="row"><b>Semente de Uva (Vitis vinifera)</b><span>✓</span></div>
+      <div class="row"><b>MC Vermelha</b><span>✓</span></div>
+      <div class="row"><b>Peso por cápsula</b><span>500mg</span></div>
+      <div class="row"><b>Cápsulas por pacote</b><span>120 (60 dias)</span></div>
+    </div>
+    <p class="comp-note">Zero glúten · Zero lactose · Zero açúcar · Uso adulto · Uso oral · Peso líquido: 60g.</p>
+    <div class="experts">
+      <span class="ic">🍇</span>
+      <div><b>Fórmula tripla, sem enchimento</b><p>Três ingredientes que se completam: um ajuda o sangue a circular, outro protege os vasos e o terceiro traz energia e disposição.</p></div>
+    </div>
   </div>
 </section>
 
@@ -1040,9 +1014,9 @@
     document.getElementById('chkNum').textContent = n;
     document.getElementById('chkBar').style.width = (n === 0 ? 0 : 40 + (n - 1) / (total - 1) * 60) + '%';
     var v = document.getElementById('chkVerdict');
-    var msg = n === 0 ? VEREDITOS.zero : n <= 2 ? VEREDITOS.baixo : n <= 5 ? VEREDITOS.medio : VEREDITOS.alto;
+    var msg = n === 0 ? VEREDITOS.zero : n <= 1 ? VEREDITOS.baixo : n <= 3 ? VEREDITOS.medio : VEREDITOS.alto;
     v.textContent = msg;
-    v.classList.toggle('alert', n > 2);
+    v.classList.toggle('alert', n > 1);
   }
 
   /* animações de entrada ao rolar */

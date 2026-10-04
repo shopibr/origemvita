@@ -432,6 +432,66 @@
   .anim{opacity:0;transform:translateY(28px);transition:opacity .7s ease,transform .7s cubic-bezier(.2,.7,.2,1)}
   .anim.in{opacity:1;transform:none}
   @media(prefers-reduced-motion:reduce){.anim,.anim.in{opacity:1!important;transform:none!important;transition:none!important}.cell,.kwbar .track{animation-play-state:paused}.kb{animation:none}}
+
+  /* ===== v3: componentes no estilo da página de referência ===== */
+  .ptitle{font-size:27px;line-height:1.18;color:var(--pri-esc);font-weight:800;margin:8px 0 8px;text-transform:none}
+  .psub{font-size:15px;color:var(--texto);margin:0 0 14px;line-height:1.55}
+  .chips{display:flex;flex-wrap:wrap;gap:6px 16px;margin:14px 0 2px;font-size:13px;font-weight:700;color:var(--pri-esc)}
+  .chips i{color:var(--cta);font-style:normal;margin-right:5px}
+  .warn{margin-top:14px;border:1px dashed var(--borda);background:var(--pri-cl);border-radius:12px;padding:12px 14px;font-size:13px;line-height:1.5;color:var(--texto)}
+  .warn b{display:block;color:var(--pri-esc);margin-bottom:2px}
+  .hquote{margin-top:14px;background:#fff;border:1px solid var(--borda);border-radius:14px;padding:14px 16px;font-size:14px}
+  .hquote .stars{color:#f5a623;letter-spacing:2px}.hquote b{color:var(--pri-esc)}.hquote .vf,.tst .vf{font-size:11px;color:#16a34a;font-weight:700;margin-left:8px}
+  .hquote p{margin:6px 0 0;font-style:italic;color:var(--texto);line-height:1.55}
+  .approved{margin:12px 0 6px;font-size:13px;color:var(--texto)}.approved b{color:var(--pri-esc)}.approved .dot{color:#16a34a}
+  details.acc{border-top:1px solid var(--borda);padding:13px 2px}details.acc:last-of-type{border-bottom:1px solid var(--borda)}
+  details.acc summary{cursor:pointer;font-weight:800;color:var(--pri-esc);list-style:none;display:flex;justify-content:space-between;align-items:center;font-size:15px}
+  details.acc summary::-webkit-details-marker{display:none}details.acc summary:after{content:"+";font-size:22px;line-height:1;color:var(--pri)}details.acc[open] summary:after{content:"–"}
+  details.acc p{margin:8px 0 0;font-size:14px;color:var(--texto);line-height:1.6}
+  .alert-lbl{font-size:11px;font-weight:800;letter-spacing:1.5px;color:var(--vermelho);margin:6px 0 2px}
+  .story{max-width:720px;margin:0 auto;text-align:center}
+  .story p{font-size:18px;line-height:1.65;margin:0 0 14px;color:var(--texto)}
+  .story p.big{font-size:21px;font-weight:700;color:var(--pri-esc);margin-bottom:8px}
+  .story p.punch{font-size:23px;font-weight:800;color:var(--pri);margin:18px 0}
+  .story h2{margin:34px 0 16px}.story small{font-size:13px;color:var(--cinza)}
+  .cyc-name{display:inline-block;background:var(--pri-esc);color:#fff;font-weight:800;letter-spacing:1px;border-radius:999px;padding:7px 18px;font-size:13px;margin:10px 0 2px}
+  .cycle{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:16px 0 22px}
+  .cycle .st{background:#fff;border:1px solid var(--borda);border-radius:18px;padding:18px 14px;text-align:center}
+  .cycle .st b{display:flex;align-items:center;justify-content:center;width:52px;height:52px;margin:0 auto 6px;border-radius:50%;background:var(--pri-cl);font-size:26px;color:var(--pri);font-family:'DM Serif Display',serif}
+  .cycle .st strong{display:block;font-size:16px;color:var(--pri-esc);margin-bottom:4px}.cycle .st span{font-size:13.5px;color:var(--cinza);line-height:1.45;display:block}
+  .fvid{max-width:440px;margin:22px auto 0;border-radius:24px;overflow:hidden;aspect-ratio:1;box-shadow:0 18px 40px rgba(0,0,0,.08)}
+  .fvid video{width:100%;height:100%;object-fit:cover;display:block}
+  .fgrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;max-width:640px;margin:20px auto 0}
+  .fgrid div{background:#fff;border:1px solid var(--borda);border-radius:12px;padding:12px 14px;font-weight:700;color:var(--pri-esc);font-size:14.5px;display:flex;gap:10px;align-items:center;text-align:left}
+  .fgrid div:before{content:"✓";color:#fff;background:var(--cta);border-radius:50%;width:22px;height:22px;display:inline-flex;align-items:center;justify-content:center;font-size:13px;flex:none}
+  .mechs{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-top:28px}
+  .mech{background:#fff;border:1px solid var(--borda);border-radius:20px;padding:20px 22px;text-align:left}
+  .mech .em{font-size:30px;line-height:1}.mech h3{font-size:18px;color:var(--pri-esc);margin:8px 0 6px}.mech p{font-size:14.5px;color:var(--texto);line-height:1.6;margin:0}
+  .bye{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:24px auto 0;max-width:760px}
+  .bye div{background:var(--pri-cl);border-radius:18px;padding:18px 8px;text-align:center;font-weight:800;color:var(--pri-esc);font-size:14.5px;line-height:1.25}
+  .bye div i{display:block;font-style:normal;font-size:34px;margin-bottom:8px}
+  .ativos{max-width:720px;margin:20px auto 0}
+  .ativo{background:#fff;border:1px solid var(--borda);border-radius:16px;margin-top:12px;overflow:hidden}
+  .ativo summary{cursor:pointer;list-style:none;padding:16px 18px;display:flex;align-items:center;gap:12px;font-weight:800;color:var(--pri-esc);font-size:17px}
+  .ativo summary::-webkit-details-marker{display:none}.ativo summary:after{content:"+";margin-left:auto;font-size:22px;color:var(--pri)}.ativo[open] summary:after{content:"–"}
+  .ativo summary small{font-size:10.5px;letter-spacing:1.5px;color:#fff;background:var(--pri);border-radius:999px;padding:4px 10px;font-weight:800;flex:none}
+  .ativo ul{list-style:none;margin:0;padding:0 18px 16px}.ativo li{padding:6px 0 6px 26px;position:relative;font-size:14.5px;color:var(--texto)}
+  .ativo li:before{content:"✓";position:absolute;left:0;color:var(--cta);font-weight:900}
+  .vs{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin:24px auto 0;max-width:820px}
+  .vs .col{border-radius:20px;padding:20px}.vs .bad{background:#f5f2ef;border:1px solid #e6e0da}.vs .good{background:var(--pri-cl);border:2px solid var(--pri)}
+  .vs h3{font-size:16px;margin:0 0 10px;color:var(--pri-esc)}.vs ul{margin:0;padding:0}.vs li{list-style:none;font-size:14.5px;padding:7px 0 7px 28px;position:relative;line-height:1.4}
+  .vs .bad li:before{content:"✕";position:absolute;left:0;color:#c0392b;font-weight:900}.vs .good li:before{content:"✓";position:absolute;left:0;color:var(--cta);font-weight:900}
+  .tsts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:24px}
+  .tst{background:#fff;border:1px solid var(--borda);border-radius:20px;padding:20px}.tst .stars{color:#f5a623;letter-spacing:2px}
+  .tst p{font-size:15px;font-style:italic;color:var(--texto);margin:10px 0 12px;line-height:1.6}.tst b{color:var(--pri-esc)}
+  @media(max-width:860px){.tsts{grid-template-columns:minmax(0,1fr)}}
+  @media(max-width:720px){.cycle,.mechs{grid-template-columns:minmax(0,1fr)}.ptitle{font-size:23px}}
+  @media(max-width:620px){.vs{grid-template-columns:minmax(0,1fr)}.bye{grid-template-columns:repeat(2,minmax(0,1fr))}.fgrid{grid-template-columns:minmax(0,1fr)}}
+
+  .mblocks{display:grid;gap:12px;margin:6px 0 18px;text-align:left}
+  .mblock{background:#fff;border-left:4px solid var(--pri);border-radius:12px;padding:14px 16px}
+  .mblock h3{font-size:16px;color:var(--pri-esc);margin:0 0 4px}.mblock p{font-size:15.5px !important;margin:0 !important;line-height:1.6}
+  .story .meta{font-style:italic;font-size:19px;color:var(--pri-esc);background:var(--pri-cl);border-radius:14px;padding:16px 18px;margin:6px 0 12px}
 </style>
 </head>
 <body>
@@ -474,10 +534,6 @@
 
       <div class="hero-left">
         <span class="patent">Cúrcuma · Curcuma longa + Piperina</span>
-        <h1>Mais conforto para as articulações e <span class="hl">liberdade para se mexer</span>, do jeito natural</h1>
-        <p class="sub">— <b>Cúrcuma (Curcuma longa) + piperina</b> da pimenta-preta em cápsulas de 500mg. 100% natural, sem glúten e sem lactose.</p>
-
-        <!-- Galeria: fotos e vídeo gerados com IA (pasta aurivita-img/) -->
         <div class="slides" id="slides">
           <div class="slide photo on"><video class="loopvid" src="aurivita-img/video-pouch.mp4" poster="aurivita-img/pouch.webp" autoplay muted loop playsinline aria-label="Pacote de Aurivita Cúrcuma + Piperina, 120 cápsulas de 500mg"></video></div>
           <div class="slide photo"><img src="aurivita-img/kit-3-pacotes.webp" alt="Kit com 3 pacotes de Aurivita" loading="lazy" decoding="async"></div>
@@ -497,13 +553,12 @@
       </div>
 
       <div class="hero-right" id="offers">
-        <span class="eyebrow">Suplemento Alimentar · Cúrcuma em Cápsulas</span>
-        <h2>Aurivita Cúrcuma + Piperina 120 Cápsulas 500mg — Absorção Potencializada + Frete Grátis</h2>
         <!-- EXEMPLO: troque a nota e a contagem pelos números reais das suas avaliações -->
-        <div class="rating-row"><span class="stars">★★★★★</span> <b>4,8</b> · 2.316 avaliações</div>
-
-        <div class="sel-label">Escolha o seu protocolo</div>
-        <div class="scarcity-line">🔥 Preço de lançamento · por tempo limitado</div>
+        <div class="rating-row"><span class="stars">★★★★★</span> Avaliado em <b>4,8</b> (2.316) · Excelente</div>
+        <h1 class="ptitle">Aurivita — Mais conforto para as articulações e liberdade para se mexer, com absorção potencializada</h1>
+        <p class="psub">Complexo com 2 ativos que trabalham juntos: a curcumina age, e a piperina garante que ela seja aproveitada pelo corpo.</p>
+        <div class="sel-label">Escolha o seu kit</div>
+        <div class="scarcity-line">🔥 Lote de lançamento com preço especial</div>
         <div class="offers">
           <label class="offer" onclick="selOffer(this)" data-kit="k3">
             <span class="offer-tag tag-1">Mais Vendido</span>
@@ -528,28 +583,69 @@
           </label>
         </div>
         <a href="#" class="cta js-buy" data-buy-main><span class="cta-main">Comprar Agora →</span><span class="buy-kit"></span></a>
+        <div class="frete"><span class="cx">📦</span><div><b>Frete grátis com rastreio</b><p>Despacho em até 1 dia útil para todo o Brasil</p></div></div>
         <div class="paystrip">
           <span class="ps-lock">🔒 Pagamento 100% seguro · compra protegida</span>
           <div class="pays"><svg class="pi"><use href="#pi-visa"/></svg><svg class="pi"><use href="#pi-mc"/></svg><svg class="pi"><use href="#pi-elo"/></svg><svg class="pi"><use href="#pi-amex"/></svg><svg class="pi"><use href="#pi-pix"/></svg></div>
         </div>
-
-        <div class="frete">
-          <span class="cx">📦</span>
-          <div><b>Frete Grátis e embalagem discreta</b><p>Envio rápido com <b>código de rastreio</b></p></div>
-        </div>
-        <div class="anvisa">
-          <span class="cx">🌿</span>
-          <div><b>Fórmula limpa</b><p>Cúrcuma + pimenta-preta · Sem glúten · Sem lactose · Sem açúcar</p></div>
-        </div>
-        <div class="urg">
-          <div class="watch">🔥 Preço de lançamento — válido enquanto durar o lote atual.</div>
-          <div class="stock">⚠️ Produção em lotes pequenos para garantir qualidade e frescor.</div>
-        </div>
-        <div class="paybar">
-          <div class="checks"><span>Compra Segura</span><span>Garantia de 120 dias</span><span>Envio Discreto</span></div>
-        </div>
+        <div class="chips"><span><i>●</i>Mais vendido</span><span><i>●</i>Experimente por 120 dias</span><span><i>●</i>Fórmula limpa</span></div>
+        <div class="warn"><b>ⓘ Aviso sobre falsificações</b>A Aurivita original é vendida somente neste site. Produtos com o mesmo nome em marketplaces não são originais.</div>
+        <!-- EXEMPLO: depoimento ilustrativo — troque por um depoimento real -->
+        <div class="hquote"><span class="stars">★★★★★</span><br><b>Marta S., 63 anos</b><span class="vf">✓ Compra verificada</span><p>“Eu acordava toda travada. Levava uns 20 minutos para conseguir andar direito pela casa, e descer a escada do prédio era um sofrimento. Depois de umas três semanas tomando a Aurivita junto com o almoço, as manhãs ficaram bem mais leves. Voltei a fazer minha caminhada.”</p></div>
+        <div class="approved"><span class="dot">●</span> <b>Aprovado por quem usa</b> — escolhido por quem quer voltar a se mexer com conforto.</div>
+        <details class="acc"><summary>Como funciona</summary><p>A curcumina é um dos antioxidantes naturais mais estudados para o conforto das articulações. Sozinha, ela é mal absorvida — por isso a fórmula traz piperina, da pimenta-preta, que ajuda o corpo a aproveitá-la.</p></details>
+        <details class="acc"><summary>Modo de uso</summary><p>3 cápsulas por dia, de preferência junto com uma refeição e um copo de água. Cada pacote rende 40 dias.</p></details>
+        <details class="acc"><summary>Ingredientes principais</summary><p>Cúrcuma (Curcuma longa) com pimenta-preta (Piper nigrum), fonte de piperina. 500mg por cápsula. Sem glúten e sem lactose.</p></details>
+        <details class="acc"><summary>Garantia de reembolso</summary><p>Você tem 120 dias para experimentar. Se não sentir a diferença, devolvemos 100% do valor pago.</p></details>
       </div>
 
+    </div>
+  </div>
+</section>
+
+<!-- AUTOAVALIAÇÃO -->
+<section class="sec-white">
+  <div class="wrap">
+    <div class="quiz-badge">🩺 Teste rápido · leva 30 segundos</div>
+    <h2 class="center">Articulação travada não é “coisa da idade”.<br><span class="red">Reconheça os sinais.</span></h2>
+    <p class="miniclaim">Faça o teste: marque os sinais que você sente. Cada um deles pode ser um sinal de <b>articulações sobrecarregadas</b>.</p>
+    <div class="quiz-cta"><span>👉 Toque nos sinais que você sente para ver o seu resultado</span><span class="arrow">👇</span></div>
+    <div class="checklist hint" id="checklist">
+      <label class="chk" onclick="toggleChk(this)"><span class="box"></span><span class="chk-txt"><span class="sname">Acordar com o corpo travado</span><span class="sexp">Os primeiros passos da manhã parecem de alguém muito mais velho.</span></span></label>
+      <label class="chk" onclick="toggleChk(this)"><span class="box"></span><span class="chk-txt"><span class="sname">Joelho que reclama na escada</span><span class="sexp">Você desce de lado, segurando no corrimão, um degrau de cada vez.</span></span></label>
+      <label class="chk" onclick="toggleChk(this)"><span class="box"></span><span class="chk-txt"><span class="sname">Mãos rígidas para abrir um pote</span><span class="sexp">Torcer um pano ou abrir uma tampa virou um desafio.</span></span></label>
+      <label class="chk" onclick="toggleChk(this)"><span class="box"></span><span class="chk-txt"><span class="sname">Estalos e sensação de “areia” no joelho</span><span class="sexp">Um barulho a cada agachada — e um desconforto que vem junto.</span></span></label>
+      <label class="chk" onclick="toggleChk(this)"><span class="box"></span><span class="chk-txt"><span class="sname">Dificuldade para levantar da cadeira</span><span class="sexp">Depois de ficar sentado, você precisa de impulso — ou das mãos — para levantar.</span></span></label>
+      <label class="chk" onclick="toggleChk(this)"><span class="box"></span><span class="chk-txt"><span class="sname">Deixou de fazer o que gosta</span><span class="sexp">A caminhada, a dança, o jardim, brincar no chão com os netos… ficaram para trás.</span></span></label>
+    </div>
+    <div class="chk-result">
+      <div class="chk-count"><span id="chkNum">0</span> de 6 sinais marcados</div>
+      <div class="alert-lbl">⚠️ NÍVEL DE ALERTA</div>
+      <div class="chk-verdict" id="chkVerdict">Marque os sinais que você sente para ver o seu resultado.</div>
+      <div class="chk-bar"><i id="chkBar"></i></div>
+      <p class="chk-note">Este teste é apenas informativo e não substitui uma avaliação médica. Inchaço, vermelhidão, calor na articulação ou dor forte precisam de avaliação médica.</p>
+    </div>
+  </div>
+</section>
+
+<!-- HISTÓRIA -->
+<section>
+  <div class="wrap">
+    <div class="story">
+      <p class="eyebrow-c">O que está por trás da rigidez e do joelho que reclama</p>
+      <p class="big">A rigidez da manhã não é “coisa da idade” que você tem que aceitar.</p>
+      <p class="big">O joelho que reclama na escada não é falta de exercício.</p>
+      <p class="big">E as mãos travadas não são culpa do frio.</p>
+      <p class="punch">São três partes diferentes do mesmo processo.</p>
+      <p>E enquanto você toma mais um anti-inflamatório, passa pomada e espera passar, o desgaste continua. Crescendo. Todos os dias.</p>
+      <p class="big">Deixa eu te explicar o que está realmente acontecendo dentro de você.</p>
+      <h2 class="center">As suas articulações estão <span class="hl">enferrujando por dentro</span></h2>
+      <div class="mblocks"><div class="mblock"><h3>O desgaste invisível</h3><p>O corpo produz radicais livres o tempo todo — e eles aumentam com a idade, o sedentarismo e o excesso de peso. Nas articulações, esse acúmulo desgasta: a cartilagem fica ressecada e o tecido em volta, tenso.</p></div><div class="mblock"><h3>O travamento</h3><p>Com a cartilagem menos protegida, cada movimento custa mais. A articulação esfria e “trava” quando fica parada — por isso as manhãs e o levantar da cadeira são os piores momentos.</p></div><div class="mblock"><h3>O resultado</h3><p>Corpo travado de manhã, joelho sensível na escada, mãos rígidas — e uma vontade cada vez menor de se mexer.</p></div></div>
+      <p class="meta">É como uma dobradiça enferrujada: a porta ainda abre, mas range, trava e pesa.</p>
+      <span class="cyc-name">O CICLO D-R-P</span>
+      <div class="cycle"><div class="st"><b>D</b><strong>Desgaste</strong><span>Radicais livres em excesso desgastam a articulação.</span></div><div class="st"><b>R</b><strong>Rigidez</strong><span>A articulação fica travada e desconfortável.</span></div><div class="st"><b>P</b><strong>Parada</strong><span>Você se mexe menos — e a articulação parada enferruja ainda mais.</span></div></div>
+      <p>A rigidez, os estalos e o joelho sensível são as suas articulações pedindo socorro: elas precisam de cuidado diário.</p>
+      <p class="punch">A resposta vem de uma raiz dourada usada há mais de 4.000 anos — com um detalhe que muda tudo.</p>
     </div>
   </div>
 </section>
@@ -592,134 +688,40 @@
   </div>
 </section>
 
-<!-- AUTOAVALIAÇÃO -->
+<!-- FÓRMULA -->
 <section class="sec-white">
   <div class="wrap">
-    <div class="quiz-badge">🩺 Autoavaliação gratuita · leva 30 segundos</div>
-    <h2 class="center">Você chama de "idade".<br><span class="red">A sua articulação chama de alerta.</span></h2>
-    <p class="miniclaim">Marque os sinais que você sente com frequência. Muitos deles têm <b>a mesma origem: articulações sobrecarregadas e sem cuidado diário</b>.</p>
-    <div class="quiz-cta"><span>👉 Toque nos sinais que você sente para ver o seu resultado</span><span class="arrow">👇</span></div>
-    <div class="checklist hint" id="checklist">
-      <label class="chk" onclick="toggleChk(this)"><span class="box"></span><span class="chk-txt"><span class="sname">Acordar com o corpo rígido, "travado" nos primeiros minutos</span><span class="sexp">A rigidez ao levantar é um dos primeiros sinais de articulação sobrecarregada.</span></span></label>
-      <label class="chk" onclick="toggleChk(this)"><span class="box"></span><span class="chk-txt"><span class="sname">Joelho que reclama na escada ou na hora de agachar</span><span class="sexp">Subir, descer e agachar exigem muito da cartilagem do joelho.</span></span></label>
-      <label class="chk" onclick="toggleChk(this)"><span class="box"></span><span class="chk-txt"><span class="sname">Mãos e dedos rígidos para abrir um pote</span><span class="sexp">As pequenas articulações das mãos também sentem o desgaste do dia a dia.</span></span></label>
-      <label class="chk" onclick="toggleChk(this)"><span class="box"></span><span class="chk-txt"><span class="sname">Estalos e sensação de "areia" no joelho ou no ombro</span><span class="sexp">Estalos frequentes podem indicar uma cartilagem mais ressecada.</span></span></label>
-      <label class="chk" onclick="toggleChk(this)"><span class="box"></span><span class="chk-txt"><span class="sname">Dificuldade para levantar depois de ficar muito tempo sentado</span><span class="sexp">A articulação parada "enferruja": o primeiro passo é sempre o mais difícil.</span></span></label>
-      <label class="chk" onclick="toggleChk(this)"><span class="box"></span><span class="chk-txt"><span class="sname">Desconforto que piora no frio ou no fim do dia</span><span class="sexp">Muita gente sente as articulações mais sensíveis com o frio e o cansaço.</span></span></label>
-      <label class="chk" onclick="toggleChk(this)"><span class="box"></span><span class="chk-txt"><span class="sname">Deixou de caminhar, dançar ou cuidar do jardim</span><span class="sexp">Quando mexer incomoda, a gente se mexe menos — e a articulação perde ainda mais mobilidade.</span></span></label>
-      <label class="chk" onclick="toggleChk(this)"><span class="box"></span><span class="chk-txt"><span class="sname">Recuperação lenta depois de uma caminhada ou de um dia puxado</span><span class="sexp">Músculos e articulações demoram mais para voltar ao normal com o passar dos anos.</span></span></label>
-      <label class="chk" onclick="toggleChk(this)"><span class="box"></span><span class="chk-txt"><span class="sname">Já usa anti-inflamatório ou pomada com frequência</span><span class="sexp">Remédios aliviam na hora, mas o uso frequente sem orientação médica pode trazer efeitos indesejados.</span></span></label>
-    </div>
-    <div class="chk-result">
-      <div class="chk-count"><span id="chkNum">0</span> de 9 sinais marcados</div>
-      <div class="chk-verdict" id="chkVerdict">Marque os sinais que você sente para ver o seu resultado.</div>
-      <div class="chk-bar"><i id="chkBar"></i></div>
-      <p class="chk-note">Este teste é apenas informativo e não substitui uma avaliação médica. Inchaço, vermelhidão, calor na articulação ou dor forte precisam de avaliação médica.</p>
-    </div>
+    <p class="eyebrow-c">A fórmula que todos estão falando</p>
+    <h2 class="center" id="stickyTrigger">O dourado para as articulações <span class="hl">que todos estão falando</span></h2>
+    <div class="fvid"><video src="aurivita-img/video-pouch.mp4" poster="aurivita-img/pouch.webp" autoplay muted loop playsinline aria-label="Embalagem de Aurivita"></video></div>
+    <p class="lead" style="max-width:660px;margin:20px auto 0">A Aurivita junta a curcumina, da cúrcuma, com a piperina da pimenta-preta. Uma age; a outra faz ela ser absorvida. Em estudo clássico, a piperina aumentou em até 2.000% a absorção da curcumina.</p>
+    <div class="fgrid"><div>Mais conforto articular</div><div>Liberdade para se mexer</div><div>Manhãs mais leves</div><div>Ação antioxidante</div><div>Absorção potencializada</div><div>100% natural</div></div>
+    <div class="mechs"><div class="mech"><div class="em">🛡️</div><h3>Ação antioxidante</h3><p>A curcumina ajuda a combater o excesso de radicais livres que se acumula nas articulações.</p></div><div class="mech"><div class="em">🔗</div><h3>Absorção potencializada</h3><p>A piperina segura a curcumina por mais tempo no organismo — para ela não passar direto.</p></div><div class="mech"><div class="em">🚶</div><h3>Mais liberdade para se mexer</h3><p>Com as articulações mais confortáveis, caminhar, subir escada e agachar ficam mais leves.</p></div><div class="mech"><div class="em">📈</div><h3>Melhora progressiva</h3><p>É um cuidado contínuo: muita gente percebe diferença entre 2 e 4 semanas de uso diário.</p></div></div>
   </div>
 </section>
 
-<!-- TEXTO -->
+<!-- DIGA ADEUS -->
 <section>
   <div class="wrap">
-    <div class="prose">
-      <p>Se você sente esses sinais, não é "coisa da idade" que você tem que aceitar calado. Com os anos, o desgaste do dia a dia e o <b>estresse oxidativo</b> se acumulam nas articulações: a cartilagem fica mais ressecada, o tecido em volta fica tenso e cada movimento custa mais.</p>
-      <div class="oseja">Ou seja…</div>
-      <p>É como uma <span class="em">dobradiça enferrujada</span>: a porta ainda abre, mas range, trava e pesa. Ninguém joga a porta fora — a gente cuida da dobradiça. É esse cuidado diário que a Aurivita traz para as suas articulações.</p>
-    </div>
+    <h2 class="center">Diga adeus para:</h2>
+    <div class="bye"><div><i>🧍</i>Corpo travado</div><div><i>🦵</i>Joelho na escada</div><div><i>✋</i>Mãos rígidas</div><div><i>🔊</i>Estalos</div><div><i>🪑</i>Dificuldade para levantar</div><div><i>💊</i>Remédio todo dia</div></div>
   </div>
 </section>
 
-<!-- O VILÃO -->
-<section>
-  <div class="wrap">
-    <p class="eyebrow-c">Por que as articulações travam</p>
-    <h2 class="center">O <span class="hl">estresse oxidativo</span> que ninguém vê</h2>
-    <div class="prose">
-      <p>O corpo produz radicais livres o tempo todo — e eles aumentam com a idade, o sedentarismo, o excesso de peso e uma alimentação pobre em antioxidantes. Nas articulações, esse acúmulo contribui para o desgaste e para aquela sensação de corpo <b>"enferrujado"</b>.</p>
-    </div>
-    <div class="data">
-      A <span class="n">curcumina</span>, principal ativo da cúrcuma, é um dos <span class="n">antioxidantes naturais mais estudados do mundo</span>, com milhares de estudos publicados.
-      <span class="src">Base de dados científica PubMed, pesquisas sobre "curcumin".</span>
-    </div>
-  </div>
-</section>
-
-<!-- POR QUE NADA RESOLVEU -->
+<!-- ATIVOS -->
 <section class="sec-white">
+  <div class="wrap">
+    <h2 class="center">Com apenas <span class="hl">2 ativos naturais</span></h2>
+    <p class="subh">Um age, o outro garante que ele seja aproveitado.</p>
+    <div class="ativos"><details class="ativo" open><summary><small>ATIVO 01</small>Cúrcuma (curcumina)</summary><ul><li>Um dos antioxidantes naturais mais estudados do mundo</li><li>Apoia o conforto das articulações</li><li>Usada há mais de 4.000 anos</li></ul></details><details class="ativo"><summary><small>ATIVO 02</small>Pimenta-preta (piperina)</summary><ul><li>Potencializa a absorção da curcumina</li><li>Mantém a curcumina mais tempo no organismo</li><li>Em estudo, aumentou a absorção em até 2.000%</li></ul></details></div>
+  </div>
+</section>
+
+<!-- COMPARATIVO -->
+<section>
   <div class="wrap">
     <h2 class="center">Por que nada do que você <span class="hl">tentou resolveu</span></h2>
-    <p class="subh">Remédio, pomada e "açafrão na comida" falham pelo mesmo motivo: ou só aliviam na hora, ou não chegam em quantidade suficiente.</p>
-    <div class="faillist">
-      <div class="fail"><span class="x">✕</span><div><b>Anti-inflamatório por conta própria</b><span>Alivia na hora, mas não é para usar todo dia sem orientação: o uso frequente pode pesar no estômago, nos rins e na pressão.</span></div></div>
-      <div class="fail"><span class="x">✕</span><div><b>Pomadas e emplastros</b><span>Dão um alívio rápido na pele, mas o efeito passa em poucas horas.</span></div></div>
-      <div class="fail"><span class="x">✕</span><div><b>Açafrão na comida</b><span>Faz bem, mas a quantidade é pequena e a curcumina, sozinha, é muito mal absorvida.</span></div></div>
-      <div class="fail"><span class="x">✕</span><div><b>Cúrcuma sem piperina</b><span>Muitas cápsulas trazem só a cúrcuma. Sem a piperina, boa parte da curcumina passa pelo corpo sem ser aproveitada.</span></div></div>
-    </div>
-    <p class="fail-close">Não foi falta de cuidado. <span class="em">Faltou a curcumina ser aproveitada</span> — todos os dias.</p>
-  </div>
-</section>
-
-<!-- MECANISMO -->
-<section>
-  <div class="wrap">
-    <h2 class="center">Da cápsula às <span class="hl">articulações</span></h2>
-    <div class="prose">
-      <p>A cúrcuma (Curcuma longa) é a raiz dourada usada há mais de 4.000 anos na tradição indiana. O seu ativo, a <b>curcumina</b>, é um potente antioxidante natural. O problema: sozinha, ela é <b>muito mal absorvida</b>.</p>
-    </div>
-    <div class="chain">
-      <div class="lk"><span class="ic">🌿</span><b>Cápsula</b><small>Cúrcuma + piperina, 500mg</small></div>
-      <div class="lk"><span class="ic">🔗</span><b>Absorção</b><small>A piperina segura a curcumina no organismo</small></div>
-      <div class="lk"><span class="ic">🛡️</span><b>Antioxidante</b><small>Ajuda a combater o excesso de radicais livres</small></div>
-      <div class="lk"><span class="ic">🚶</span><b>Movimento</b><small>Mais conforto para se mexer no dia a dia</small></div>
-    </div>
-    <div class="data">
-      Junto com a piperina, a absorção da curcumina <span class="n">aumentou em até 2.000%</span> em estudo com pessoas. Por isso a Aurivita traz <span class="n">as duas na mesma cápsula</span>.
-      <span class="src">Shoba G. et al. Influence of piperine on the pharmacokinetics of curcumin. Planta Medica, 1998.</span>
-    </div>
-  </div>
-</section>
-
-<!-- UMA RAIZ, VÁRIAS FRENTES -->
-<section class="sec-white">
-  <div class="wrap">
-    <h2 class="center" id="stickyTrigger">Uma raiz, <span class="hl">várias frentes</span></h2>
-    <div class="prose">
-      <p>A Aurivita junta a <b>cúrcuma e a piperina</b> da pimenta-preta numa cápsula só, agindo em várias frentes ao mesmo tempo:</p>
-    </div>
-    <div class="ing3">
-      <div class="card"><span class="tag">Articulações</span><h3>Mais conforto ao se mexer</h3><p>Ajuda a manter as articulações confortáveis para subir escada, caminhar e agachar.</p></div>
-      <div class="card"><span class="tag">Antioxidante</span><h3>Proteção todos os dias</h3><p>A curcumina ajuda a combater o excesso de radicais livres que se acumula com os anos.</p></div>
-      <div class="card"><span class="tag">Absorção</span><h3>Com piperina</h3><p>A pimenta-preta potencializa a absorção da curcumina, para ela não passar direto pelo corpo.</p></div>
-      <div class="card"><span class="tag">Movimento</span><h3>Aliada de quem se mexe</h3><p>Para quem caminha, treina, cuida da casa ou passa o dia em pé.</p></div>
-      <div class="card"><span class="tag">Fórmula limpa</span><h3>100% natural</h3><p>Cúrcuma e pimenta-preta, sem glúten, sem lactose e sem açúcar.</p></div>
-      <div class="card"><span class="tag">Rendimento</span><h3>40 dias por pacote</h3><p>São 120 cápsulas por pacote. Com 3 por dia, cada pacote dura 40 dias.</p></div>
-    </div>
-    <p class="comp-note" style="margin-top:20px">Tome de preferência junto com uma refeição.</p>
-  </div>
-</section>
-
-<!-- VS AÇAFRÃO NA COMIDA -->
-<section>
-  <div class="wrap">
-    <h2 class="center">Aurivita vs. <span class="hl">açafrão na comida</span></h2>
-    <div class="prose">
-      <p>O açafrão-da-terra na comida faz bem — mas para as articulações ele quase não chega lá. A quantidade é pequena e a curcumina, sozinha, é muito mal absorvida. Com a Aurivita, você recebe <b>3 cápsulas de 500mg por dia, já combinadas com a piperina</b>, sem cozinhar e sem manchar nada de amarelo.</p>
-      <p>É a diferença entre um tempero e um cuidado de verdade. <b>Cúrcuma só funciona se você toma todo dia — e se ela for absorvida.</b></p>
-    </div>
-  </div>
-</section>
-
-<!-- APRESENTAÇÃO -->
-<section>
-  <div class="wrap">
-    <div class="present">
-      <span class="badge">A solução completa</span>
-      <h2>Aurivita — cúrcuma com piperina em cápsulas de 500mg, para as suas articulações e a sua disposição todos os dias</h2>
-      <div class="present-media"><img class="loopvid kb" src="aurivita-img/pouch.webp" alt="Pacote de Aurivita com 120 cápsulas de 500mg" loading="lazy" decoding="async"></div>
-      <p>Se as manhãs começam com o corpo travado, se o joelho reclama na escada e se o remédio virou rotina, a Aurivita foi criada para você. São <b>120 cápsulas de 500mg de cúrcuma com piperina</b> da pimenta-preta — <b>sem glúten, sem lactose e sem açúcar</b>, numa cápsula fácil de tomar junto com a refeição.</p>
-      <p>Uma raiz usada há mais de 4.000 anos e hoje entre as mais estudadas do mundo — agora com a piperina, que faz ela ser aproveitada.</p>
-    </div>
+    <div class="vs"><div class="col bad"><h3>Anti-inflamatórios, pomadas e açafrão na comida</h3><ul><li>Anti-inflamatório não é para usar todo dia sem orientação</li><li>Pomadas aliviam só por algumas horas</li><li>Açafrão na comida tem pouca curcumina e é mal absorvido</li><li>Cúrcuma sem piperina passa direto pelo corpo</li></ul></div><div class="col good"><h3>Aurivita</h3><ul><li>Curcumina + piperina na mesma cápsula</li><li>Absorção potencializada</li><li>Cuidado diário e natural</li><li>3 cápsulas com a refeição</li><li>Sem glúten e sem lactose</li><li>Garantia de 120 dias</li></ul></div></div>
   </div>
 </section>
 
@@ -736,62 +738,25 @@
   </div>
 </section>
 
-<!-- COMPOSIÇÃO -->
+<!-- DEPOIMENTOS -->
+<!-- EXEMPLO: depoimentos ilustrativos — troque por depoimentos reais de clientes antes de publicar. -->
 <section class="sec-white">
   <div class="wrap">
-    <h2 class="center">O que tem em <span class="hl">cada cápsula</span></h2>
-    <p class="lead">Dois ingredientes que trabalham juntos. Você sabe exatamente o que está tomando.</p>
-    <div class="comp">
-      <div class="h">Composição · por cápsula</div>
-      <div class="row"><b>Cúrcuma (Curcuma longa) com pimenta-preta (Piper nigrum) em pó</b><span>500mg</span></div>
-      <div class="row"><b>Piperina natural da pimenta-preta</b><span>✓</span></div>
-      <div class="row"><b>Sem glúten · Sem lactose</b><span>✓</span></div>
-      <div class="row"><b>Sem açúcar e sem conservantes</b><span>✓</span></div>
-      <div class="row"><b>Cápsulas por pacote</b><span>120 (40 dias)</span></div>
-    </div>
-    <p class="comp-note">100% natural · Uso adulto · Cápsula de gelatina · Tome junto com uma refeição.</p>
-    <div class="experts">
-      <span class="ic">🌿</span>
-      <div><b>Fórmula de dois ingredientes</b><p>Só o que funciona junto: a cúrcuma, fonte de curcumina, e a pimenta-preta, fonte de piperina. Nada de misturas para encher a fórmula.</p></div>
-    </div>
+    <h2 class="center">O que diz quem confia na <span class="hl">Aurivita</span></h2>
+    <div class="tsts"><div class="tst"><span class="stars">★★★★★</span><p>“Faço caminhada todo dia de manhã e o joelho vivia reclamando nos primeiros 15 minutos. Hoje começo e termino a caminhada bem melhor.”</p><b>Antônio R., 66 anos</b><span class="vf">✓ Compra verificada</span></div><div class="tst"><span class="stars">★★★★★</span><p>“Já tinha tomado cúrcuma sem piperina e não senti nada. Essa com pimenta-preta fez diferença pra mim — principalmente nas mãos, de manhã.”</p><b>Cleusa F., 59 anos</b><span class="vf">✓ Compra verificada</span></div><div class="tst"><span class="stars">★★★★★</span><p>“Voltei a cuidar do meu jardim e a me abaixar para plantar sem ficar toda dolorida no dia seguinte. Pra mim isso não tem preço.”</p><b>Lúcia M., 71 anos</b><span class="vf">✓ Compra verificada</span></div></div>
   </div>
 </section>
 
-<!-- BENEFÍCIOS -->
+<!-- GARANTIA -->
 <section>
   <div class="wrap">
-    <h2 class="center">Benefícios da <span class="hl">Aurivita</span></h2>
-    <p class="subh">O que você pode sentir com as suas articulações recebendo cúrcuma todos os dias:*</p>
-    <div class="ben-list">
-      <div class="ben"><span class="ck">✓</span><div><b>Mais conforto articular</b><span>Ajuda a manter as articulações <b>confortáveis no dia a dia</b>, da escada à caminhada.</span></div></div>
-      <div class="ben"><span class="ck">✓</span><div><b>Manhãs mais leves</b><span>Começar o dia com <b>mais disposição para se mexer</b>.</span></div></div>
-      <div class="ben"><span class="ck">✓</span><div><b>Mais mobilidade</b><span>Mais liberdade para <b>caminhar, agachar e cuidar da casa e do jardim</b>.</span></div></div>
-      <div class="ben"><span class="ck">✓</span><div><b>Ação antioxidante</b><span>A curcumina ajuda a <b>combater o excesso de radicais livres</b> que se acumula com os anos.</span></div></div>
-      <div class="ben"><span class="ck">✓</span><div><b>Absorção potencializada</b><span>Com a piperina, a curcumina é <b>muito mais bem aproveitada</b> pelo corpo.</span></div></div>
-      <div class="ben"><span class="ck">✓</span><div><b>Aliada do movimento</b><span>Para quem caminha, treina ou <b>passa o dia em pé</b>.</span></div></div>
-      <div class="ben"><span class="ck">✓</span><div><b>100% natural</b><span>Cúrcuma e pimenta-preta, <b>sem glúten, lactose ou açúcar</b>.</span></div></div>
-      <div class="ben"><span class="ck">✓</span><div><b>Fácil de manter</b><span>3 cápsulas junto com a refeição. <b>Simples de encaixar na rotina</b>.</span></div></div>
+    <div class="guar">
+      <h2>Experimente sem risco por 120 dias</h2>
+      <p class="txt">Use a Aurivita por 120 dias. Se você não sentir mais conforto para se mexer, devolvemos 100% do seu dinheiro. Sem perguntas, sem burocracia.</p>
+      <div class="pill">Nossa promessa para você</div>
+      <div class="seal"><span class="ring">Garantia</span><span class="big">120</span><span class="d">DIAS</span></div>
     </div>
-  </div>
-</section>
-
-<!-- RESULTADOS -->
-<!-- EXEMPLO: as porcentagens abaixo são ilustrativas. Substitua pelos resultados de uma pesquisa real com os seus clientes. -->
-<section class="sec-white">
-  <div class="wrap">
-    <p class="eyebrow-c">Pesquisa com clientes</p>
-    <h2 class="center">O que os nossos <span class="hl">clientes relatam</span></h2>
-    <p class="lead">Em pesquisa recente com quem usa a Aurivita:</p>
-    <div class="stats">
-      <div class="stat"><div class="n">84%</div><p>sentiram mais conforto para se movimentar nas primeiras semanas</p></div>
-      <div class="stat"><div class="n">78%</div><p>relataram acordar com o corpo menos travado</p></div>
-      <div class="stat"><div class="n">73%</div><p>voltaram a caminhar com mais frequência</p></div>
-      <div class="stat"><div class="n">91%</div><p>pretendem continuar usando a Aurivita no dia a dia</p></div>
-    </div>
-    <p class="stats-note">*Resultados de pesquisa voluntária e autodeclarada com clientes. Resultados individuais podem variar.</p>
-    <div class="narr">
-      <p>Quando a articulação volta a colaborar, o dia inteiro muda. Você desce a escada sem segurar no corrimão, volta a caminhar de manhã, senta no chão para brincar com os netos e para de pensar no joelho o tempo todo. <b>Não é milagre — é cuidado diário com o que a natureza já oferece.</b></p>
-    </div>
+    <a href="#" class="cta sm js-buy">Quero experimentar sem risco →</a>
   </div>
 </section>
 
@@ -822,18 +787,6 @@
       <div class="rev"><div class="top"><div class="av">J</div><div><div class="name">João P.</div><div class="verif">✓ Compra verificada</div></div></div><div class="stars">★★★★★</div><p>"Tomo junto com o almoço e nunca me fez mal no estômago. Prático demais."</p><div class="date">14 de setembro de 2026</div></div>
       <div class="rev"><div class="top"><div class="av">L</div><div><div class="name">Lúcia M.</div><div class="verif">✓ Compra verificada</div></div></div><div class="stars">★★★★★</div><p>"Voltei a cuidar do meu jardim sem ficar toda dolorida no dia seguinte."</p><div class="date">10 de setembro de 2026</div></div>
       <div class="rev"><div class="top"><div class="av">R</div><div><div class="name">Rosa C.</div><div class="verif">✓ Compra verificada</div></div></div><div class="stars">★★★★★</div><p>"Comprei o kit de 3 para fazer os 120 dias direitinho. Recomendo."</p><div class="date">6 de setembro de 2026</div></div>
-    </div>
-  </div>
-</section>
-
-<!-- GARANTIA -->
-<section class="sec-white">
-  <div class="wrap">
-    <div class="guar">
-      <h2>Garantia de 120 dias</h2>
-      <p class="txt">Se você não ficar satisfeito em até 120 dias, basta entrar em contato com o nosso suporte para receber o reembolso total — sem burocracia.</p>
-      <div class="pill">Experimente hoje mesmo sem riscos!</div>
-      <div class="seal"><span class="ring">Garantia</span><span class="big">120</span><span class="d">DIAS</span></div>
     </div>
   </div>
 </section>
@@ -886,6 +839,27 @@
       <div class="trow"><span class="ic">🌿</span><div><b>Fórmula limpa e transparente</b><p>Cúrcuma e pimenta-preta, sem glúten, sem lactose e sem açúcar. Você sabe exatamente o que está tomando.</p></div></div>
     </div>
     <a href="#" class="cta sm js-buy">Quero minha Aurivita com frete grátis →</a>
+  </div>
+</section>
+
+<!-- COMPOSIÇÃO -->
+<section class="sec-white">
+  <div class="wrap">
+    <h2 class="center">O que tem em <span class="hl">cada cápsula</span></h2>
+    <p class="lead">Dois ingredientes que trabalham juntos. Você sabe exatamente o que está tomando.</p>
+    <div class="comp">
+      <div class="h">Composição · por cápsula</div>
+      <div class="row"><b>Cúrcuma (Curcuma longa) com pimenta-preta (Piper nigrum) em pó</b><span>500mg</span></div>
+      <div class="row"><b>Piperina natural da pimenta-preta</b><span>✓</span></div>
+      <div class="row"><b>Sem glúten · Sem lactose</b><span>✓</span></div>
+      <div class="row"><b>Sem açúcar e sem conservantes</b><span>✓</span></div>
+      <div class="row"><b>Cápsulas por pacote</b><span>120 (40 dias)</span></div>
+    </div>
+    <p class="comp-note">100% natural · Uso adulto · Cápsula de gelatina · Tome junto com uma refeição.</p>
+    <div class="experts">
+      <span class="ic">🌿</span>
+      <div><b>Fórmula de dois ingredientes</b><p>Só o que funciona junto: a cúrcuma, fonte de curcumina, e a pimenta-preta, fonte de piperina. Nada de misturas para encher a fórmula.</p></div>
+    </div>
   </div>
 </section>
 
@@ -1025,9 +999,9 @@
     document.getElementById('chkNum').textContent = n;
     document.getElementById('chkBar').style.width = (n === 0 ? 0 : 40 + (n - 1) / (total - 1) * 60) + '%';
     var v = document.getElementById('chkVerdict');
-    var msg = n === 0 ? VEREDITOS.zero : n <= 2 ? VEREDITOS.baixo : n <= 5 ? VEREDITOS.medio : VEREDITOS.alto;
+    var msg = n === 0 ? VEREDITOS.zero : n <= 1 ? VEREDITOS.baixo : n <= 3 ? VEREDITOS.medio : VEREDITOS.alto;
     v.textContent = msg;
-    v.classList.toggle('alert', n > 2);
+    v.classList.toggle('alert', n > 1);
   }
 
   /* animações de entrada ao rolar */
