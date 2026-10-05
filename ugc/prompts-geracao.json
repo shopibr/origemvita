@@ -1,0 +1,90 @@
+{
+  "tool": "built-in image_gen",
+  "commonPrompt": "Single fictional Brazilian adult portrait, vertical 4:5, photorealistic ordinary phone photo, natural light and age texture, no products, logos or text. Clearly labeled academic demo persona.",
+  "portraits": [
+    {
+      "id": "rubravita-1",
+      "prompt": "Fictional Brazilian woman Rosângela age 54, medium complexion, shoulder length graying dark hair, burgundy cotton blouse, home kitchen in Campinas, smartphone selfie."
+    },
+    {
+      "id": "rubravita-2",
+      "prompt": "Brazilian man age 63, fair skin, short silver hair, glasses, seated on a beige sofa, blue polo"
+    },
+    {
+      "id": "rubravita-3",
+      "prompt": "Brazilian woman age 47, brown skin, curly black hair, green blouse, dining table beside an open unbranded cardboard delivery box"
+    },
+    {
+      "id": "ignivita-1",
+      "prompt": "Brazilian man age 51, tan skin, short dark graying hair, light business shirt, seated inside parked car in daylight"
+    },
+    {
+      "id": "ignivita-2",
+      "prompt": "Brazilian man age 44, brown skin, short beard, athletic casual gray shirt, modest apartment building gym"
+    },
+    {
+      "id": "ignivita-3",
+      "prompt": "Brazilian man age 58, dark skin, close cropped gray hair, white cotton shirt, tiled home porch"
+    },
+    {
+      "id": "levivita-1",
+      "prompt": "Brazilian woman age 49, fair skin, dark bob haircut, navy blouse, kitchen with glass of water"
+    },
+    {
+      "id": "levivita-2",
+      "prompt": "Brazilian woman age 56, brown skin, shoulder length chestnut curls, blue casual blouse, cozy living room"
+    },
+    {
+      "id": "levivita-3",
+      "prompt": "Brazilian man age 39, tan skin, short black hair, glasses, casual checked shirt, home office desk"
+    },
+    {
+      "id": "aurivita-1",
+      "prompt": "Brazilian woman age 66, fair skin, short gray hair, floral blouse, seated near sewing machine at home"
+    },
+    {
+      "id": "aurivita-2",
+      "prompt": "Brazilian man age 61, tan skin, gray moustache, green polo, garden patio with plants"
+    },
+    {
+      "id": "aurivita-3",
+      "prompt": "Brazilian woman age 58, Black, natural short curly hair, modest light cotton robe, home veranda"
+    },
+    {
+      "id": "pedivita-1",
+      "prompt": "Brazilian woman age 56, brown skin, hair tied back, clean simple white kitchen uniform, school kitchen break"
+    },
+    {
+      "id": "pedivita-2",
+      "prompt": "Brazilian man age 52, tan skin, short salt and pepper hair, casual blue tee, comfortable armchair at home"
+    },
+    {
+      "id": "pedivita-3",
+      "prompt": "Brazilian woman age 60, fair skin, silver bob, modest cotton pajama top, sitting beside bed in tidy bedroom"
+    },
+    {
+      "id": "cinnavita-1",
+      "prompt": "Brazilian man age 59, fair skin, gray beard, dark polo, work desk with coffee cup"
+    },
+    {
+      "id": "cinnavita-2",
+      "prompt": "Brazilian woman age 53, brown skin, shoulder length wavy black hair, modest cotton pajamas, living room sofa"
+    },
+    {
+      "id": "cinnavita-3",
+      "prompt": "Brazilian man age 65, fair skin, receding silver hair, checkered shirt, kitchen table with lunch plate"
+    },
+    {
+      "id": "cordivita-1",
+      "prompt": "Brazilian man age 55, brown skin, short dark hair, green polo, neighborhood grocery store counter"
+    },
+    {
+      "id": "cordivita-2",
+      "prompt": "Brazilian woman age 57, fair skin, auburn short hair, cream blouse, home garden holding ceramic cup"
+    },
+    {
+      "id": "cordivita-3",
+      "prompt": "Brazilian man age 62, tan skin, short silver hair and moustache, navy polo, home garage beside parked car"
+    }
+  ]
+}
