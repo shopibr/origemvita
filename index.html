@@ -36,7 +36,20 @@
   .logo svg{width:22px;height:22px}
   nav{display:flex;flex-wrap:wrap;justify-content:flex-end;gap:6px 22px}
   nav a{font-size:14px;font-weight:600;color:var(--c,var(--ink));text-decoration:none}
-  @media(max-width:560px){.hd{flex-direction:column;gap:6px;padding:10px 16px}nav{flex-wrap:nowrap;justify-content:flex-start;overflow-x:auto;max-width:100%;gap:18px;scrollbar-width:none}nav::-webkit-scrollbar{display:none}nav a{font-size:13.5px;white-space:nowrap}.logo{font-size:17px}}
+  .menu-toggle{display:none}
+  nav a:focus-visible,.menu-toggle:focus-visible{outline:3px solid var(--leaf);outline-offset:4px}
+  @media(max-width:860px){
+    .hd{flex-wrap:wrap;gap:12px;padding:12px 16px}
+    .logo{font-size:17px;letter-spacing:2px}
+    .menu-toggle{display:flex;align-items:center;justify-content:center;gap:8px;min-height:44px;padding:10px 13px;border:1px solid var(--line);border-radius:12px;background:#f5f8f4;color:var(--ink);font-family:inherit;font-size:14px;font-weight:600;cursor:pointer}
+    .menu-toggle svg{width:18px;height:18px}
+    #brand-menu{width:100%;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;padding:12px 0 4px;border-top:1px solid var(--line);max-height:calc(100dvh - 88px);overflow-y:auto}
+    #brand-menu[hidden]{display:none}
+    #brand-menu a{display:flex;align-items:center;gap:10px;min-height:48px;padding:10px 14px;border:1px solid var(--line);border-radius:12px;background:#fafbf9;font-size:14px}
+    #brand-menu a:before{content:'';width:8px;height:8px;flex:none;border-radius:50%;background:var(--c)}
+    #brand-menu a:after{content:'›';margin-left:auto;font-size:22px}
+    #brand-menu a:hover{background:#edf3e9}
+  }
 
   /* HERO: texto à esquerda e foto à direita no desktop; no celular texto em cima e foto embaixo */
   .hero{background:#f3ebe3;overflow:hidden}
@@ -105,7 +118,8 @@
       <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21V9" stroke="#3f7d4e" stroke-width="2" fill="none" stroke-linecap="round"/><path d="M12 10C8 10 5 7 5 3c4 0 7 3 7 7Z" fill="#3f7d4e"/><path d="M12 13c3.5 0 6.5-2.5 6.5-6.5-3.5 0-6.5 2.5-6.5 6.5Z" fill="#6aa877"/></svg>
       <span>ORIGEM<b>VITA</b></span>
     </a>
-    <nav>
+    <button class="menu-toggle" type="button" aria-expanded="true" aria-controls="brand-menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg><span>Produtos</span></button>
+    <nav id="brand-menu" aria-label="Nossas marcas">
       <a href="rubravita/" style="--c:#9b1747">Rubravita</a>
       <a href="ignivita/" style="--c:#c8361a">Ignivita</a>
       <a href="levivita/" style="--c:#4f7a3c">Levivita</a>
@@ -247,5 +261,20 @@
   </div>
 </footer>
 
+<script>
+(() => {
+  const toggle = document.querySelector('.menu-toggle');
+  const menu = document.getElementById('brand-menu');
+  const mobile = window.matchMedia('(max-width:860px)');
+  const setOpen = open => {menu.hidden = !open; toggle.setAttribute('aria-expanded', String(open));};
+  const reset = () => setOpen(!mobile.matches);
+  reset();
+  mobile.addEventListener('change', reset);
+  toggle.addEventListener('click', () => setOpen(menu.hidden));
+  document.addEventListener('keydown', event => {if(event.key === 'Escape' && mobile.matches && !menu.hidden){setOpen(false);toggle.focus();}});
+  document.addEventListener('click', event => {if(mobile.matches && !menu.hidden && !event.target.closest('header')) setOpen(false);});
+  menu.addEventListener('click', event => {if(mobile.matches && event.target.closest('a')) setOpen(false);});
+})();
+</script>
 </body>
 </html>
