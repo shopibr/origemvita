@@ -15,13 +15,15 @@
   ===== COMO EDITAR ESTA PÁGINA =====
   1. LINKS DE CHECKOUT ...... no <script> do fim da página, objeto CHECKOUT (k2, k3, k4).
   2. PREÇOS DOS KITS ........ nos dois blocos de oferta (.offers) e na barra fixa (.stickybar).
-  3. CONTATO / CNPJ .......... no <footer>.
+  3. CONTATO / CNPJ .......... no
+
+<footer>.
   4. PIXEL / GTM / CLARITY ... cole os scripts no lugar marcado logo abaixo.
   5. AVALIAÇÕES E NÚMEROS .... nota, contagem de avaliações, depoimentos e porcentagens da
      pesquisa são EXEMPLOS. Troque por dados reais dos seus clientes antes de publicar.
   6. IMAGENS E VÍDEOS ........ ficam na pasta cordivita-img/ (suba a pasta junto com este arquivo).
      PNGs em alta e vídeos originais em cordivita-img/originais/, GIFs em cordivita-img/gif/.
-  7. DOSE ................... 2 cápsulas/dia (1 de manhã e 1 à noite): 1 pacote = 60 dias.
+  7. DOSE / DURAÇÃO ........ pendentes; conferir rótulo do fornecedor.
 -->
 
 <!-- ===== COLE AQUI: Pixel / GTM / Clarity ===== -->
@@ -550,8 +552,11 @@ fbq('track', 'PageView');
 .dm-demo-foot{background:#111;color:#bbb;text-align:center;font-size:12px;padding:10px 14px}
 </style>
 <link rel="stylesheet" href="../demo-refresh.css">
+<style id="origem-info-card-css">.ov-info-card{box-sizing:border-box;max-width:1080px;margin:32px auto;padding:24px;background:#f2f8f2;color:#24362b;border:1px solid #cbdcd6;border-left:6px solid #3f7d4e;border-radius:16px;display:flex;align-items:center;gap:20px;font-family:inherit}.ov-info-card svg{width:42px;height:42px;flex:none}.ov-info-card strong{font-size:21px;display:block}.ov-info-card p{margin:4px 0;line-height:1.5}.ov-info-card a{margin-left:auto;white-space:nowrap;color:#286039;font-weight:700;text-decoration:underline;text-underline-offset:4px;padding:12px 4px}.ov-info-card a:focus-visible{outline:3px solid #286039;outline-offset:4px}@media(max-width:600px){.ov-info-card{margin:24px 16px;padding:18px;gap:12px;flex-wrap:wrap}.ov-info-card strong{font-size:19px}.ov-info-card svg{width:30px;height:30px}.ov-info-card .ov-info-copy{flex:1;min-width:180px}.ov-info-card a{margin-left:42px}}</style>
+<style id="new-pack-media">.dm-card .ph img{object-fit:contain!important}.dm-card .ph{background:#faf7f3}.fvid>img,.reveal-img>img{width:100%;height:auto;display:block}.ov-new-family{display:grid;grid-template-columns:1fr 1fr;gap:8px}.ov-new-family img{width:100%;height:auto}</style>
 </head>
 <body class="demo-refresh">
+<aside class="wrap" data-current-factual style="margin:16px auto;padding:16px;border:1px solid #b7cabc;border-radius:12px"><strong>Ficha da simulação</strong><p>120 cápsulas de 500 mg por pote. Não há recomendação de uso confirmada para calcular a duração. Recomendação de uso não informada. Dose diária e duração por pote ou kit pendentes de confirmação no rótulo do fornecedor.</p></aside>
 <div class="demo-disclosure"><b>DEMO · APRESENTAÇÃO</b> Fotos geradas por IA, relatos, avaliações e ofertas ilustrativos.</div><div class="dm-bar">ESCOLHA SEU KIT · LEVE MAIS, PAGUE MENOS · FRETE GRÁTIS <small>Condições simuladas</small></div>
 <noscript><img height="1" width="1" style="display:none"
 src="https://www.facebook.com/tr?id=1051208311286719&ev=PageView&noscript=1"
@@ -596,12 +601,12 @@ src="https://www.facebook.com/tr?id=1051208311286719&ev=PageView&noscript=1"
       <div class="hero-left">
         <span class="patent">Fórmula Tripla · Alcachofra + Berinjela + Espirulina</span>
         <div class="slides" id="slides">
-          <div class="slide photo on"><video class="loopvid" src="cordivita-img/video-pouch.mp4" poster="cordivita-img/pouch.webp" autoplay muted loop playsinline aria-label="Pacote de Cordivita Alcachofra + Berinjela + Espirulina, 120 cápsulas de 500mg"></video></div>
-          <div class="slide photo"><img src="cordivita-img/kit-3-pacotes.webp" alt="Kit com 3 pacotes de Cordivita" loading="lazy" decoding="async"></div>
-          <div class="slide photo"><img src="cordivita-img/beneficios.webp" alt="6 benefícios em 1" loading="lazy" decoding="async"></div>
-          <div class="slide photo"><img src="cordivita-img/por-dentro.webp" alt="O que tem por dentro: alcachofra, berinjela e espirulina" loading="lazy" decoding="async"></div>
-          <div class="slide photo"><img src="cordivita-img/composicao.webp" alt="Composição limpa: o que contém e o que não contém" loading="lazy" decoding="async"></div>
-          <div class="slide photo"><img src="cordivita-img/como-tomar.webp" alt="Como tomar: 1 cápsula de manhã e 1 à noite" loading="lazy" decoding="async"></div>
+          <div class="slide photo on"><img src="cordivita-img/pouch.webp" alt="Embalagem de Cordivita" width="1000" height="1000" fetchpriority="high" decoding="async"></div>
+          <div class="slide photo"><img src="cordivita-img/kit-3-pacotes.webp" alt="Kit de 3 unidades de Cordivita" width="1000" height="1000" loading="lazy" decoding="async"></div>
+          <div class="slide photo"><img src="cordivita-img/beneficios.webp" alt="Apresentação de Cordivita" width="1000" height="1000" loading="lazy" decoding="async"></div>
+          <div class="slide photo"><img src="cordivita-img/por-dentro.webp" alt="Informações do produto de Cordivita" width="1000" height="1000" loading="lazy" decoding="async"></div>
+          <div class="slide photo"><img src="cordivita-img/composicao.webp" alt="Composição apresentada de Cordivita" width="1000" height="1000" loading="lazy" decoding="async"></div>
+          <div class="slide photo"><img src="cordivita-img/como-tomar.webp" alt="Produto no cotidiano de Cordivita" width="1000" height="1000" loading="lazy" decoding="async"></div>
         </div>
         <div class="thumbs">
           <button class="ph on" onclick="setSlide(0,this)" aria-label="Ver o pacote"><img src="cordivita-img/pouch-mini.webp" alt=""></button>
@@ -625,21 +630,21 @@ src="https://www.facebook.com/tr?id=1051208311286719&ev=PageView&noscript=1"
             <span class="offer-tag tag-1">Mais Vendido</span>
             <span class="radio"></span>
             <span class="thumb"><img src="cordivita-img/kit-3-pacotes-mini.webp" alt="3 pacotes" loading="lazy" decoding="async"><i class="qty">3 PACOTES</i></span>
-            <span class="offer-body"><span class="offer-title">COMPRE&nbsp;2 · LEVE&nbsp;3</span><br><span class="offer-eco">180 dias de uso · Economize 56%</span></span>
+            <span class="offer-body"><span class="offer-title">COMPRE&nbsp;2 · LEVE&nbsp;3</span><br><span class="offer-eco">Duração pendente · Economize 56%</span></span>
             <span class="offer-price"><span class="offer-old">R$ 449,90</span><span class="offer-new">R$ 199,90</span></span>
           <span class="demo-unit">R$ 66,63 por unidade</span></label>
           <label tabindex="0" role="radio" aria-checked="false" class="offer" onclick="selOffer(this)" data-kit="k4">
             <span class="offer-tag tag-2">Melhor Valor</span>
             <span class="radio"></span>
             <span class="thumb"><img src="cordivita-img/kit-4-pacotes.webp" alt="4 pacotes" loading="lazy" decoding="async"><i class="qty">4 PACOTES</i></span>
-            <span class="offer-body"><span class="offer-title">COMPRE&nbsp;3 · LEVE&nbsp;4</span><br><span class="offer-eco">240 dias de uso · Economize 60%</span></span>
+            <span class="offer-body"><span class="offer-title">COMPRE&nbsp;3 · LEVE&nbsp;4</span><br><span class="offer-eco">Duração pendente · Economize 60%</span></span>
             <span class="offer-price"><span class="offer-old">R$ 579,90</span><span class="offer-new">R$ 229,90</span></span>
           <span class="demo-unit">R$ 57,48 por unidade</span></label>
           <label tabindex="0" role="radio" aria-checked="false" class="offer" onclick="selOffer(this)" data-kit="k2">
             <span class="offer-tag tag-3">50% OFF</span>
             <span class="radio"></span>
             <span class="thumb"><img src="cordivita-img/kit-2-pacotes.webp" alt="2 pacotes" loading="lazy" decoding="async"><i class="qty">2 PACOTES</i></span>
-            <span class="offer-body"><span class="offer-title">COMPRE&nbsp;1 · LEVE&nbsp;2</span><br><span class="offer-eco">120 dias de uso · Economize 50%</span></span>
+            <span class="offer-body"><span class="offer-title">COMPRE&nbsp;1 · LEVE&nbsp;2</span><br><span class="offer-eco">Duração pendente · Economize 50%</span></span>
             <span class="offer-price"><span class="offer-old">R$ 299,90</span><span class="offer-new">R$ 149,90</span></span>
           <span class="demo-unit">R$ 74,95 por unidade</span></label>
         </div>
@@ -655,7 +660,7 @@ src="https://www.facebook.com/tr?id=1051208311286719&ev=PageView&noscript=1"
         <div class="hquote"><img class="demo-quote-photo" src="../ugc/cordivita-1-produto.webp" alt="Personagem fictício gerado por IA" width="88" height="88" loading="lazy"><span class="stars">★★★★★</span><br><b>Roberto N., 55 anos</b><span class="vf">Personagem fictício · DEMO</span><p>“Meu pai teve infarto com 60 anos. Quando meu exame veio com o colesterol alto, eu gelei. O médico pediu mudança de hábito: comecei a caminhar, mudei a alimentação e tomo a Cordivita todo dia. Hoje eu sinto muito mais disposição — e muito menos medo.”</p></div>
         <div class="approved"><span class="dot">●</span> <b>Aprovado por quem usa</b> — escolhido por quem quer cuidar do coração antes do susto.</div>
         <details class="acc"><summary>Como funciona</summary><p>A Cordivita junta alcachofra, tradicional na digestão das gorduras, berinjela, fonte de fibras e antioxidantes, e espirulina, rica em proteína vegetal e ficocianina. Juntas, são uma aliada de quem cuida do colesterol e do coração.</p></details>
-        <details class="acc"><summary>Modo de uso</summary><p>2 cápsulas por dia: 1 de manhã e 1 à noite, com um copo de água. Cada pacote rende 60 dias.</p></details>
+        <details class="acc"><summary>Modo de uso</summary><p>Recomendação de uso não informada. Dose diária e duração por pote ou kit pendentes de confirmação no rótulo do fornecedor.</p></details>
         <details class="acc"><summary>Ingredientes principais</summary><p>Alcachofra (Cynara scolymus), berinjela (Solanum melongena) e espirulina (Arthrospira platensis). 500mg por cápsula. Sem glúten, sem lactose e sem estimulantes.</p></details>
         <details class="acc"><summary>Garantia de reembolso</summary><p>Você tem 120 dias para experimentar. Se não ficar satisfeito, devolvemos 100% do valor pago.</p></details>
       </div>
@@ -704,7 +709,7 @@ src="https://www.facebook.com/tr?id=1051208311286719&ev=PageView&noscript=1"
       <span class="cyc-name">O CICLO P-O-A</span>
       <div class="cycle"><div class="st"><b>P</b><strong>Produção</strong><span>O corpo produz mais gordura do que consegue eliminar.</span></div><div class="st"><b>O</b><strong>Oxidação</strong><span>O estresse oxidativo “estraga” o colesterol que circula.</span></div><div class="st"><b>A</b><strong>Acúmulo</strong><span>A gordura se deposita na parede das artérias — em silêncio.</span></div></div>
       <p>O exame alterado, o cansaço e o histórico na família são o seu coração pedindo cuidado diário.</p>
-      <p class="punch">O cuidado pode começar hoje — em 2 cápsulas por dia, junto com o seu médico.</p>
+      <p class="punch">Recomendação de uso não informada. Dose diária e duração por pote ou kit pendentes de confirmação no rótulo do fornecedor.</p>
     </div>
   </div>
 </section>
@@ -733,7 +738,7 @@ src="https://www.facebook.com/tr?id=1051208311286719&ev=PageView&noscript=1"
 <section class="reveal-sec">
   <div class="reveal-grid">
     <div class="reveal-img">
-      <video src="cordivita-img/video-lifestyle.mp4" poster="cordivita-img/lifestyle.webp" autoplay muted loop playsinline aria-label="Homem sorrindo no parque depois da caminhada segurando o pacote de Cordivita"></video>
+      <img src="cordivita-img/lifestyle.webp" alt="Cordivita — nova embalagem Origem Vita" width="1000" height="1000" decoding="async" style="display:block;width:100%;height:auto;object-fit:contain">
     </div>
     <div class="reveal-content">
       <span class="rk">O que ninguém te conta</span>
@@ -749,9 +754,9 @@ src="https://www.facebook.com/tr?id=1051208311286719&ev=PageView&noscript=1"
   <div class="wrap">
     <p class="eyebrow-c">A fórmula que todos estão falando</p>
     <h2 class="center" id="stickyTrigger">Três ativos, uma cápsula: <span class="hl">o cuidado que todos estão falando</span></h2>
-    <div class="fvid"><video src="cordivita-img/video-pouch.mp4" poster="cordivita-img/pouch.webp" autoplay muted loop playsinline aria-label="Embalagem de Cordivita"></video></div>
-    <p class="lead" style="max-width:660px;margin:20px auto 0">A Cordivita junta alcachofra, berinjela e espirulina numa fórmula só. Três ingredientes da natureza que se completam — sem cafeína, sem estimulantes, em 2 cápsulas por dia.</p>
-    <div class="fgrid"><div>Aliada do colesterol</div><div>Digestão mais leve das gorduras</div><div>Proteção antioxidante</div><div>Mais disposição</div><div>Sem estimulantes</div><div>2 cápsulas por dia</div></div>
+    <div class="fvid"><img src="cordivita-img/pouch.webp" alt="Cordivita — nova embalagem Origem Vita" width="1000" height="1000" decoding="async" style="display:block;width:100%;height:auto;object-fit:contain"></div>
+    <p class="lead" style="max-width:660px;margin:20px auto 0">Recomendação de uso não informada. Dose diária e duração por pote ou kit pendentes de confirmação no rótulo do fornecedor.</p>
+    <div class="fgrid"><div>Aliada do colesterol</div><div>Digestão mais leve das gorduras</div><div>Proteção antioxidante</div><div>Mais disposição</div><div>Sem estimulantes</div><div>Orientação de uso pendente</div></div>
     <div class="mechs"><div class="mech"><div class="em">🥬</div><h3>Alcachofra</h3><p>Tradicional na digestão das gorduras e no cuidado com o fígado, graças a compostos como a cinarina.</p></div><div class="mech"><div class="em">🍆</div><h3>Berinjela</h3><p>A casca roxa é fonte de fibras e antioxidantes naturais.</p></div><div class="mech"><div class="em">💠</div><h3>Espirulina</h3><p>Rica em proteína vegetal e ficocianina, um antioxidante natural.</p></div><div class="mech"><div class="em">📈</div><h3>Melhora progressiva</h3><p>É um cuidado contínuo: refaça os seus exames com o seu médico depois de alguns meses de hábitos novos.</p></div></div>
   </div>
 </section>
@@ -781,7 +786,7 @@ src="https://www.facebook.com/tr?id=1051208311286719&ev=PageView&noscript=1"
       <div class="row"><b>Berinjela (Solanum melongena)</b><span>✓</span></div>
       <div class="row"><b>Espirulina (Arthrospira platensis)</b><span>✓</span></div>
       <div class="row"><b>Total por cápsula</b><span>500mg</span></div>
-      <div class="row"><b>Cápsulas por pacote</b><span>120 (60 dias)</span></div>
+      <div class="row"><b>Cápsulas por pacote</b><span>120 · duração pendente</span></div>
     </div>
     <p class="comp-note">100% natural · Uso adulto · Sem estimulantes · Não substitui medicamentos.</p>
     <div class="experts">
@@ -791,28 +796,18 @@ src="https://www.facebook.com/tr?id=1051208311286719&ev=PageView&noscript=1"
   </div>
 <p class="dm-note" style="max-width:850px;margin:20px auto;padding:0 20px">Os 500mg se referem ao total da cápsula. A composição disponível não informa a quantidade individual de cada ingrediente nem a padronização de seus compostos.</p></section>
 
-<section class="dm-sec"><div class="wrap"><h2 class="center">O que você <span class="hl">já tentou</span> e por que não bastou</h2><div class="dm-head"><span>Alternativa</span><span>O limite</span><span>Com Cordivita</span></div><div class="dm-alt"><div class="dm-row"><div class="a">Água de berinjela</div><div class="b">Só antes do exame: exame é foto, coração é filme.</div><div class="c">Rotina diária com 3 ingredientes vegetais.</div></div><div class="dm-row"><div class="a">Cortar gordura só na semana do exame</div><div class="b">Funciona na foto, não no filme completo.</div><div class="c">Constância de rotina como aliada.</div></div><div class="dm-row"><div class="a">Chás variados</div><div class="b">Dose imprevisível, difíceis de manter todo dia.</div><div class="c">2 cápsulas por dia, sem preparo.</div></div></div><div class="dm-sci"><b>🔬 O que diz a ciência</b><p>A espirulina era colhida no lago Texcoco pelos astecas, e a alcachofra é a base de amaros italianos tradicionais, usados há mais de um século em ritual digestivo.</p><small>Referência sobre o ingrediente, não sobre este produto. Este produto não foi testado em estudo clínico próprio.</small></div></div></section>
+<section class="dm-sec"><div class="wrap"><h2 class="center">O que você <span class="hl">já tentou</span> e por que não bastou</h2><div class="dm-head"><span>Alternativa</span><span>O limite</span><span>Com Cordivita</span></div><div class="dm-alt"><div class="dm-row"><div class="a">Água de berinjela</div><div class="b">Só antes do exame: exame é foto, coração é filme.</div><div class="c">Rotina diária com 3 ingredientes vegetais.</div></div><div class="dm-row"><div class="a">Cortar gordura só na semana do exame</div><div class="b">Funciona na foto, não no filme completo.</div><div class="c">Constância de rotina como aliada.</div></div><div class="dm-row"><div class="a">Chás variados</div><div class="b">Dose imprevisível, difíceis de manter todo dia.</div><div class="c">Orientação de uso pendente</div></div></div><div class="dm-sci"><b>🔬 O que diz a ciência</b><p>A espirulina era colhida no lago Texcoco pelos astecas, e a alcachofra é a base de amaros italianos tradicionais, usados há mais de um século em ritual digestivo.</p><small>Referência sobre o ingrediente, não sobre este produto. Este produto não foi testado em estudo clínico próprio.</small></div></div></section>
 
-<section>
-  <div class="wrap">
-    <h2 class="center">Como tomar o <span class="hl">seu protocolo</span></h2>
-    <p class="lead">Simples e sem mudar a rotina.</p>
-    <div class="htake">
-      <div class="htk"><div class="htk-media"><img src="cordivita-img/passo-1.webp" alt="Mão segurando duas cápsulas verdes ao lado de um copo de água e de um café" loading="lazy" decoding="async"><span class="num">1</span></div><div class="htk-body"><h4>1 cápsula de manhã</h4><p>Com um copo de água, junto com o café da manhã.</p></div></div>
-      <div class="htk"><div class="htk-media"><img src="cordivita-img/passo-2.webp" alt="Jantar saudável com berinjela grelhada e alcachofra" loading="lazy" decoding="async"><span class="num">2</span></div><div class="htk-body"><h4>1 cápsula à noite</h4><p>Junto com o jantar. São 2 cápsulas por dia.</p></div></div>
-      <div class="htk"><div class="htk-media"><img src="cordivita-img/passo-3.webp" alt="Pacote de Cordivita na mesa ao lado de um exame e de um café" loading="lazy" decoding="async"><span class="num">3</span></div><div class="htk-body"><h4>Exames em dia</h4><p>Mantenha a constância e acompanhe os seus exames com o seu médico. Cada pacote rende 60 dias.</p></div></div>
-    </div>
-  </div>
-</section>
+<section class="sec-white"><div class="wrap"><h2 class="center">Orientação de uso pendente</h2><p class="lead">Recomendação de uso não informada. Dose diária e duração por pote ou kit pendentes de confirmação no rótulo do fornecedor.</p></div></section>
 
-<section class="sec-white dm-sec"><div class="wrap"><p class="eyebrow-c">CONSISTÊNCIA É O QUE CONTA</p><h2 class="center">O que esperar da <span class="hl">Cordivita</span>, semana a semana</h2><p class="lead">Cada corpo responde no seu tempo. Veja a linha do tempo realista e quando vale avaliar.</p><div class="dm-tl"><div class="dm-step"><small>Dias 1 a 7</small><h4>Criando a rotina</h4><p>Duas cápsulas por dia, manhã e noite. Mantenha o acompanhamento e os remédios que você já usa.</p></div><div class="dm-step"><small>Semanas 2 a 4</small><h4>Adaptação</h4><p>O intestino costuma se adaptar. Combine com alimentação mais leve, fibras e caminhada.</p></div><div class="dm-step"><small>Semanas 5 a 8</small><h4>Hora de avaliar</h4><p>O exame de sangue é a única régua que vale: converse com seu médico sobre quando repetir.</p></div><div class="dm-step"><small>2 a 3 meses</small><h4>Decisão com dados</h4><p>Continue como parte do cuidado, nunca no lugar de remédio. Gestantes e quem usa anticoagulante devem consultar o médico.</p></div></div><p class="dm-note">Relatos individuais variam. Suplemento alimentar não é medicamento e não substitui acompanhamento médico.</p></div></section>
+<section class="sec-white"><div class="wrap"><h2 class="center">Orientação de uso pendente</h2><p class="lead">Recomendação de uso não informada. Dose diária e duração por pote ou kit pendentes de confirmação no rótulo do fornecedor.</p></div></section>
 
-<section id="historias-demo" class="sec-white dm-sec"><div class="wrap"><h2 class="center">Histórias que <span class="hl">aproximam</span></h2><p class="subh">Depoimentos fictícios para apresentação. Todos os retratos desta seção foram gerados por inteligência artificial.</p><div class="dm-ugc"><div class="dm-card"><div class="ph"><img src="../ugc/cordivita-1-produto.webp" alt="Personagem fictício segurando o produto · imagem gerada por IA" loading="lazy" width="1024" height="1280"><span class="demo-image-label">IMAGEM GERADA POR IA</span></div><div class="bd"><span class="stars">★★★★★</span><p>“Gerente de supermercado, vivo na correria. Tomo de manhã e à noite junto com o remédio que o médico passou. Rotina fácil.”</p><div class="nm">Roberto N., 55 anos</div><span class="vf">Personagem fictício · DEMO · Cuiabá, MT</span></div></div><div class="dm-card"><div class="ph"><img src="../ugc/cordivita-2-produto.webp" alt="Personagem fictício segurando o produto · imagem gerada por IA" loading="lazy" width="1024" height="1280"><span class="demo-image-label">IMAGEM GERADA POR IA</span></div><div class="bd"><span class="stars">★★★★★</span><p>“Meu médico pediu mudança de hábitos. Incluí isso junto com caminhadas. Tudo bem tolerado.”</p><div class="nm">Sandra K., 57 anos</div><span class="vf">Personagem fictício · DEMO · Blumenau, SC</span></div></div><div class="dm-card"><div class="ph"><img src="../ugc/cordivita-3-produto.webp" alt="Personagem fictício segurando o produto · imagem gerada por IA" loading="lazy" width="1024" height="1280"><span class="demo-image-label">IMAGEM GERADA POR IA</span></div><div class="bd"><span class="stars">★★★★★</span><p>“Comprei o de 3 pacotes. Sai mais barato por mês. Chegou em 5 dias.”</p><div class="nm">José Carlos B., 62 anos</div><span class="vf">Personagem fictício · DEMO · Anápolis, GO</span></div></div></div></div></section>
+<section id="historias-demo" class="sec-white dm-sec"><div class="wrap"><h2 class="center">Histórias que <span class="hl">aproximam</span></h2><p class="subh">Depoimentos fictícios para apresentação. Todos os retratos desta seção foram gerados por inteligência artificial.</p><div class="dm-ugc"><div class="dm-card"><div class="ph"><img src="../ugc/cordivita-1-produto.webp" alt="Personagem fictício segurando o produto · imagem gerada por IA" loading="lazy" width="800" height="1000"><span class="demo-image-label">IMAGEM GERADA POR IA</span></div><div class="bd"><span class="stars">★★★★★</span><p>Recomendação de uso não informada. Dose diária e duração por pote ou kit pendentes de confirmação no rótulo do fornecedor.</p><div class="nm">Roberto N., 55 anos</div><span class="vf">Personagem fictício · DEMO · Cuiabá, MT</span></div></div><div class="dm-card"><div class="ph"><img src="../ugc/cordivita-2-produto.webp" alt="Personagem fictício segurando o produto · imagem gerada por IA" loading="lazy" width="800" height="1000"><span class="demo-image-label">IMAGEM GERADA POR IA</span></div><div class="bd"><span class="stars">★★★★★</span><p>“Meu médico pediu mudança de hábitos. Incluí isso junto com caminhadas. Tudo bem tolerado.”</p><div class="nm">Sandra K., 57 anos</div><span class="vf">Personagem fictício · DEMO · Blumenau, SC</span></div></div><div class="dm-card"><div class="ph"><img src="../ugc/cordivita-3-produto.webp" alt="Personagem fictício segurando o produto · imagem gerada por IA" loading="lazy" width="800" height="1000"><span class="demo-image-label">IMAGEM GERADA POR IA</span></div><div class="bd"><span class="stars">★★★★★</span><p>“Comprei o de 3 pacotes. Sai mais barato por mês. Chegou em 5 dias.”</p><div class="nm">José Carlos B., 62 anos</div><span class="vf">Personagem fictício · DEMO · Anápolis, GO</span></div></div></div></div></section>
 
 <section class="sec-white">
   <div class="wrap">
     <h2 class="center">O que diz quem confia na <span class="hl">Cordivita</span></h2>
-    <div class="tsts"><div class="tst"><span class="stars">★★★★★</span><p>“Meu marido nunca foi de médico. Comprei, deixei em cima da mesa do café e ele começou a tomar. Hoje toma certinho de manhã e à noite e voltou a caminhar comigo.”</p><b>Marlene A., 60 anos</b><span class="vf">Personagem fictício · DEMO</span></div><div class="tst"><span class="stars">★★★★★</span><p>“Tenho histórico de infarto na família e resolvi me cuidar antes do susto. Faço meus exames, caminho e tomo a Cordivita. Me sinto no controle.”</p><b>Roberto M., 54 anos</b><span class="vf">Personagem fictício · DEMO</span></div><div class="tst"><span class="stars">★★★★★</span><p>“Eu comprava alcachofra, berinjela e espirulina separadas e sempre esquecia alguma. Ter os três na mesma cápsula facilitou demais.”</p><b>Cláudia F., 52 anos</b><span class="vf">Personagem fictício · DEMO</span></div></div>
+    <div class="tsts"><div class="tst"><span class="stars">★★★★★</span><p>Recomendação de uso não informada. Dose diária e duração por pote ou kit pendentes de confirmação no rótulo do fornecedor.</p><b>Marlene A., 60 anos</b><span class="vf">Personagem fictício · DEMO</span></div><div class="tst"><span class="stars">★★★★★</span><p>“Tenho histórico de infarto na família e resolvi me cuidar antes do susto. Faço meus exames, caminho e tomo a Cordivita. Me sinto no controle.”</p><b>Roberto M., 54 anos</b><span class="vf">Personagem fictício · DEMO</span></div><div class="tst"><span class="stars">★★★★★</span><p>“Eu comprava alcachofra, berinjela e espirulina separadas e sempre esquecia alguma. Ter os três na mesma cápsula facilitou demais.”</p><b>Cláudia F., 52 anos</b><span class="vf">Personagem fictício · DEMO</span></div></div>
   </div>
 </section>
 
@@ -846,13 +841,13 @@ src="https://www.facebook.com/tr?id=1051208311286719&ev=PageView&noscript=1"
 
     <div class="revs">
       <div class="rev"><div class="top"><div class="av">V</div><div><div class="name">Valter R.</div><div class="verif">Personagem fictício · DEMO</div></div></div><div class="stars">★★★★★</div><p>"O exame veio com o colesterol alto e o médico pediu mudança de hábito. Comecei a caminhar, mudei a alimentação e tomo a Cordivita todo dia. Me sinto com mais disposição."</p><div class="date">30 de setembro de 2026</div></div>
-      <div class="rev"><div class="top"><div class="av">M</div><div><div class="name">Marlene A.</div><div class="verif">Personagem fictício · DEMO</div></div></div><div class="stars">★★★★★</div><p>"Comprei pro meu marido, que nunca cuidou da saúde. Ele toma certinho de manhã e à noite."</p><div class="date">27 de setembro de 2026</div></div>
+      <div class="rev"><div class="top"><div class="av">M</div><div><div class="name">Marlene A.</div><div class="verif">Personagem fictício · DEMO</div></div></div><div class="stars">★★★★★</div><p>Recomendação de uso não informada. Dose diária e duração por pote ou kit pendentes de confirmação no rótulo do fornecedor.</p><div class="date">27 de setembro de 2026</div></div>
       <div class="rev"><div class="top"><div class="av">J</div><div><div class="name">José C.</div><div class="verif">Personagem fictício · DEMO</div></div></div><div class="stars">★★★★★</div><p>"Não tem gosto, não tira o sono e é fácil de lembrar. Recomendo."</p><div class="date">24 de setembro de 2026</div></div>
       <div class="rev"><div class="top"><div class="av">N</div><div><div class="name">Neusa P.</div><div class="verif">Personagem fictício · DEMO</div></div></div><div class="stars">★★★★☆</div><p>"Senti a digestão bem mais leve depois do almoço."</p><div class="date">21 de setembro de 2026</div></div>
       <div class="rev"><div class="top"><div class="av">R</div><div><div class="name">Roberto M.</div><div class="verif">Personagem fictício · DEMO</div></div></div><div class="stars">★★★★★</div><p>"Tenho histórico de infarto na família e resolvi me cuidar antes. Faço meus exames e tomo a Cordivita."</p><div class="date">18 de setembro de 2026</div></div>
       <div class="rev"><div class="top"><div class="av">C</div><div><div class="name">Cláudia F.</div><div class="verif">Personagem fictício · DEMO</div></div></div><div class="stars">★★★★★</div><p>"Gostei de ter os três na mesma cápsula. Antes eu comprava separado e sempre esquecia algum."</p><div class="date">14 de setembro de 2026</div></div>
       <div class="rev"><div class="top"><div class="av">A</div><div><div class="name">Aparecido S.</div><div class="verif">Personagem fictício · DEMO</div></div></div><div class="stars">★★★★★</div><p>"Mais disposição para a minha caminhada de manhã."</p><div class="date">10 de setembro de 2026</div></div>
-      <div class="rev"><div class="top"><div class="av">H</div><div><div class="name">Helena B.</div><div class="verif">Personagem fictício · DEMO</div></div></div><div class="stars">★★★★★</div><p>"Comprei o kit de 3 para fazer os 6 meses direitinho."</p><div class="date">6 de setembro de 2026</div></div>
+      <div class="rev"><div class="top"><div class="av">H</div><div><div class="name">Helena B.</div><div class="verif">Personagem fictício · DEMO</div></div></div><div class="stars">★★★★★</div><p>Recomendação de uso não informada. Dose diária e duração por pote ou kit pendentes de confirmação no rótulo do fornecedor.</p><div class="date">6 de setembro de 2026</div></div>
     </div>
   </div>
 </section>
@@ -867,21 +862,21 @@ src="https://www.facebook.com/tr?id=1051208311286719&ev=PageView&noscript=1"
             <span class="offer-tag tag-1">Mais Vendido</span>
             <span class="radio"></span>
             <span class="thumb"><img src="cordivita-img/kit-3-pacotes-mini.webp" alt="3 pacotes" loading="lazy" decoding="async"><i class="qty">3 PACOTES</i></span>
-            <span class="offer-body"><span class="offer-title">COMPRE&nbsp;2 · LEVE&nbsp;3</span><br><span class="offer-eco">180 dias de uso · Economize 56%</span></span>
+            <span class="offer-body"><span class="offer-title">COMPRE&nbsp;2 · LEVE&nbsp;3</span><br><span class="offer-eco">Duração pendente · Economize 56%</span></span>
             <span class="offer-price"><span class="offer-old">R$ 449,90</span><span class="offer-new">R$ 199,90</span></span>
           <span class="demo-unit">R$ 66,63 por unidade</span></label>
           <label tabindex="0" role="radio" aria-checked="false" class="offer" onclick="selOffer(this)" data-kit="k4">
             <span class="offer-tag tag-2">Melhor Valor</span>
             <span class="radio"></span>
             <span class="thumb"><img src="cordivita-img/kit-4-pacotes.webp" alt="4 pacotes" loading="lazy" decoding="async"><i class="qty">4 PACOTES</i></span>
-            <span class="offer-body"><span class="offer-title">COMPRE&nbsp;3 · LEVE&nbsp;4</span><br><span class="offer-eco">240 dias de uso · Economize 60%</span></span>
+            <span class="offer-body"><span class="offer-title">COMPRE&nbsp;3 · LEVE&nbsp;4</span><br><span class="offer-eco">Duração pendente · Economize 60%</span></span>
             <span class="offer-price"><span class="offer-old">R$ 579,90</span><span class="offer-new">R$ 229,90</span></span>
           <span class="demo-unit">R$ 57,48 por unidade</span></label>
           <label tabindex="0" role="radio" aria-checked="false" class="offer" onclick="selOffer(this)" data-kit="k2">
             <span class="offer-tag tag-3">50% OFF</span>
             <span class="radio"></span>
             <span class="thumb"><img src="cordivita-img/kit-2-pacotes.webp" alt="2 pacotes" loading="lazy" decoding="async"><i class="qty">2 PACOTES</i></span>
-            <span class="offer-body"><span class="offer-title">COMPRE&nbsp;1 · LEVE&nbsp;2</span><br><span class="offer-eco">120 dias de uso · Economize 50%</span></span>
+            <span class="offer-body"><span class="offer-title">COMPRE&nbsp;1 · LEVE&nbsp;2</span><br><span class="offer-eco">Duração pendente · Economize 50%</span></span>
             <span class="offer-price"><span class="offer-old">R$ 299,90</span><span class="offer-new">R$ 149,90</span></span>
           <span class="demo-unit">R$ 74,95 por unidade</span></label>
         </div>
@@ -911,14 +906,14 @@ src="https://www.facebook.com/tr?id=1051208311286719&ev=PageView&noscript=1"
     <h2 class="center">Perguntas frequentes</h2>
     <div class="faq">
       <div class="faqitem"><div class="q">Como a Cordivita funciona?</div><p class="a">A Cordivita junta alcachofra, tradicional na digestão das gorduras, berinjela, fonte de fibras e antioxidantes, e espirulina, rica em proteína vegetal e antioxidantes naturais. Juntas, são uma aliada de quem cuida do colesterol e do coração, ao lado de alimentação equilibrada e acompanhamento médico.</p></div>
-      <div class="faqitem"><div class="q">Como devo tomar?</div><p class="a">2 cápsulas ao dia: 1 de manhã e 1 à noite, com um copo de água. Não exceda a recomendação diária.</p></div>
+      <div class="faqitem"><div class="q">Como devo tomar?</div><p class="a">Recomendação de uso não informada. Dose diária e duração por pote ou kit pendentes de confirmação no rótulo do fornecedor.</p></div>
       <div class="faqitem"><div class="q">Posso parar o meu remédio de colesterol ou de pressão?</div><p class="a">Não. A Cordivita é um suplemento alimentar e não substitui nenhum medicamento. Nunca pare ou mude o seu tratamento sem falar com o seu médico.</p></div>
       <div class="faqitem"><div class="q">Quem usa remédio pode tomar?</div><p class="a">Converse com o seu médico antes, principalmente se você usa anticoagulante ou remédio para pressão, diabetes ou tireoide.</p></div>
       <div class="faqitem"><div class="q">Em quanto tempo vejo resultado?</div><p class="a">É um cuidado contínuo. Muita gente sente mais disposição e a digestão mais leve nas primeiras semanas. Para acompanhar o colesterol, refaça os exames com o seu médico depois de alguns meses de hábitos novos.</p></div>
       <div class="faqitem"><div class="q">Tem estimulante ou cafeína?</div><p class="a">Não. A Cordivita não tem cafeína nem estimulantes: pode tomar à noite sem atrapalhar o sono.</p></div>
       <div class="faqitem"><div class="q">Quem não deve tomar?</div><p class="a">Gestantes, lactantes, crianças e pessoas com alergia a algum dos ingredientes, fenilcetonúria ou doenças autoimunes não devem usar sem orientação. Idosos e pessoas em uso de medicamentos devem consultar um profissional de saúde antes.</p></div>
       <div class="faqitem"><div class="q">Tem glúten ou lactose?</div><p class="a">Não. A Cordivita é feita de alcachofra, berinjela e espirulina, sem glúten e sem lactose.</p></div>
-      <div class="faqitem"><div class="q">Quanto tempo dura cada pacote?</div><p class="a">Cada pacote tem 120 cápsulas de 500mg. Tomando 2 por dia, dura 60 dias. O kit de 3 pacotes rende 180 dias.</p></div>
+      <div class="faqitem"><div class="q">Quanto tempo dura cada pacote?</div><p class="a">Recomendação de uso não informada. Dose diária e duração por pote ou kit pendentes de confirmação no rótulo do fornecedor.</p></div>
       <div class="faqitem"><div class="q">E se eu não gostar?</div><p class="a">Você tem 120 dias de garantia. Se não ficar satisfeito por qualquer motivo, é só falar com o nosso suporte e devolvemos o seu dinheiro — sem burocracia.</p></div>
       <div class="faqitem"><div class="q">Quanto tempo para receber?</div><p class="a">O pedido é despachado em até 1 dia útil, com frete grátis para todo o Brasil e código de rastreio para acompanhar a entrega.</p></div>
     </div>
@@ -934,6 +929,7 @@ src="https://www.facebook.com/tr?id=1051208311286719&ev=PageView&noscript=1"
   </div>
 </section>
 
+<aside class="ov-info-card" aria-label="Informações da Origem Vita"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="10" stroke="#3f7d4e" stroke-width="1.7"/><path d="M12 11v6M12 7v.1" stroke="#3f7d4e" stroke-width="2" stroke-linecap="round"/></svg><div class="ov-info-copy"><strong>Conheça a Origem Vita</strong><p>Informações da empresa e atendimento.</p></div><a href="../origem-vita-e-confiavel/">Saiba mais <span aria-hidden="true">→</span></a></aside>
 <footer>
   <div class="wrap">
     <div class="logo">Cordi<span>vita</span></div>

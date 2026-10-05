@@ -15,14 +15,16 @@
   ===== COMO EDITAR ESTA PÁGINA =====
   1. LINKS DE CHECKOUT ...... no <script> do fim da página, objeto CHECKOUT (k2, k3, k4).
   2. PREÇOS DOS KITS ........ nos dois blocos de oferta (.offers) e na barra fixa (.stickybar).
-  3. CONTATO / CNPJ .......... no <footer>.
+  3. CONTATO / CNPJ .......... no
+
+<footer>.
   4. PIXEL / GTM / CLARITY ... cole os scripts no lugar marcado logo abaixo.
   5. AVALIAÇÕES E NÚMEROS .... nota, contagem de avaliações, depoimentos e porcentagens da
      pesquisa são EXEMPLOS. Troque por dados reais dos seus clientes antes de publicar.
   6. IMAGENS E VÍDEOS ........ ficam na pasta levivita-img/ (suba a pasta junto com este arquivo).
      PNGs em alta e vídeos originais em levivita-img/originais/, GIFs em levivita-img/gif/.
      A versão antiga com pote ficou guardada em levivita-img/versao-pote/ (não é usada na página).
-  7. DOSE ................... 4 cápsulas/dia (2 de manhã + 2 à noite), sempre com bastante água: 1 pacote = 30 dias.
+  7. DOSE / DURAÇÃO ........ pendentes; conferir rótulo do fornecedor.
 -->
 
 <!-- ===== COLE AQUI: Pixel / GTM / Clarity ===== -->
@@ -551,8 +553,11 @@ fbq('track', 'PageView');
 .dm-demo-foot{background:#111;color:#bbb;text-align:center;font-size:12px;padding:10px 14px}
 </style>
 <link rel="stylesheet" href="../demo-refresh.css">
+<style id="origem-info-card-css">.ov-info-card{box-sizing:border-box;max-width:1080px;margin:32px auto;padding:24px;background:#f2f8f2;color:#24362b;border:1px solid #cbdcd6;border-left:6px solid #3f7d4e;border-radius:16px;display:flex;align-items:center;gap:20px;font-family:inherit}.ov-info-card svg{width:42px;height:42px;flex:none}.ov-info-card strong{font-size:21px;display:block}.ov-info-card p{margin:4px 0;line-height:1.5}.ov-info-card a{margin-left:auto;white-space:nowrap;color:#286039;font-weight:700;text-decoration:underline;text-underline-offset:4px;padding:12px 4px}.ov-info-card a:focus-visible{outline:3px solid #286039;outline-offset:4px}@media(max-width:600px){.ov-info-card{margin:24px 16px;padding:18px;gap:12px;flex-wrap:wrap}.ov-info-card strong{font-size:19px}.ov-info-card svg{width:30px;height:30px}.ov-info-card .ov-info-copy{flex:1;min-width:180px}.ov-info-card a{margin-left:42px}}</style>
+<style id="new-pack-media">.dm-card .ph img{object-fit:contain!important}.dm-card .ph{background:#faf7f3}.fvid>img,.reveal-img>img{width:100%;height:auto;display:block}.ov-new-family{display:grid;grid-template-columns:1fr 1fr;gap:8px}.ov-new-family img{width:100%;height:auto}</style>
 </head>
 <body class="demo-refresh">
+<aside class="wrap" data-current-factual style="margin:16px auto;padding:16px;border:1px solid #b7cabc;border-radius:12px"><strong>Ficha da simulação</strong><p>120 cápsulas de 500 mg por pote, com excipiente. Não se declara fórmula pura nem quantidade individual de cada componente. Recomendação de uso não informada. Dose diária e duração por pote ou kit pendentes de confirmação no rótulo do fornecedor.</p></aside>
 <div class="demo-disclosure"><b>DEMO · APRESENTAÇÃO</b> Fotos geradas por IA, relatos, avaliações e ofertas ilustrativos.</div><div class="dm-bar">ESCOLHA SEU KIT · LEVE MAIS, PAGUE MENOS · FRETE GRÁTIS <small>Condições simuladas</small></div>
 <noscript><img height="1" width="1" style="display:none"
 src="https://www.facebook.com/tr?id=1051208311286719&ev=PageView&noscript=1"
@@ -597,12 +602,12 @@ src="https://www.facebook.com/tr?id=1051208311286719&ev=PageView&noscript=1"
       <div class="hero-left">
         <span class="patent">Fibra Solúvel · Plantago ovata</span>
         <div class="slides" id="slides">
-          <div class="slide photo on"><video class="loopvid" src="levivita-img/video-pouch.mp4" poster="levivita-img/pouch.webp" autoplay muted loop playsinline aria-label="Pacote de Levivita Psyllium, 120 cápsulas de 500mg"></video></div>
-          <div class="slide photo"><img src="levivita-img/kit-3-pacotes.webp" alt="Kit com 3 pacotes de Levivita" loading="lazy" decoding="async"></div>
-          <div class="slide photo"><img src="levivita-img/beneficios.webp" alt="6 benefícios em 1" loading="lazy" decoding="async"></div>
-          <div class="slide photo"><img src="levivita-img/por-dentro.webp" alt="O que tem por dentro: psyllium, fibra solúvel" loading="lazy" decoding="async"></div>
-          <div class="slide photo"><img src="levivita-img/composicao.webp" alt="Composição limpa: o que contém e o que não contém" loading="lazy" decoding="async"></div>
-          <div class="slide photo"><img src="levivita-img/como-tomar.webp" alt="Como tomar: 2 cápsulas de manhã e 2 à noite, com bastante água" loading="lazy" decoding="async"></div>
+          <div class="slide photo on"><img src="levivita-img/pouch.webp" alt="Embalagem de Levivita" width="1000" height="1000" fetchpriority="high" decoding="async"></div>
+          <div class="slide photo"><img src="levivita-img/kit-3-pacotes.webp" alt="Kit de 3 unidades de Levivita" width="1000" height="1000" loading="lazy" decoding="async"></div>
+          <div class="slide photo"><img src="levivita-img/beneficios.webp" alt="Apresentação de Levivita" width="1000" height="1000" loading="lazy" decoding="async"></div>
+          <div class="slide photo"><img src="levivita-img/por-dentro.webp" alt="Informações do produto de Levivita" width="1000" height="1000" loading="lazy" decoding="async"></div>
+          <div class="slide photo"><img src="levivita-img/composicao.webp" alt="Composição apresentada de Levivita" width="1000" height="1000" loading="lazy" decoding="async"></div>
+          <div class="slide photo"><img src="levivita-img/como-tomar.webp" alt="Produto no cotidiano de Levivita" width="1000" height="1000" loading="lazy" decoding="async"></div>
         </div>
         <div class="thumbs">
           <button class="ph on" onclick="setSlide(0,this)" aria-label="Ver o pacote"><img src="levivita-img/pouch-mini.webp" alt=""></button>
@@ -626,21 +631,21 @@ src="https://www.facebook.com/tr?id=1051208311286719&ev=PageView&noscript=1"
             <span class="offer-tag tag-1">Mais Vendido</span>
             <span class="radio"></span>
             <span class="thumb"><img src="levivita-img/kit-3-pacotes-mini.webp" alt="3 pacotes" loading="lazy" decoding="async"><i class="qty">3 PACOTES</i></span>
-            <span class="offer-body"><span class="offer-title">COMPRE&nbsp;2 · LEVE&nbsp;3</span><br><span class="offer-eco">90 dias de uso · Economize 56%</span></span>
+            <span class="offer-body"><span class="offer-title">COMPRE&nbsp;2 · LEVE&nbsp;3</span><br><span class="offer-eco">Duração pendente · Economize 56%</span></span>
             <span class="offer-price"><span class="offer-old">R$ 449,90</span><span class="offer-new">R$ 199,90</span></span>
           <span class="demo-unit">R$ 66,63 por unidade</span></label>
           <label tabindex="0" role="radio" aria-checked="false" class="offer" onclick="selOffer(this)" data-kit="k4">
             <span class="offer-tag tag-2">Melhor Valor</span>
             <span class="radio"></span>
             <span class="thumb"><img src="levivita-img/kit-4-pacotes.webp" alt="4 pacotes" loading="lazy" decoding="async"><i class="qty">4 PACOTES</i></span>
-            <span class="offer-body"><span class="offer-title">COMPRE&nbsp;3 · LEVE&nbsp;4</span><br><span class="offer-eco">120 dias de uso · Economize 60%</span></span>
+            <span class="offer-body"><span class="offer-title">COMPRE&nbsp;3 · LEVE&nbsp;4</span><br><span class="offer-eco">Duração pendente · Economize 60%</span></span>
             <span class="offer-price"><span class="offer-old">R$ 579,90</span><span class="offer-new">R$ 229,90</span></span>
           <span class="demo-unit">R$ 57,48 por unidade</span></label>
           <label tabindex="0" role="radio" aria-checked="false" class="offer" onclick="selOffer(this)" data-kit="k2">
             <span class="offer-tag tag-3">50% OFF</span>
             <span class="radio"></span>
             <span class="thumb"><img src="levivita-img/kit-2-pacotes.webp" alt="2 pacotes" loading="lazy" decoding="async"><i class="qty">2 PACOTES</i></span>
-            <span class="offer-body"><span class="offer-title">COMPRE&nbsp;1 · LEVE&nbsp;2</span><br><span class="offer-eco">60 dias de uso · Economize 50%</span></span>
+            <span class="offer-body"><span class="offer-title">COMPRE&nbsp;1 · LEVE&nbsp;2</span><br><span class="offer-eco">Duração pendente · Economize 50%</span></span>
             <span class="offer-price"><span class="offer-old">R$ 299,90</span><span class="offer-new">R$ 149,90</span></span>
           <span class="demo-unit">R$ 74,95 por unidade</span></label>
         </div>
@@ -656,7 +661,7 @@ src="https://www.facebook.com/tr?id=1051208311286719&ev=PageView&noscript=1"
         <div class="hquote"><img class="demo-quote-photo" src="../ugc/levivita-1-produto.webp" alt="Personagem fictício gerado por IA" width="88" height="88" loading="lazy"><span class="stars">★★★★★</span><br><b>Cláudia R., 49 anos</b><span class="vf">Personagem fictício · DEMO</span><p>“Eu passava 4, 5 dias sem ir ao banheiro. A barriga estufava tanto que no fim do dia eu tinha que abrir o botão da calça. Na segunda semana tomando a Levivita com bastante água, meu intestino começou a funcionar todo dia de manhã. Eu me sinto leve de novo.”</p></div>
         <div class="approved"><span class="dot">●</span> <b>Aprovado por quem usa</b> — escolhido por quem quer acordar leve, com o intestino em dia.</div>
         <details class="acc"><summary>Como funciona</summary><p>O psyllium é uma fibra solúvel que, em contato com a água, forma um gel macio. Esse gel dá volume e maciez, ajuda o intestino a funcionar no ritmo certo e aumenta a saciedade.</p></details>
-        <details class="acc"><summary>Modo de uso</summary><p>2 cápsulas pela manhã e 2 à noite, sempre com um copo grande de água. Cada pacote rende 30 dias.</p></details>
+        <details class="acc"><summary>Modo de uso</summary><p>Recomendação de uso não informada. Dose diária e duração por pote ou kit pendentes de confirmação no rótulo do fornecedor.</p></details>
         <details class="acc"><summary>Ingredientes principais</summary><p>Psyllium (Plantago ovata) — casca da semente, fibra solúvel natural. 500mg por cápsula. Sem glúten, sem lactose e sem conservantes.</p></details>
         <details class="acc"><summary>Garantia de reembolso</summary><p>Você tem 120 dias para experimentar. Se não sentir a diferença, devolvemos 100% do valor pago.</p></details>
       </div>
@@ -734,7 +739,7 @@ src="https://www.facebook.com/tr?id=1051208311286719&ev=PageView&noscript=1"
 <section class="reveal-sec">
   <div class="reveal-grid">
     <div class="reveal-img">
-      <video src="levivita-img/video-lifestyle.mp4" poster="levivita-img/lifestyle.webp" autoplay muted loop playsinline aria-label="Mulher sorrindo segurando o pacote de Levivita"></video>
+      <img src="levivita-img/lifestyle.webp" alt="Levivita — nova embalagem Origem Vita" width="1000" height="1000" decoding="async" style="display:block;width:100%;height:auto;object-fit:contain">
     </div>
     <div class="reveal-content">
       <span class="rk">O que ninguém te conta</span>
@@ -750,7 +755,7 @@ src="https://www.facebook.com/tr?id=1051208311286719&ev=PageView&noscript=1"
   <div class="wrap">
     <p class="eyebrow-c">A fórmula que todos estão falando</p>
     <h2 class="center" id="stickyTrigger">A fibra <span class="hl">que todos estão falando</span></h2>
-    <div class="fvid"><video src="levivita-img/video-pouch.mp4" poster="levivita-img/pouch.webp" autoplay muted loop playsinline aria-label="Embalagem de Levivita"></video></div>
+    <div class="fvid"><img src="levivita-img/pouch.webp" alt="Levivita — nova embalagem Origem Vita" width="1000" height="1000" decoding="async" style="display:block;width:100%;height:auto;object-fit:contain"></div>
     <p class="lead" style="max-width:660px;margin:20px auto 0">A Levivita é psyllium em cápsulas — uma das fibras solúveis mais estudadas do mundo. Em contato com a água, ela vira um gel macio que regula o intestino nos dois sentidos, sem gosma no copo e sem gosto.</p>
     <div class="fgrid"><div>Intestino no ritmo</div><div>Barriga mais leve</div><div>Mais saciedade</div><div>Aliada do colesterol e da glicemia</div><div>Não é laxante</div><div>Sem gosto, sem gosma</div></div>
     <div class="mechs"><div class="mech"><div class="em">💧</div><h3>Vira gel com a água</h3><p>A fibra absorve água e forma um gel macio que hidrata e dá volume.</p></div><div class="mech"><div class="em">🌀</div><h3>Intestino no ritmo</h3><p>O gel amolece o que está preso e dá consistência ao que está solto — regulando nos dois sentidos.</p></div><div class="mech"><div class="em">🍽️</div><h3>Mais saciedade</h3><p>O gel ocupa espaço e deixa a digestão mais lenta: você belisca menos.</p></div><div class="mech"><div class="em">📈</div><h3>Melhora progressiva</h3><p>Muita gente sente diferença nos primeiros dias; o ritmo costuma se estabilizar entre 2 e 3 semanas.</p></div></div>
@@ -778,37 +783,27 @@ src="https://www.facebook.com/tr?id=1051208311286719&ev=PageView&noscript=1"
     <p class="lead">Um ingrediente só. Você sabe exatamente o que está tomando.</p>
     <div class="comp">
       <div class="h">Composição · por cápsula</div>
-      <div class="row"><b>Psyllium (Plantago ovata) — casca da semente</b><span>500mg</span></div>
+      <div class="row"><b>Psyllium com excipiente — massa declarada da cápsula</b><span>500mg</span></div>
       <div class="row"><b>Fibra solúvel natural</b><span>✓</span></div>
       <div class="row"><b>Sem glúten · Sem lactose</b><span>✓</span></div>
-      <div class="row"><b>Sem conservantes ou aditivos artificiais</b><span>✓</span></div>
-      <div class="row"><b>Cápsulas por pacote</b><span>120 (30 dias)</span></div>
+      <div class="row"><b>Contém excipiente</b><span>✓</span></div>
+      <div class="row"><b>Cápsulas por pacote</b><span>120 · duração pendente</span></div>
     </div>
     <p class="comp-note">100% natural · Uso adulto · Tome sempre com bastante água.</p>
     <div class="experts">
       <span class="ic">🌱</span>
-      <div><b>Fórmula de ingrediente único</b><p>Nada de misturas para encher a fórmula: 100% casca de semente de psyllium, a parte mais rica em fibra solúvel.</p></div>
+      <div><b>Psyllium com excipiente</b><p>O anúncio declara psyllium com excipiente; a quantidade de cada componente não foi confirmada.</p></div>
     </div>
   </div>
 <p class="dm-note" style="max-width:850px;margin:20px auto;padding:0 20px">A composição informa psyllium (Plantago ovata), 500mg por cápsula. Não apresenta laudo de pureza nem quantifica separadamente a fibra solúvel.</p></section>
 
 <section class="dm-sec"><div class="wrap"><h2 class="center">O que você <span class="hl">já tentou</span> e por que não bastou</h2><div class="dm-head"><span>Alternativa</span><span>O limite</span><span>Com Levivita</span></div><div class="dm-alt"><div class="dm-row"><div class="a">Chá de sene</div><div class="b">Laxante: resolve o dia, mas não organiza o intestino.</div><div class="c">Fibra solúvel que dá volume e apoia o ritmo natural.</div></div><div class="dm-row"><div class="a">Fibra em pó</div><div class="b">Mistura, gosto e textura estranha. Difícil manter todo dia.</div><div class="c">Cápsula: 4 por dia com água, sem preparo.</div></div><div class="dm-row"><div class="a">Só beber mais água</div><div class="b">Essencial, mas sozinha nem sempre basta.</div><div class="c">Água mais fibra: o combo que funciona.</div></div></div><div class="dm-sci"><b>🔬 O que diz a ciência</b><p>O psyllium (isabgol) vem da semente de Plantago ovata, cultivada principalmente em Gujarat e Rajasthan, na Índia, e é uma fibra solúvel usada há séculos.</p><small>Referência sobre o ingrediente, não sobre este produto. Este produto não foi testado em estudo clínico próprio.</small></div></div></section>
 
-<section>
-  <div class="wrap">
-    <h2 class="center">Como tomar o <span class="hl">seu protocolo</span></h2>
-    <p class="lead">Simples e sem mudar a rotina.</p>
-    <div class="htake">
-      <div class="htk"><div class="htk-media"><img src="levivita-img/passo-1.webp" alt="Mão segurando cápsulas ao lado de um copo grande de água" loading="lazy" decoding="async"><span class="num">1</span></div><div class="htk-body"><h4>2 cápsulas de manhã e 2 à noite</h4><p>Sempre com um copo grande de água (cerca de 300ml) a cada dose.</p></div></div>
-      <div class="htk"><div class="htk-media"><img src="levivita-img/passo-2.webp" alt="Psyllium formando gel num copo de água" loading="lazy" decoding="async"><span class="num">2</span></div><div class="htk-body"><h4>A fibra vira gel</h4><p>Em contato com a água, o psyllium forma um gel macio que dá volume e regula o intestino.</p></div></div>
-      <div class="htk"><div class="htk-media"><img src="levivita-img/passo-3.webp" alt="Pacote de Levivita na mesa do café da manhã" loading="lazy" decoding="async"><span class="num">3</span></div><div class="htk-body"><h4>Beba água ao longo do dia</h4><p>Fibra precisa de água para funcionar. Mantenha a regularidade: cada pacote rende 30 dias.</p></div></div>
-    </div>
-  </div>
-</section>
+<section class="sec-white"><div class="wrap"><h2 class="center">Orientação de uso pendente</h2><p class="lead">Recomendação de uso não informada. Dose diária e duração por pote ou kit pendentes de confirmação no rótulo do fornecedor.</p></div></section>
 
-<section class="sec-white dm-sec"><div class="wrap"><p class="eyebrow-c">CONSISTÊNCIA É O QUE CONTA</p><h2 class="center">O que esperar da <span class="hl">Levivita</span>, semana a semana</h2><p class="lead">Cada corpo responde no seu tempo. Veja a linha do tempo realista e quando vale avaliar.</p><div class="dm-tl"><div class="dm-step"><small>Dias 1 a 7</small><h4>Adaptação</h4><p>Comece com 2 cápsulas e suba até 4 por dia, sempre com bastante água. É normal sentir a barriga diferente nos primeiros dias.</p></div><div class="dm-step"><small>Semanas 2 a 3</small><h4>Primeiros sinais</h4><p>O intestino costuma ficar mais regular e a sensação de saciedade entre as refeições aparece. Mais água ajuda muito.</p></div><div class="dm-step"><small>Semanas 4 a 6</small><h4>Hora de avaliar</h4><p>Observe a regularidade e o conforto. Fibra funciona com hábito: água, frutas, legumes e movimento somam.</p></div><div class="dm-step"><small>2 a 3 meses</small><h4>Decisão com dados</h4><p>Continue como parte da rotina se notou diferença. Fale com o médico se usa remédios, já que a fibra pode atrasar a absorção.</p></div></div><p class="dm-note">Relatos individuais variam. Suplemento alimentar não é medicamento e não substitui acompanhamento médico.</p></div></section>
+<section class="sec-white"><div class="wrap"><h2 class="center">Orientação de uso pendente</h2><p class="lead">Recomendação de uso não informada. Dose diária e duração por pote ou kit pendentes de confirmação no rótulo do fornecedor.</p></div></section>
 
-<section id="historias-demo" class="sec-white dm-sec"><div class="wrap"><h2 class="center">Histórias que <span class="hl">aproximam</span></h2><p class="subh">Depoimentos fictícios para apresentação. Todos os retratos desta seção foram gerados por inteligência artificial.</p><div class="dm-ugc"><div class="dm-card"><div class="ph"><img src="../ugc/levivita-1-produto.webp" alt="Personagem fictício segurando o produto · imagem gerada por IA" loading="lazy" width="1024" height="1280"><span class="demo-image-label">IMAGEM GERADA POR IA</span></div><div class="bd"><span class="stars">★★★★★</span><p>“Sempre tive intestino preguiçoso e vivia de chá. Em duas semanas já estava mais regular. Lembre de beber água, faz diferença.”</p><div class="nm">Cláudia R., 49 anos</div><span class="vf">Personagem fictício · DEMO · Santo André, SP</span></div></div><div class="dm-card"><div class="ph"><img src="../ugc/levivita-2-produto.webp" alt="Personagem fictício segurando o produto · imagem gerada por IA" loading="lazy" width="1024" height="1280"><span class="demo-image-label">IMAGEM GERADA POR IA</span></div><div class="bd"><span class="stars">★★★★★</span><p>“Tomo 2 de manhã e 2 à noite. Menos fome no meio da tarde, que era o meu pior horário.”</p><div class="nm">Sônia B., 56 anos</div><span class="vf">Personagem fictício · DEMO · Niterói, RJ</span></div></div><div class="dm-card"><div class="ph"><img src="../ugc/levivita-3-produto.webp" alt="Personagem fictício segurando o produto · imagem gerada por IA" loading="lazy" width="1024" height="1280"><span class="demo-image-label">IMAGEM GERADA POR IA</span></div><div class="bd"><span class="stars">★★★★★</span><p>“Pedi o kit de 3. Chegou certinho. Voltei a ter rotina, e isso mudou meu dia.”</p><div class="nm">Henrique D., 39 anos</div><span class="vf">Personagem fictício · DEMO · Belo Horizonte, MG</span></div></div></div></div></section>
+<section id="historias-demo" class="sec-white dm-sec"><div class="wrap"><h2 class="center">Histórias que <span class="hl">aproximam</span></h2><p class="subh">Depoimentos fictícios para apresentação. Todos os retratos desta seção foram gerados por inteligência artificial.</p><div class="dm-ugc"><div class="dm-card"><div class="ph"><img src="../ugc/levivita-1-produto.webp" alt="Personagem fictício segurando o produto · imagem gerada por IA" loading="lazy" width="800" height="1000"><span class="demo-image-label">IMAGEM GERADA POR IA</span></div><div class="bd"><span class="stars">★★★★★</span><p>“Sempre tive intestino preguiçoso e vivia de chá. Em duas semanas já estava mais regular. Lembre de beber água, faz diferença.”</p><div class="nm">Cláudia R., 49 anos</div><span class="vf">Personagem fictício · DEMO · Santo André, SP</span></div></div><div class="dm-card"><div class="ph"><img src="../ugc/levivita-2-produto.webp" alt="Personagem fictício segurando o produto · imagem gerada por IA" loading="lazy" width="800" height="1000"><span class="demo-image-label">IMAGEM GERADA POR IA</span></div><div class="bd"><span class="stars">★★★★★</span><p>Recomendação de uso não informada. Dose diária e duração por pote ou kit pendentes de confirmação no rótulo do fornecedor.</p><div class="nm">Sônia B., 56 anos</div><span class="vf">Personagem fictício · DEMO · Niterói, RJ</span></div></div><div class="dm-card"><div class="ph"><img src="../ugc/levivita-3-produto.webp" alt="Personagem fictício segurando o produto · imagem gerada por IA" loading="lazy" width="800" height="1000"><span class="demo-image-label">IMAGEM GERADA POR IA</span></div><div class="bd"><span class="stars">★★★★★</span><p>“Pedi o kit de 3. Chegou certinho. Voltei a ter rotina, e isso mudou meu dia.”</p><div class="nm">Henrique D., 39 anos</div><span class="vf">Personagem fictício · DEMO · Belo Horizonte, MG</span></div></div></div></div></section>
 
 <section class="sec-white">
   <div class="wrap">
@@ -853,7 +848,7 @@ src="https://www.facebook.com/tr?id=1051208311286719&ev=PageView&noscript=1"
       <div class="rev"><div class="top"><div class="av">C</div><div><div class="name">Cláudia R.</div><div class="verif">Personagem fictício · DEMO</div></div></div><div class="stars">★★★★★</div><p>"Me ajuda muito a controlar a fome entre as refeições. Belisco bem menos à tarde."</p><div class="date">17 de setembro de 2026</div></div>
       <div class="rev"><div class="top"><div class="av">D</div><div><div class="name">Denise L.</div><div class="verif">Personagem fictício · DEMO</div></div></div><div class="stars">★★★★★</div><p>"Larguei o chá laxante que eu tomava toda noite. Agora é tudo natural."</p><div class="date">13 de setembro de 2026</div></div>
       <div class="rev"><div class="top"><div class="av">F</div><div><div class="name">Fernanda T.</div><div class="verif">Personagem fictício · DEMO</div></div></div><div class="stars">★★★★★</div><p>"Meu médico recomendou mais fibra e eu achei prático assim. Sem gosto nenhum."</p><div class="date">9 de setembro de 2026</div></div>
-      <div class="rev"><div class="top"><div class="av">S</div><div><div class="name">Sônia P.</div><div class="verif">Personagem fictício · DEMO</div></div></div><div class="stars">★★★★★</div><p>"Comprei o kit de 3 para fazer os 90 dias. Recomendo seguir direitinho e beber bastante água."</p><div class="date">5 de setembro de 2026</div></div>
+      <div class="rev"><div class="top"><div class="av">S</div><div><div class="name">Sônia P.</div><div class="verif">Personagem fictício · DEMO</div></div></div><div class="stars">★★★★★</div><p>Recomendação de uso não informada. Dose diária e duração por pote ou kit pendentes de confirmação no rótulo do fornecedor.</p><div class="date">5 de setembro de 2026</div></div>
     </div>
   </div>
 </section>
@@ -868,21 +863,21 @@ src="https://www.facebook.com/tr?id=1051208311286719&ev=PageView&noscript=1"
             <span class="offer-tag tag-1">Mais Vendido</span>
             <span class="radio"></span>
             <span class="thumb"><img src="levivita-img/kit-3-pacotes-mini.webp" alt="3 pacotes" loading="lazy" decoding="async"><i class="qty">3 PACOTES</i></span>
-            <span class="offer-body"><span class="offer-title">COMPRE&nbsp;2 · LEVE&nbsp;3</span><br><span class="offer-eco">90 dias de uso · Economize 56%</span></span>
+            <span class="offer-body"><span class="offer-title">COMPRE&nbsp;2 · LEVE&nbsp;3</span><br><span class="offer-eco">Duração pendente · Economize 56%</span></span>
             <span class="offer-price"><span class="offer-old">R$ 449,90</span><span class="offer-new">R$ 199,90</span></span>
           <span class="demo-unit">R$ 66,63 por unidade</span></label>
           <label tabindex="0" role="radio" aria-checked="false" class="offer" onclick="selOffer(this)" data-kit="k4">
             <span class="offer-tag tag-2">Melhor Valor</span>
             <span class="radio"></span>
             <span class="thumb"><img src="levivita-img/kit-4-pacotes.webp" alt="4 pacotes" loading="lazy" decoding="async"><i class="qty">4 PACOTES</i></span>
-            <span class="offer-body"><span class="offer-title">COMPRE&nbsp;3 · LEVE&nbsp;4</span><br><span class="offer-eco">120 dias de uso · Economize 60%</span></span>
+            <span class="offer-body"><span class="offer-title">COMPRE&nbsp;3 · LEVE&nbsp;4</span><br><span class="offer-eco">Duração pendente · Economize 60%</span></span>
             <span class="offer-price"><span class="offer-old">R$ 579,90</span><span class="offer-new">R$ 229,90</span></span>
           <span class="demo-unit">R$ 57,48 por unidade</span></label>
           <label tabindex="0" role="radio" aria-checked="false" class="offer" onclick="selOffer(this)" data-kit="k2">
             <span class="offer-tag tag-3">50% OFF</span>
             <span class="radio"></span>
             <span class="thumb"><img src="levivita-img/kit-2-pacotes.webp" alt="2 pacotes" loading="lazy" decoding="async"><i class="qty">2 PACOTES</i></span>
-            <span class="offer-body"><span class="offer-title">COMPRE&nbsp;1 · LEVE&nbsp;2</span><br><span class="offer-eco">60 dias de uso · Economize 50%</span></span>
+            <span class="offer-body"><span class="offer-title">COMPRE&nbsp;1 · LEVE&nbsp;2</span><br><span class="offer-eco">Duração pendente · Economize 50%</span></span>
             <span class="offer-price"><span class="offer-old">R$ 299,90</span><span class="offer-new">R$ 149,90</span></span>
           <span class="demo-unit">R$ 74,95 por unidade</span></label>
         </div>
@@ -901,7 +896,7 @@ src="https://www.facebook.com/tr?id=1051208311286719&ev=PageView&noscript=1"
     <div class="trows">
       <div class="trow"><span class="ic">🚚</span><div><b>Frete grátis · Envio rápido · Rastreio</b><p>Despacho em até 1 dia útil, com código de rastreio para você acompanhar a entrega em tempo real.</p></div></div>
       <div class="trow"><span class="ic">🤫</span><div><b>Embalagem discreta</b><p>O seu pedido chega numa caixa neutra, sem o nome ou a foto do produto do lado de fora.</p></div></div>
-      <div class="trow"><span class="ic">🌿</span><div><b>Fórmula limpa e transparente</b><p>100% psyllium, sem glúten, sem lactose, sem conservantes e sem aditivos artificiais. Você sabe exatamente o que está tomando.</p></div></div>
+      <div class="trow"><span class="ic">🌿</span><div><b>Fórmula limpa e transparente</b><p>psyllium com excipiente, sem glúten, sem lactose, sem conservantes e com excipiente. Você sabe exatamente o que está tomando.</p></div></div>
     </div>
     <a href="#" class="cta sm js-buy">Quero minha Levivita com frete grátis →</a>
   </div>
@@ -912,14 +907,14 @@ src="https://www.facebook.com/tr?id=1051208311286719&ev=PageView&noscript=1"
     <h2 class="center">Perguntas frequentes</h2>
     <div class="faq">
       <div class="faqitem"><div class="q">Como a Levivita funciona?</div><p class="a">O psyllium é uma fibra solúvel que, em contato com a água, forma um gel macio. Esse gel dá volume e maciez às fezes, ajuda o intestino a funcionar no ritmo certo, aumenta a saciedade e deixa a absorção de gordura e açúcar da refeição mais lenta.</p></div>
-      <div class="faqitem"><div class="q">Como devo tomar?</div><p class="a">2 cápsulas pela manhã e 2 à noite, sempre com um copo grande de água a cada dose. Se você não tem o costume de consumir fibra, comece com 2 cápsulas por dia na primeira semana e aumente aos poucos.</p></div>
+      <div class="faqitem"><div class="q">Como devo tomar?</div><p class="a">Recomendação de uso não informada. Dose diária e duração por pote ou kit pendentes de confirmação no rótulo do fornecedor.</p></div>
       <div class="faqitem"><div class="q">Por que preciso beber tanta água?</div><p class="a">Porque é a água que transforma o psyllium em gel. Sem água suficiente, a fibra pode ressecar e piorar o intestino preso. Tome cada dose com um copo cheio e beba água ao longo do dia.</p></div>
       <div class="faqitem"><div class="q">Em quanto tempo vejo resultado?</div><p class="a">Muita gente sente o intestino mais regular já nos primeiros dias. O ritmo costuma se estabilizar entre 2 e 3 semanas de uso diário.</p></div>
-      <div class="faqitem"><div class="q">Pode dar gases no começo?</div><p class="a">Pode, nos primeiros dias, enquanto o intestino se acostuma com mais fibra. Por isso a dica de começar com 2 cápsulas por dia e aumentar aos poucos.</p></div>
+      <div class="faqitem"><div class="q">Pode dar gases no começo?</div><p class="a">Recomendação de uso não informada. Dose diária e duração por pote ou kit pendentes de confirmação no rótulo do fornecedor.</p></div>
       <div class="faqitem"><div class="q">Posso tomar junto com remédios?</div><p class="a">A fibra pode diminuir a absorção de alguns medicamentos. Tome a Levivita com pelo menos 2 horas de intervalo dos seus remédios e converse com o seu médico se você usa medicação contínua, tem diabetes ou alguma doença intestinal.</p></div>
       <div class="faqitem"><div class="q">Quem não deve tomar?</div><p class="a">Pessoas com obstrução intestinal, dificuldade para engolir ou alergia ao psyllium. Gestantes, lactantes e menores de 18 anos devem consultar um profissional de saúde antes de usar.</p></div>
-      <div class="faqitem"><div class="q">Tem glúten, lactose ou conservantes?</div><p class="a">Não. A Levivita é 100% psyllium, sem glúten, sem lactose, sem conservantes e sem aditivos artificiais.</p></div>
-      <div class="faqitem"><div class="q">Quanto tempo dura cada pacote?</div><p class="a">Cada pacote tem 120 cápsulas de 500mg. Tomando 4 por dia, dura 30 dias. O kit de 3 pacotes rende 90 dias.</p></div>
+      <div class="faqitem"><div class="q">Tem glúten, lactose ou conservantes?</div><p class="a">Não. A Levivita é psyllium com excipiente, sem glúten, sem lactose, sem conservantes e com excipiente.</p></div>
+      <div class="faqitem"><div class="q">Quanto tempo dura cada pacote?</div><p class="a">Recomendação de uso não informada. Dose diária e duração por pote ou kit pendentes de confirmação no rótulo do fornecedor.</p></div>
       <div class="faqitem"><div class="q">E se eu não gostar?</div><p class="a">Você tem 120 dias de garantia. Se não ficar satisfeito por qualquer motivo, é só falar com o nosso suporte e devolvemos o seu dinheiro — sem burocracia.</p></div>
       <div class="faqitem"><div class="q">Quanto tempo para receber?</div><p class="a">O pedido é despachado em até 1 dia útil, com frete grátis para todo o Brasil e código de rastreio para acompanhar a entrega.</p></div>
     </div>
@@ -935,6 +930,7 @@ src="https://www.facebook.com/tr?id=1051208311286719&ev=PageView&noscript=1"
   </div>
 </section>
 
+<aside class="ov-info-card" aria-label="Informações da Origem Vita"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="10" stroke="#3f7d4e" stroke-width="1.7"/><path d="M12 11v6M12 7v.1" stroke="#3f7d4e" stroke-width="2" stroke-linecap="round"/></svg><div class="ov-info-copy"><strong>Conheça a Origem Vita</strong><p>Informações da empresa e atendimento.</p></div><a href="../origem-vita-e-confiavel/">Saiba mais <span aria-hidden="true">→</span></a></aside>
 <footer>
   <div class="wrap">
     <div class="logo">Levi<span>vita</span></div>

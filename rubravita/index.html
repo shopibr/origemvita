@@ -15,7 +15,9 @@
   ===== COMO EDITAR ESTA PÁGINA =====
   1. LINKS DE CHECKOUT ...... no <script> do fim da página, objeto CHECKOUT (k2, k3, k4).
   2. PREÇOS DOS KITS ........ nos dois blocos de oferta (.offers) e na barra fixa (.stickybar).
-  3. CONTATO / CNPJ .......... no <footer>.
+  3. CONTATO / CNPJ .......... no
+
+<footer>.
   4. PIXEL / GTM / CLARITY ... cole os scripts no lugar marcado logo abaixo.
   5. AVALIAÇÕES E NÚMEROS .... nota, contagem de avaliações, depoimentos e porcentagens da
      pesquisa são EXEMPLOS. Troque por dados reais dos seus clientes antes de publicar.
@@ -552,6 +554,8 @@ fbq('track', 'PageView');
 .dm-demo-foot{background:#111;color:#bbb;text-align:center;font-size:12px;padding:10px 14px}
 </style>
 <link rel="stylesheet" href="../demo-refresh.css">
+<style id="origem-info-card-css">.ov-info-card{box-sizing:border-box;max-width:1080px;margin:32px auto;padding:24px;background:#f2f8f2;color:#24362b;border:1px solid #cbdcd6;border-left:6px solid #3f7d4e;border-radius:16px;display:flex;align-items:center;gap:20px;font-family:inherit}.ov-info-card svg{width:42px;height:42px;flex:none}.ov-info-card strong{font-size:21px;display:block}.ov-info-card p{margin:4px 0;line-height:1.5}.ov-info-card a{margin-left:auto;white-space:nowrap;color:#286039;font-weight:700;text-decoration:underline;text-underline-offset:4px;padding:12px 4px}.ov-info-card a:focus-visible{outline:3px solid #286039;outline-offset:4px}@media(max-width:600px){.ov-info-card{margin:24px 16px;padding:18px;gap:12px;flex-wrap:wrap}.ov-info-card strong{font-size:19px}.ov-info-card svg{width:30px;height:30px}.ov-info-card .ov-info-copy{flex:1;min-width:180px}.ov-info-card a{margin-left:42px}}</style>
+<style id="new-pack-media">.dm-card .ph img{object-fit:contain!important}.dm-card .ph{background:#faf7f3}.fvid>img,.reveal-img>img{width:100%;height:auto;display:block}.ov-new-family{display:grid;grid-template-columns:1fr 1fr;gap:8px}.ov-new-family img{width:100%;height:auto}</style>
 </head>
 <body class="demo-refresh">
 <div class="demo-disclosure"><b>DEMO · APRESENTAÇÃO</b> Fotos geradas por IA, relatos, avaliações e ofertas ilustrativos.</div><div class="dm-bar">ESCOLHA SEU KIT · LEVE MAIS, PAGUE MENOS · FRETE GRÁTIS <small>Condições simuladas</small></div>
@@ -599,12 +603,12 @@ src="https://www.facebook.com/tr?id=1051208311286719&ev=PageView&noscript=1"
       <div class="hero-left">
         <span class="patent">Fórmula Tripla · Fonte Natural de Nitratos</span>
         <div class="slides" id="slides">
-          <div class="slide photo on"><video class="loopvid" src="rubravita-img/video-pouch.mp4" poster="rubravita-img/pouch.webp" autoplay muted loop playsinline aria-label="Pacote de Rubravita Beterraba + Semente de Uva + MC Vermelha, 120 cápsulas de 500mg"></video></div>
-          <div class="slide photo"><img src="rubravita-img/kit-3-pacotes.webp" alt="Kit com 3 pacotes de Rubravita" loading="lazy" decoding="async"></div>
-          <div class="slide photo"><img src="rubravita-img/beneficios.webp" alt="6 benefícios em 1" loading="lazy" decoding="async"></div>
-          <div class="slide photo"><img src="rubravita-img/por-dentro.webp" alt="O que tem por dentro: beterraba, semente de uva e MC vermelha" loading="lazy" decoding="async"></div>
-          <div class="slide photo"><img src="rubravita-img/composicao.webp" alt="Composição limpa: o que contém e o que não contém" loading="lazy" decoding="async"></div>
-          <div class="slide photo"><img src="rubravita-img/como-tomar.webp" alt="Como tomar: 2 cápsulas por dia, 1 pacote = 60 dias" loading="lazy" decoding="async"></div>
+          <div class="slide photo on"><img src="rubravita-img/pouch.webp" alt="Embalagem de Rubravita" width="1000" height="1000" fetchpriority="high" decoding="async"></div>
+          <div class="slide photo"><img src="rubravita-img/kit-3-pacotes.webp" alt="Kit de 3 unidades de Rubravita" width="1000" height="1000" loading="lazy" decoding="async"></div>
+          <div class="slide photo"><img src="rubravita-img/beneficios.webp" alt="Apresentação de Rubravita" width="1000" height="1000" loading="lazy" decoding="async"></div>
+          <div class="slide photo"><img src="rubravita-img/por-dentro.webp" alt="Informações do produto de Rubravita" width="1000" height="1000" loading="lazy" decoding="async"></div>
+          <div class="slide photo"><img src="rubravita-img/composicao.webp" alt="Composição apresentada de Rubravita" width="1000" height="1000" loading="lazy" decoding="async"></div>
+          <div class="slide photo"><img src="rubravita-img/como-tomar.webp" alt="Produto no cotidiano de Rubravita" width="1000" height="1000" loading="lazy" decoding="async"></div>
         </div>
         <div class="thumbs">
           <button class="ph on" onclick="setSlide(0,this)" aria-label="Ver o pacote"><img src="rubravita-img/pouch-mini.webp" alt=""></button>
@@ -743,7 +747,7 @@ src="https://www.facebook.com/tr?id=1051208311286719&ev=PageView&noscript=1"
 <section class="reveal-sec">
   <div class="reveal-grid">
     <div class="reveal-img">
-      <video src="rubravita-img/video-lifestyle.mp4" poster="rubravita-img/lifestyle.webp" autoplay muted loop playsinline aria-label="Mulher sorrindo segurando o pacote de Rubravita"></video>
+      <img src="rubravita-img/lifestyle.webp" alt="Rubravita — nova embalagem Origem Vita" width="1000" height="1000" decoding="async" style="display:block;width:100%;height:auto;object-fit:contain">
     </div>
     <div class="reveal-content">
       <span class="rk">O que ninguém te conta</span>
@@ -759,7 +763,7 @@ src="https://www.facebook.com/tr?id=1051208311286719&ev=PageView&noscript=1"
   <div class="wrap">
     <p class="eyebrow-c">A fórmula que todos estão falando</p>
     <h2 class="center" id="stickyTrigger">A fórmula para a circulação <span class="hl">que todos estão falando</span></h2>
-    <div class="fvid"><video src="rubravita-img/video-pouch.mp4" poster="rubravita-img/pouch.webp" autoplay muted loop playsinline aria-label="Embalagem de Rubravita"></video></div>
+    <div class="fvid"><img src="rubravita-img/pouch.webp" alt="Rubravita — nova embalagem Origem Vita" width="1000" height="1000" decoding="async" style="display:block;width:100%;height:auto;object-fit:contain"></div>
     <p class="lead" style="max-width:660px;margin:20px auto 0">A Rubravita junta 3 ativos naturais que trabalham juntos: a beterraba fornece o nitrato, a semente de uva protege os vasos e a MC vermelha apoia a energia do dia a dia.</p>
     <div class="fgrid"><div>Sangue circulando livre</div><div>Mãos e pés mais quentes</div><div>Pernas leves no fim do dia</div><div>Mais energia e disposição</div><div>Proteção antioxidante</div><div>Zero açúcar, glúten e lactose</div></div>
     <div class="mechs"><div class="mech"><div class="em">🫀</div><h3>Do nitrato ao óxido nítrico</h3><p>O corpo transforma o nitrato natural da beterraba em óxido nítrico — o sinal que ajuda os vasos a relaxar.</p></div><div class="mech"><div class="em">🍇</div><h3>Proteção para os vasos</h3><p>Os antioxidantes da semente de uva ajudam a proteger o revestimento dos vasos contra o desgaste do dia a dia.</p></div><div class="mech"><div class="em">⚡</div><h3>Energia que dura o dia</h3><p>Com o sangue circulando melhor, o oxigênio chega mais fácil aos músculos — e o cansaço da tarde perde força.</p></div><div class="mech"><div class="em">📈</div><h3>Melhora progressiva</h3><p>Quanto mais tempo você usa, mais o corpo responde. Muita gente sente diferença entre 2 e 4 semanas de uso diário.</p></div></div>
@@ -818,7 +822,7 @@ src="https://www.facebook.com/tr?id=1051208311286719&ev=PageView&noscript=1"
 
 <section class="sec-white dm-sec"><div class="wrap"><p class="eyebrow-c">CONSISTÊNCIA É O QUE CONTA</p><h2 class="center">O que esperar da <span class="hl">Rubravita</span>, semana a semana</h2><p class="lead">Cada corpo responde no seu tempo. Veja a linha do tempo realista e quando vale avaliar.</p><div class="dm-tl"><div class="dm-step"><small>Dias 1 a 7</small><h4>Criando a rotina</h4><p>Duas cápsulas por dia, com uma refeição. É cedo para esperar mudança: o objetivo agora é não pular dias. Urina rosada é normal (betanina da beterraba).</p></div><div class="dm-step"><small>Semanas 2 a 4</small><h4>Primeiros sinais</h4><p>Muita gente relata pernas menos pesadas no fim do dia e mais disposição à tarde. Varia de pessoa para pessoa.</p></div><div class="dm-step"><small>Semanas 5 a 8</small><h4>Hora de avaliar</h4><p>Anote como você termina o dia: pernas, mãos e energia. Compare com a primeira semana. Fim do primeiro pacote.</p></div><div class="dm-step"><small>2 a 3 meses</small><h4>Decisão com dados</h4><p>Continue se notou diferença. Se não notou, a garantia de 120 dias cobre: você pede e devolvemos o valor.</p></div></div><p class="dm-note">Relatos individuais variam. Suplemento alimentar não é medicamento e não substitui acompanhamento médico.</p></div></section>
 
-<section id="historias-demo" class="sec-white dm-sec"><div class="wrap"><h2 class="center">Histórias que <span class="hl">aproximam</span></h2><p class="subh">Depoimentos fictícios para apresentação. Todos os retratos desta seção foram gerados por inteligência artificial.</p><div class="dm-ugc"><div class="dm-card"><div class="ph"><img src="../ugc/rubravita-1-produto.webp" alt="Personagem fictício segurando o produto · imagem gerada por IA" loading="lazy" width="1024" height="1280"><span class="demo-image-label">IMAGEM GERADA POR IA</span></div><div class="bd"><span class="stars">★★★★★</span><p>“Pensei que fosse mais um suplemento na gaveta. Na terceira semana percebi que cheguei no fim do dia ainda de pé. Já pedi o segundo kit.”</p><div class="nm">Rosângela M., 54 anos</div><span class="vf">Personagem fictício · DEMO · Campinas, SP</span></div></div><div class="dm-card"><div class="ph"><img src="../ugc/rubravita-2-produto.webp" alt="Personagem fictício segurando o produto · imagem gerada por IA" loading="lazy" width="1024" height="1280"><span class="demo-image-label">IMAGEM GERADA POR IA</span></div><div class="bd"><span class="stars">★★★★★</span><p>“Meus pés viviam gelados. Não é milagre, demorou umas quatro semanas. Mas hoje durmo sem meia grossa.”</p><div class="nm">Valdecir P., 63 anos</div><span class="vf">Personagem fictício · DEMO · Londrina, PR</span></div></div><div class="dm-card"><div class="ph"><img src="../ugc/rubravita-3-produto.webp" alt="Personagem fictício segurando o produto · imagem gerada por IA" loading="lazy" width="1024" height="1280"><span class="demo-image-label">IMAGEM GERADA POR IA</span></div><div class="bd"><span class="stars">★★★★★</span><p>“Chegou em 4 dias, bem embalado. Uso junto com o café da manhã e a caminhada. Mais fôlego na subida.”</p><div class="nm">Aline T., 47 anos</div><span class="vf">Personagem fictício · DEMO · Goiânia, GO</span></div></div></div></div></section>
+<section id="historias-demo" class="sec-white dm-sec"><div class="wrap"><h2 class="center">Histórias que <span class="hl">aproximam</span></h2><p class="subh">Depoimentos fictícios para apresentação. Todos os retratos desta seção foram gerados por inteligência artificial.</p><div class="dm-ugc"><div class="dm-card"><div class="ph"><img src="../ugc/rubravita-1-produto.webp" alt="Personagem fictício segurando o produto · imagem gerada por IA" loading="lazy" width="800" height="1000"><span class="demo-image-label">IMAGEM GERADA POR IA</span></div><div class="bd"><span class="stars">★★★★★</span><p>“Pensei que fosse mais um suplemento na gaveta. Na terceira semana percebi que cheguei no fim do dia ainda de pé. Já pedi o segundo kit.”</p><div class="nm">Rosângela M., 54 anos</div><span class="vf">Personagem fictício · DEMO · Campinas, SP</span></div></div><div class="dm-card"><div class="ph"><img src="../ugc/rubravita-2-produto.webp" alt="Personagem fictício segurando o produto · imagem gerada por IA" loading="lazy" width="800" height="1000"><span class="demo-image-label">IMAGEM GERADA POR IA</span></div><div class="bd"><span class="stars">★★★★★</span><p>“Meus pés viviam gelados. Não é milagre, demorou umas quatro semanas. Mas hoje durmo sem meia grossa.”</p><div class="nm">Valdecir P., 63 anos</div><span class="vf">Personagem fictício · DEMO · Londrina, PR</span></div></div><div class="dm-card"><div class="ph"><img src="../ugc/rubravita-3-produto.webp" alt="Personagem fictício segurando o produto · imagem gerada por IA" loading="lazy" width="800" height="1000"><span class="demo-image-label">IMAGEM GERADA POR IA</span></div><div class="bd"><span class="stars">★★★★★</span><p>“Chegou em 4 dias, bem embalado. Uso junto com o café da manhã e a caminhada. Mais fôlego na subida.”</p><div class="nm">Aline T., 47 anos</div><span class="vf">Personagem fictício · DEMO · Goiânia, GO</span></div></div></div></div></section>
 
 <section class="sec-white">
   <div class="wrap">
@@ -944,6 +948,7 @@ src="https://www.facebook.com/tr?id=1051208311286719&ev=PageView&noscript=1"
   </div>
 </section>
 
+<aside class="ov-info-card" aria-label="Informações da Origem Vita"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="10" stroke="#3f7d4e" stroke-width="1.7"/><path d="M12 11v6M12 7v.1" stroke="#3f7d4e" stroke-width="2" stroke-linecap="round"/></svg><div class="ov-info-copy"><strong>Conheça a Origem Vita</strong><p>Informações da empresa e atendimento.</p></div><a href="../origem-vita-e-confiavel/">Saiba mais <span aria-hidden="true">→</span></a></aside>
 <footer>
   <div class="wrap">
     <div class="logo">Rubra<span>vita</span></div>
