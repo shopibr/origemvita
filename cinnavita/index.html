@@ -333,6 +333,8 @@
   .comp .h{background:var(--pri-esc);color:#fff;padding:14px 18px;font-weight:800;text-align:center;letter-spacing:.5px;text-transform:uppercase;font-size:14px}
   .comp .row{display:flex;justify-content:space-between;gap:14px;padding:13px 18px;border-bottom:1px solid var(--borda);font-size:14.5px}
   .comp .row:last-child{border-bottom:none}
+  .comp .capsule-count b{white-space:nowrap}
+  .comp .capsule-count span{flex-shrink:0}
   .comp .row b{color:var(--pri-esc)}
   .comp .row span{color:var(--pri);font-weight:800;white-space:nowrap}
   .comp-note{text-align:center;font-size:12px;color:var(--cinza);margin-top:12px}
@@ -557,7 +559,7 @@ fbq('track', 'PageView');
 <style id="offer-pack-sizes">.offer-two-size{display:flex!important;flex-direction:column;justify-content:center;align-items:center;background:#f5f5f2;text-align:center;gap:3px}.offer-two-size b{font-size:12px;line-height:1.2}.offer-two-size small{font-size:10px;line-height:1.2}.offer-quantity{font-size:11px}.offer-presentation{font-size:12px;line-height:1.5;margin:12px 0;color:var(--texto)}</style>
 </head>
 <body class="demo-refresh" data-checkout="cinnavita-live">
-<aside class="wrap" data-cinnavita-factual style="margin:16px auto;padding:16px;border:1px solid #c4b7a8;border-radius:12px"><strong>60 cápsulas de 500mg por unidade</strong><p>Kits de 2/3/4 unidades: 120/180/240 cápsulas. O atendimento comercial do produto-fonte selecionado na Shopee informou 3 cápsulas por dia. Essa referência não confirma a posologia do produto Origem Vita. A orientação de uso depende da confirmação do rótulo final e da orientação profissional. Cálculo condicional, sem indicação de dose: se o rótulo final confirmar 3 cápsulas por dia, um pacote de 60 cápsulas rende 20 dias; os kits de 120, 180 e 240 cápsulas rendem aproximadamente 40, 60 e 80 dias.</p></aside>
+
 <div class="dm-bar">ESCOLHA SEU KIT · LEVE MAIS, PAGUE MENOS · FRETE GRÁTIS </div>
 <noscript><img height="1" width="1" style="display:none"
 src="https://www.facebook.com/tr?id=1051208311286719&ev=PageView&noscript=1"
@@ -631,21 +633,21 @@ src="https://www.facebook.com/tr?id=1051208311286719&ev=PageView&noscript=1"
             <span class="offer-tag tag-3">50% OFF</span>
             <span class="radio"></span>
             <span class="thumb"><img src="cinnavita-img/kit-2-pacotes-60caps.webp" alt="2 pacotes de Cinnavita, 60 cápsulas cada" width="1000" height="1000" loading="lazy" decoding="async"></span>
-            <span class="offer-body"><span class="offer-title">COMPRE 1 E LEVE 2</span><br><span class="offer-eco">Cálculo condicional: 40 dias · 3 cáps./dia como referência do produto-fonte; confirmar rótulo final · Economize 50%</span></span>
+            <span class="offer-body"><span class="offer-title">COMPRE 1 E LEVE 2</span><br><span class="offer-eco">40 dias de uso estimado · Economize 50%</span></span>
             <span class="offer-price"><span class="offer-old">R$ 299,90</span><span class="offer-new">R$ 149,90</span></span>
           <span class="demo-unit">R$ 74,95 por unidade</span></label>
 <label tabindex="0" role="radio" aria-checked="false" class="offer" onclick="selOffer(this)" data-kit="k3">
             <span class="offer-tag tag-1">Mais Vendido</span>
             <span class="radio"></span>
             <span class="thumb"><img src="cinnavita-img/kit-3-pacotes-60caps.webp" alt="3 pacotes" loading="lazy" decoding="async"><i class="qty">3 PACOTES</i></span>
-            <span class="offer-body"><span class="offer-title">COMPRE&nbsp;2 · LEVE&nbsp;3</span><br><span class="offer-eco">Cálculo condicional: 60 dias · 3 cáps./dia como referência do produto-fonte; confirmar rótulo final · Economize 56%</span></span>
+            <span class="offer-body"><span class="offer-title">COMPRE&nbsp;2 · LEVE&nbsp;3</span><br><span class="offer-eco">60 dias de uso estimado · Economize 56%</span></span>
             <span class="offer-price"><span class="offer-old">R$ 449,90</span><span class="offer-new">R$ 199,90</span></span>
           <span class="demo-unit">R$ 66,63 por unidade</span></label>
 <label tabindex="0" role="radio" aria-checked="false" class="offer" onclick="selOffer(this)" data-kit="k4">
             <span class="offer-tag tag-2">Melhor Valor</span>
             <span class="radio"></span>
             <span class="thumb"><img src="cinnavita-img/kit-4-pacotes-60caps.webp" alt="4 pacotes" loading="lazy" decoding="async"><i class="qty">4 PACOTES</i></span>
-            <span class="offer-body"><span class="offer-title">COMPRE&nbsp;3 · LEVE&nbsp;4</span><br><span class="offer-eco">Cálculo condicional: 80 dias · 3 cáps./dia como referência do produto-fonte; confirmar rótulo final · Economize 60%</span></span>
+            <span class="offer-body"><span class="offer-title">COMPRE&nbsp;3 · LEVE&nbsp;4</span><br><span class="offer-eco">80 dias de uso estimado · Economize 60%</span></span>
             <span class="offer-price"><span class="offer-old">R$ 579,90</span><span class="offer-new">R$ 229,90</span></span>
           <span class="demo-unit">R$ 57,48 por unidade</span></label>
         </div>
@@ -655,14 +657,14 @@ src="https://www.facebook.com/tr?id=1051208311286719&ev=PageView&noscript=1"
           <span class="ps-lock">🔒 Pagamento 100% seguro · compra protegida</span>
           <div class="pays"><svg class="pi"><use href="#pi-visa"/></svg><svg class="pi"><use href="#pi-mc"/></svg><svg class="pi"><use href="#pi-elo"/></svg><svg class="pi"><use href="#pi-amex"/></svg><svg class="pi"><use href="#pi-pix"/></svg></div>
         </div>
-        <p class="offer-presentation">Todos os pacotes contêm 60 cápsulas. Kits de 2, 3 e 4 pacotes: 120, 180 e 240 cápsulas no total. O atendimento comercial do produto-fonte selecionado na Shopee informou 3 cápsulas por dia. Essa referência não confirma a posologia do produto Origem Vita. A orientação de uso depende da confirmação do rótulo final e da orientação profissional. Cálculo condicional, sem indicação de dose: se o rótulo final confirmar 3 cápsulas por dia, um pacote de 60 cápsulas rende 20 dias; os kits de 120, 180 e 240 cápsulas rendem aproximadamente 40, 60 e 80 dias. Fotos ilustrativas; todos os kits são entregues em pacotes de 60 cápsulas.</p>
+        
         <div class="chips"><span><i>●</i>Mais vendido</span><span><i>●</i>Experimente por 90 dias</span><span><i>●</i>Fórmula limpa</span></div>
         <div class="warn"><b>ⓘ Aviso sobre falsificações</b>A Cinnavita original é vendida somente neste site. Produtos com o mesmo nome em marketplaces não são originais.</div>
         <!-- EXEMPLO: depoimento ilustrativo — troque por um depoimento real -->
         <div class="hquote"><img class="demo-quote-photo" src="../ugc/cinnavita-avatar.webp" alt="Personagem fictício gerado por IA" width="88" height="88" loading="lazy"><span class="stars">★★★★★</span><br><b>Eliane R., 53 anos</b><span class="vf">Relato fictício · imagem gerada por IA</span><p>“Depois do almoço eu precisava de um doce — e aí vinha um sono que não me deixava trabalhar. No último exame a glicose veio no limite e eu me assustei. Comecei a cuidar da alimentação e a tomar a Cinnavita junto das refeições. A vontade de doce diminuiu muito e eu me sinto bem mais disposta.”</p></div>
         <div class="approved"><span class="dot">●</span> <b>Aprovado por quem usa</b> — escolhido por quem quer cuidar do açúcar no sangue todos os dias.</div>
         <details class="acc"><summary>Como funciona</summary><p>A canela-do-ceilão é uma das especiarias mais estudadas quando o assunto é açúcar no sangue. Tomada junto com as refeições, ela é uma aliada natural de quem cuida da glicose, ao lado da alimentação e do acompanhamento médico.</p></details>
-        <details class="acc"><summary>Modo de uso</summary><p class="supplier-duration">Cálculo condicional, sem indicação de dose: se o rótulo final confirmar 3 cápsulas por dia, um pacote de 60 cápsulas rende 20 dias; os kits de 120, 180 e 240 cápsulas rendem aproximadamente 40, 60 e 80 dias.</p><p>O atendimento comercial do produto-fonte selecionado na Shopee informou 3 cápsulas por dia. Essa referência não confirma a posologia do produto Origem Vita. A orientação de uso depende da confirmação do rótulo final e da orientação profissional.</p></details>
+        <details class="acc"><summary>Modo de uso</summary><p class="product-facts">Cada pacote contém 60 cápsulas de 500mg. Kits de 2, 3 e 4 pacotes contêm 120, 180 e 240 cápsulas no total.</p><p class="supplier-duration">Cálculo condicional, sem indicação de dose: se o rótulo final confirmar 3 cápsulas por dia, um pacote de 60 cápsulas rende 20 dias; os kits de 120, 180 e 240 cápsulas rendem aproximadamente 40, 60 e 80 dias.</p><p>O atendimento comercial do produto-fonte selecionado na Shopee informou 3 cápsulas por dia. Essa referência não confirma a posologia do produto Origem Vita. A orientação de uso depende da confirmação do rótulo final e da orientação profissional.</p></details>
         <details class="acc"><summary>Ingredientes principais</summary><p>Canela-do-ceilão (Cinnamomum verum), a canela verdadeira, com baixo teor de cumarina. 500mg por cápsula. Zero açúcar, sem glúten e sem lactose.</p></details>
         <details class="acc"><summary>Garantia de reembolso</summary><p>Você tem 90 dias para experimentar. Se não sentir a diferença, devolvemos 100% do valor pago.</p></details>
       </div>
@@ -788,7 +790,7 @@ src="https://www.facebook.com/tr?id=1051208311286719&ev=PageView&noscript=1"
       <div class="row"><b>Baixo teor de cumarina</b><span>✓</span></div>
       <div class="row"><b>Zero açúcar</b><span>✓</span></div>
       <div class="row"><b>Sem glúten · Sem lactose</b><span>✓</span></div>
-      <div class="row"><b>Cápsulas por pacote</b><span>60 · cálculo condicional: 20 dias se o rótulo confirmar 3/dia</span></div>
+      <div class="row capsule-count"><b>Cápsulas por pacote</b><span>60 cápsulas</span></div>
     </div>
     <p class="comp-note">100% natural · Uso adulto · Tome junto com as refeições.</p>
     <div class="experts">
@@ -864,21 +866,21 @@ src="https://www.facebook.com/tr?id=1051208311286719&ev=PageView&noscript=1"
             <span class="offer-tag tag-3">50% OFF</span>
             <span class="radio"></span>
             <span class="thumb"><img src="cinnavita-img/kit-2-pacotes-60caps.webp" alt="2 pacotes de Cinnavita, 60 cápsulas cada" width="1000" height="1000" loading="lazy" decoding="async"></span>
-            <span class="offer-body"><span class="offer-title">COMPRE 1 E LEVE 2</span><br><span class="offer-eco">Cálculo condicional: 40 dias · 3 cáps./dia como referência do produto-fonte; confirmar rótulo final · Economize 50%</span></span>
+            <span class="offer-body"><span class="offer-title">COMPRE 1 E LEVE 2</span><br><span class="offer-eco">40 dias de uso estimado · Economize 50%</span></span>
             <span class="offer-price"><span class="offer-old">R$ 299,90</span><span class="offer-new">R$ 149,90</span></span>
           <span class="demo-unit">R$ 74,95 por unidade</span></label>
 <label tabindex="0" role="radio" aria-checked="false" class="offer" onclick="selOffer(this)" data-kit="k3">
             <span class="offer-tag tag-1">Mais Vendido</span>
             <span class="radio"></span>
             <span class="thumb"><img src="cinnavita-img/kit-3-pacotes-60caps.webp" alt="3 pacotes" loading="lazy" decoding="async"><i class="qty">3 PACOTES</i></span>
-            <span class="offer-body"><span class="offer-title">COMPRE&nbsp;2 · LEVE&nbsp;3</span><br><span class="offer-eco">Cálculo condicional: 60 dias · 3 cáps./dia como referência do produto-fonte; confirmar rótulo final · Economize 56%</span></span>
+            <span class="offer-body"><span class="offer-title">COMPRE&nbsp;2 · LEVE&nbsp;3</span><br><span class="offer-eco">60 dias de uso estimado · Economize 56%</span></span>
             <span class="offer-price"><span class="offer-old">R$ 449,90</span><span class="offer-new">R$ 199,90</span></span>
           <span class="demo-unit">R$ 66,63 por unidade</span></label>
 <label tabindex="0" role="radio" aria-checked="false" class="offer" onclick="selOffer(this)" data-kit="k4">
             <span class="offer-tag tag-2">Melhor Valor</span>
             <span class="radio"></span>
             <span class="thumb"><img src="cinnavita-img/kit-4-pacotes-60caps.webp" alt="4 pacotes" loading="lazy" decoding="async"><i class="qty">4 PACOTES</i></span>
-            <span class="offer-body"><span class="offer-title">COMPRE&nbsp;3 · LEVE&nbsp;4</span><br><span class="offer-eco">Cálculo condicional: 80 dias · 3 cáps./dia como referência do produto-fonte; confirmar rótulo final · Economize 60%</span></span>
+            <span class="offer-body"><span class="offer-title">COMPRE&nbsp;3 · LEVE&nbsp;4</span><br><span class="offer-eco">80 dias de uso estimado · Economize 60%</span></span>
             <span class="offer-price"><span class="offer-old">R$ 579,90</span><span class="offer-new">R$ 229,90</span></span>
           <span class="demo-unit">R$ 57,48 por unidade</span></label>
         </div>
