@@ -15,7 +15,7 @@
     });
   });
   document.querySelectorAll('.js-buy').forEach(button => button.addEventListener('click', event => {
-    if (['rubravita-live', 'ignivita-live', 'levivita-live'].includes(document.body.dataset.checkout)) return;
+    if (['rubravita-live', 'ignivita-live', 'levivita-live', 'aurivita-live', 'pedivita-live', 'cinnavita-live', 'cordivita-live'].includes(document.body.dataset.checkout)) return;
     event.preventDefault();
     if (!window.CO) return;
     dialog.querySelector('.demo-selection').textContent = `${window.COkit} · ${window.COprice}`;
