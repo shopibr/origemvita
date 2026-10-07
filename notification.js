@@ -1,5 +1,26 @@
 // Social Proof Notifications - Simula compras em tempo real
 (function() {
+  // Banner "Somente Hoje" no topo
+  const banner = document.createElement('div');
+  banner.style.cssText = `
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(90deg, #dc2626 0%, #991b1b 100%);
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 14px;
+    z-index: 10000;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    animation: pulse 2s infinite;
+  `;
+  banner.innerHTML = '🔥 SOMENTE HOJE - APROVEITE ENQUANTO HÁ ESTOQUE 🔥';
+  document.body.appendChild(banner);
+  
   const nomes = ['João', 'Maria', 'Carlos', 'Ana', 'Paulo', 'Fernanda', 'Ricardo', 'Patricia', 'Bruno', 'Silvia', 'Marcelo', 'Juliana'];
   const sobrenomes = ['Silva', 'Santos', 'Oliveira', 'Pereira', 'Costa', 'Ferreira', 'Martins', 'Gomes', 'Alves', 'Rocha'];
   const produtos = ['RUBRAVITA', 'IGNIVITA', 'LEVIVITA', 'PEDIVITA', 'AURIVITA', 'CINNAVITA', 'CORDIVITA'];
@@ -65,6 +86,10 @@
     @keyframes slideOut {
       from { transform: translateX(0); opacity: 1; }
       to { transform: translateX(400px); opacity: 0; }
+    }
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.8; }
     }
   `;
   document.head.appendChild(style);
