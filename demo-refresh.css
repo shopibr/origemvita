@@ -5,3 +5,22 @@
 .demo-refresh .vf,.demo-refresh .rev .verif{font-size:12px;line-height:1.5;color:#374151}.demo-refresh .hquote .vf{display:block;margin:6px 0}
 
 body.demo-refresh .demo-image-label,body.demo-refresh .dm-card .vf{font-size:12px!important;line-height:1.5}body.demo-refresh .rating-disclosure{font-size:12px;color:#374151;margin:4px 0 12px}
+
+/* Readability and delivery update: October 2026. */
+body.demo-refresh{font-size:16px;line-height:1.6}
+.demo-refresh .psub,.demo-refresh .demo-benefits,.demo-refresh details.acc p,.demo-refresh .faqitem .a,.demo-refresh .comp .row,.demo-refresh .trow p{font-size:16px;line-height:1.6}
+.demo-refresh .sel-label,.demo-refresh .demo-assurance,.demo-refresh .demo-offer-note,.demo-refresh .demo-unit,.demo-refresh .offer-eco,.demo-refresh .offer-old,.demo-refresh .offer-tag,.demo-refresh .checks,.demo-refresh .frete p,.demo-refresh .chips,.demo-refresh .vf,.demo-refresh .rev .verif,.demo-refresh .rating-disclosure{font-size:13px;line-height:1.5}
+.demo-refresh .dm-card .demo-image-label,.demo-refresh .dm-card .vf{font-size:13px!important;line-height:1.5}
+.demo-refresh .frete b,.demo-refresh details.acc summary{font-size:16px;line-height:1.5}
+.demo-refresh .offer-body{line-height:1.4}
+.demo-refresh .chips{justify-content:center;text-align:center}
+.demo-refresh .comp .row b{min-width:0}
+.demo-refresh .comp .row span{white-space:normal;text-align:right}
+.demo-refresh .comp .capsule-count span{white-space:nowrap}
+@media(max-width:900px){.demo-refresh .ptitle{font-size:32px;line-height:1.2}.demo-refresh .offer-title{font-size:15px}.demo-refresh .offer-new{font-size:20px}.demo-refresh .offer-eco,.demo-refresh .offer-old,.demo-refresh .offer-tag{font-size:13px}}
+
+/* Compact promotional strip; no unconfirmed deadline. */
+.demo-refresh .dm-bar{padding:8px 16px;font-size:13px;line-height:1.4;letter-spacing:.2px;text-align:center}
+.demo-refresh .dm-bar strong{font-weight:800}
+
+.demo-refresh .sel-label,.demo-refresh .demo-offer-note{text-align:center}
