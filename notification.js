@@ -1,6 +1,6 @@
 // Social Proof Notifications - Simula compras em tempo real
 (function() {
-  // Banner "Somente Hoje" no topo
+  // Banner "Somente Hoje Frete Expresso Grátis" no topo
   const banner = document.createElement('div');
   banner.style.cssText = `
     position: fixed;
@@ -18,7 +18,7 @@
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
     animation: pulse 2s infinite;
   `;
-  banner.innerHTML = '🔥 SOMENTE HOJE - APROVEITE ENQUANTO HÁ ESTOQUE 🔥';
+  banner.innerHTML = '🚚 SOMENTE HOJE FRETE EXPRESSO GRÁTIS 🚚';
   document.body.appendChild(banner);
   
   // Adicionar padding no body para o banner não sobrepor
