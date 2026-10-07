@@ -21,6 +21,9 @@
   banner.innerHTML = '🔥 SOMENTE HOJE - APROVEITE ENQUANTO HÁ ESTOQUE 🔥';
   document.body.appendChild(banner);
   
+  // Adicionar padding no body para o banner não sobrepor
+  document.body.style.paddingTop = '52px';
+  
   const nomes = ['João', 'Maria', 'Carlos', 'Ana', 'Paulo', 'Fernanda', 'Ricardo', 'Patricia', 'Bruno', 'Silvia', 'Marcelo', 'Juliana'];
   const sobrenomes = ['Silva', 'Santos', 'Oliveira', 'Pereira', 'Costa', 'Ferreira', 'Martins', 'Gomes', 'Alves', 'Rocha'];
   const produtos = ['RUBRAVITA', 'IGNIVITA', 'LEVIVITA', 'PEDIVITA', 'AURIVITA', 'CINNAVITA', 'CORDIVITA'];
