@@ -22,3 +22,38 @@
     dialog.showModal();
   }));
 })();
+
+// One-finger horizontal swipes change slides; the browser owns scrolling and zoom.
+(() => {
+  const gallery = document.getElementById('slides');
+  const buttons = Array.from(document.querySelectorAll('.thumbs button'));
+  if (!gallery || buttons.length < 2) return;
+  let start = null;
+  const zoomed = () => window.visualViewport && window.visualViewport.scale > 1.01;
+  const updateTouchAction = () => {
+    gallery.style.touchAction = zoomed() ? 'auto' : 'pan-y pinch-zoom';
+    start = null;
+  };
+  updateTouchAction();
+  if (window.visualViewport) window.visualViewport.addEventListener('resize', updateTouchAction);
+  gallery.addEventListener('touchstart', event => {
+    start = event.touches.length === 1 && !zoomed()
+      ? { x: event.touches[0].clientX, y: event.touches[0].clientY }
+      : null;
+  }, { passive: true });
+  gallery.addEventListener('touchmove', event => {
+    if (event.touches.length !== 1 || zoomed()) start = null;
+  }, { passive: true });
+  gallery.addEventListener('touchcancel', () => { start = null; }, { passive: true });
+  gallery.addEventListener('touchend', event => {
+    const origin = start;
+    start = null;
+    if (!origin || event.touches.length || zoomed() || !event.changedTouches.length) return;
+    const dx = event.changedTouches[0].clientX - origin.x;
+    const dy = event.changedTouches[0].clientY - origin.y;
+    if (Math.abs(dx) < 40 || Math.abs(dx) <= Math.abs(dy) * 1.25) return;
+    const current = buttons.findIndex(button => button.classList.contains('on'));
+    const next = (current + (dx < 0 ? 1 : -1) + buttons.length) % buttons.length;
+    buttons[next].click();
+  }, { passive: true });
+})();

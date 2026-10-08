@@ -24,3 +24,8 @@ body.demo-refresh{font-size:16px;line-height:1.6}
 .demo-refresh .dm-bar strong{font-weight:800}
 
 .demo-refresh .sel-label,.demo-refresh .demo-offer-note{text-align:center}
+
+/* Keep the product FAQ inside the viewport without clipping its text. */
+.product-faq-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+.product-faq-grid>*{min-width:0;overflow-wrap:anywhere}
+@media(max-width:640px){.product-faq-grid{grid-template-columns:minmax(0,1fr)}}
